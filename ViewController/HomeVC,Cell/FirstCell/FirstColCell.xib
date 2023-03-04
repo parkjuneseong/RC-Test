@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FirstColCell" customModule="RC_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EX5-gW-wIr">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-T8-DiV">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ud-2R-O6c">
+                                <rect key="frame" x="287" y="219" width="100" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10 모두보기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C10-WH-qh3">
+                                        <rect key="frame" x="0.0" y="8" width="100" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstItem="C10-WH-qh3" firstAttribute="centerY" secondItem="3ud-2R-O6c" secondAttribute="centerY" id="8hT-fB-DrV"/>
+                                    <constraint firstAttribute="height" constant="30" id="Gmx-DQ-32l"/>
+                                    <constraint firstItem="C10-WH-qh3" firstAttribute="leading" secondItem="3ud-2R-O6c" secondAttribute="leading" id="L69-3m-dVX"/>
+                                    <constraint firstAttribute="width" constant="100" id="WfP-8P-sI0"/>
+                                    <constraint firstItem="C10-WH-qh3" firstAttribute="centerX" secondItem="3ud-2R-O6c" secondAttribute="centerX" id="YFt-cE-n86"/>
+                                    <constraint firstAttribute="trailing" secondItem="C10-WH-qh3" secondAttribute="trailing" id="wd5-aG-8Om"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ztR-T8-DiV" secondAttribute="trailing" id="5oA-6k-w7X"/>
+                            <constraint firstAttribute="bottom" secondItem="ztR-T8-DiV" secondAttribute="bottom" id="WoI-Nf-GIY"/>
+                            <constraint firstAttribute="bottom" secondItem="3ud-2R-O6c" secondAttribute="bottom" constant="1" id="bQ8-yl-gm4"/>
+                            <constraint firstAttribute="trailing" secondItem="3ud-2R-O6c" secondAttribute="trailing" constant="3" id="hYv-7t-uwf"/>
+                            <constraint firstItem="ztR-T8-DiV" firstAttribute="top" secondItem="EX5-gW-wIr" secondAttribute="top" id="mb5-ip-Lor"/>
+                            <constraint firstItem="ztR-T8-DiV" firstAttribute="leading" secondItem="EX5-gW-wIr" secondAttribute="leading" id="nQq-Ak-Eo8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="EX5-gW-wIr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BQ0-vI-X09"/>
+                <constraint firstAttribute="bottom" secondItem="EX5-gW-wIr" secondAttribute="bottom" id="Fw3-GR-RPM"/>
+                <constraint firstItem="EX5-gW-wIr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rTA-gg-Lqf"/>
+                <constraint firstAttribute="trailing" secondItem="EX5-gW-wIr" secondAttribute="trailing" id="rdM-2N-h6g"/>
+            </constraints>
+            <connections>
+                <outlet property="topImage" destination="ztR-T8-DiV" id="IlE-8Y-6av"/>
+                <outlet property="topLabel" destination="C10-WH-qh3" id="3JN-aE-pVu"/>
+            </connections>
+            <point key="canvasLocation" x="4.5801526717557248" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -6,9 +6,11 @@
 //
 
 import UIKit
-
+protocol TabBarButtonDelegate: AnyObject {
+    func areaViewAction()
+}
 class HomeVC: UIViewController {
-
+    weak var delegate : TabBarButtonDelegate?
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -144,20 +146,18 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
         
         return presenter.headerHeight
     }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard let presenter = tablePresenters[section] else {
+            return nil
+        }
+        return presenter.footerView
+    }
     
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        guard let presenter = tablePresenters[section] else {
-//            return nil
-//        }
-//        return presenter.footerView
-//    }
-    
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        guard let presenter = tablePresenters[section] else {
-//            return .leastNormalMagnitude
-//        }
-//
-//        return presenter.footerHeight
-//    }
-    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        guard let presenter = tablePresenters[section] else {
+            return .leastNormalMagnitude
+        }
+        
+        return presenter.footerHeight
+    }
 }

@@ -25,12 +25,47 @@
 		3F1FE6EA29B36901002153C6 /* SevenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6E829B36901002153C6 /* SevenCell.swift */; };
 		3F1FE6EB29B36901002153C6 /* SevenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FE6E929B36901002153C6 /* SevenCell.xib */; };
 		3F1FE6ED29B3690E002153C6 /* SevenCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6EC29B3690E002153C6 /* SevenCellPresenter.swift */; };
-		3F1FE6F129B36FC3002153C6 /* EighthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6EF29B36FC3002153C6 /* EighthCell.swift */; };
-		3F1FE6F229B36FC3002153C6 /* EighthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FE6F029B36FC3002153C6 /* EighthCell.xib */; };
-		3F1FE6F529B36FD9002153C6 /* EighthColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6F329B36FD9002153C6 /* EighthColCell.swift */; };
-		3F1FE6F629B36FD9002153C6 /* EighthColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FE6F429B36FD9002153C6 /* EighthColCell.xib */; };
-		3F1FE6F829B36FEA002153C6 /* EighthCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6F729B36FEA002153C6 /* EighthCellPresenter.swift */; };
+		3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233629B38BDC00ED756A /* EighthCell.swift */; };
+		3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A233729B38BDC00ED756A /* EighthCell.xib */; };
+		3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233A29B38BF700ED756A /* EighthColCell.swift */; };
+		3F3A233D29B38BF700ED756A /* EighthColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A233B29B38BF700ED756A /* EighthColCell.xib */; };
+		3F3A233F29B38C0800ED756A /* EighthCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233E29B38C0800ED756A /* EighthCellPresenter.swift */; };
+		3F3A234429B38E0400ED756A /* TalkFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A234229B38E0400ED756A /* TalkFirstCell.swift */; };
+		3F3A234529B38E0400ED756A /* TalkFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A234329B38E0400ED756A /* TalkFirstCell.xib */; };
+		3F3A234929B38E8C00ED756A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A234729B38E8C00ED756A /* SearchVC.swift */; };
+		3F3A234A29B38E8C00ED756A /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A234829B38E8C00ED756A /* SearchVC.xib */; };
+		3F3A234D29B38EA400ED756A /* SearchFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A234B29B38EA400ED756A /* SearchFirstCell.swift */; };
+		3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */; };
+		3F3B415A29B38F3A003827A2 /* SearchOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */; };
 		3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F432BE629B315A90017E245 /* CommonTablePresent.swift */; };
+		3F57B74629B451D80009D190 /* SearchTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B74429B451D80009D190 /* SearchTwoCell.swift */; };
+		3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F57B74529B451D80009D190 /* SearchTwoCell.xib */; };
+		3F57B74929B451E30009D190 /* SearchTwoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B74829B451E30009D190 /* SearchTwoPresenter.swift */; };
+		3F57B74B29B453C10009D190 /* CommonFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B74A29B453C10009D190 /* CommonFooterView.swift */; };
+		3F57B74D29B453CE0009D190 /* CommonFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F57B74C29B453CE0009D190 /* CommonFooterView.xib */; };
+		3F57B75029B45C340009D190 /* SearchTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B74E29B45C340009D190 /* SearchTwo.swift */; };
+		3F57B75129B45C340009D190 /* SearchTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F57B74F29B45C340009D190 /* SearchTwo.xib */; };
+		3F57B75529B461BF0009D190 /* SearchThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B75329B461BF0009D190 /* SearchThree.swift */; };
+		3F57B75629B461BF0009D190 /* SearchThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F57B75429B461BF0009D190 /* SearchThree.xib */; };
+		3F57B75929B461EC0009D190 /* SearchThreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B75729B461EC0009D190 /* SearchThreeCell.swift */; };
+		3F57B75A29B461EC0009D190 /* SearchThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F57B75829B461EC0009D190 /* SearchThreeCell.xib */; };
+		3F57B75C29B461F80009D190 /* SearchThreePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B75B29B461F80009D190 /* SearchThreePresenter.swift */; };
+		3F69EA9829B476B500440C41 /* TalkHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EA9729B476B500440C41 /* TalkHeaderView.swift */; };
+		3F69EA9A29B476C100440C41 /* TalkHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EA9929B476C100440C41 /* TalkHeaderView.xib */; };
+		3F69EA9D29B47A1E00440C41 /* TalkFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EA9B29B47A1E00440C41 /* TalkFirst.swift */; };
+		3F69EA9E29B47A1E00440C41 /* TalkFirst.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EA9C29B47A1E00440C41 /* TalkFirst.xib */; };
+		3F69EAA029B47A2E00440C41 /* TalkOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EA9F29B47A2E00440C41 /* TalkOnePresenter.swift */; };
+		3F69EAA229B4BF5E00440C41 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA129B4BF5E00440C41 /* RootViewController.swift */; };
+		3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */; };
+		3F69EAA729B4BFED00440C41 /* TabIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA629B4BFED00440C41 /* TabIconViewController.swift */; };
+		3F69EAA929B4C01300440C41 /* TabiconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA829B4C01300440C41 /* TabiconView.swift */; };
+		3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAAA29B4C05200440C41 /* TabbarContainerViewController.swift */; };
+		3F69EAAF29B4C16700440C41 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAAD29B4C16700440C41 /* MyVC.swift */; };
+		3F69EAB029B4C16700440C41 /* MyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAAE29B4C16700440C41 /* MyVC.xib */; };
+		3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAB129B4C17500440C41 /* RegistVC.swift */; };
+		3F69EAB429B4C17500440C41 /* RegistVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB229B4C17500440C41 /* RegistVC.xib */; };
+		3F69EAB629B4C20500440C41 /* TabIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB529B4C20500440C41 /* TabIconViewController.xib */; };
+		3F69EAB829B4C23200440C41 /* TabiconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB729B4C23200440C41 /* TabiconView.xib */; };
 		3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB5E629B318CA002F03E8 /* HomeVC.swift */; };
 		3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7EB5E729B318CA002F03E8 /* HomeVC.xib */; };
 		3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB5EC29B31B57002F03E8 /* HomeFirstCell.swift */; };
@@ -72,12 +107,47 @@
 		3F1FE6E829B36901002153C6 /* SevenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenCell.swift; sourceTree = "<group>"; };
 		3F1FE6E929B36901002153C6 /* SevenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SevenCell.xib; sourceTree = "<group>"; };
 		3F1FE6EC29B3690E002153C6 /* SevenCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenCellPresenter.swift; sourceTree = "<group>"; };
-		3F1FE6EF29B36FC3002153C6 /* EighthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCell.swift; sourceTree = "<group>"; };
-		3F1FE6F029B36FC3002153C6 /* EighthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EighthCell.xib; sourceTree = "<group>"; };
-		3F1FE6F329B36FD9002153C6 /* EighthColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthColCell.swift; sourceTree = "<group>"; };
-		3F1FE6F429B36FD9002153C6 /* EighthColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EighthColCell.xib; sourceTree = "<group>"; };
-		3F1FE6F729B36FEA002153C6 /* EighthCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCellPresenter.swift; sourceTree = "<group>"; };
+		3F3A233629B38BDC00ED756A /* EighthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCell.swift; sourceTree = "<group>"; };
+		3F3A233729B38BDC00ED756A /* EighthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EighthCell.xib; sourceTree = "<group>"; };
+		3F3A233A29B38BF700ED756A /* EighthColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthColCell.swift; sourceTree = "<group>"; };
+		3F3A233B29B38BF700ED756A /* EighthColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EighthColCell.xib; sourceTree = "<group>"; };
+		3F3A233E29B38C0800ED756A /* EighthCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCellPresenter.swift; sourceTree = "<group>"; };
+		3F3A234229B38E0400ED756A /* TalkFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkFirstCell.swift; sourceTree = "<group>"; };
+		3F3A234329B38E0400ED756A /* TalkFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkFirstCell.xib; sourceTree = "<group>"; };
+		3F3A234729B38E8C00ED756A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		3F3A234829B38E8C00ED756A /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		3F3A234B29B38EA400ED756A /* SearchFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFirstCell.swift; sourceTree = "<group>"; };
+		3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFirstCell.xib; sourceTree = "<group>"; };
+		3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnePresenter.swift; sourceTree = "<group>"; };
 		3F432BE629B315A90017E245 /* CommonTablePresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTablePresent.swift; sourceTree = "<group>"; };
+		3F57B74429B451D80009D190 /* SearchTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTwoCell.swift; sourceTree = "<group>"; };
+		3F57B74529B451D80009D190 /* SearchTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTwoCell.xib; sourceTree = "<group>"; };
+		3F57B74829B451E30009D190 /* SearchTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTwoPresenter.swift; sourceTree = "<group>"; };
+		3F57B74A29B453C10009D190 /* CommonFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFooterView.swift; sourceTree = "<group>"; };
+		3F57B74C29B453CE0009D190 /* CommonFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonFooterView.xib; sourceTree = "<group>"; };
+		3F57B74E29B45C340009D190 /* SearchTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTwo.swift; sourceTree = "<group>"; };
+		3F57B74F29B45C340009D190 /* SearchTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTwo.xib; sourceTree = "<group>"; };
+		3F57B75329B461BF0009D190 /* SearchThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThree.swift; sourceTree = "<group>"; };
+		3F57B75429B461BF0009D190 /* SearchThree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchThree.xib; sourceTree = "<group>"; };
+		3F57B75729B461EC0009D190 /* SearchThreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThreeCell.swift; sourceTree = "<group>"; };
+		3F57B75829B461EC0009D190 /* SearchThreeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchThreeCell.xib; sourceTree = "<group>"; };
+		3F57B75B29B461F80009D190 /* SearchThreePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThreePresenter.swift; sourceTree = "<group>"; };
+		3F69EA9729B476B500440C41 /* TalkHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkHeaderView.swift; sourceTree = "<group>"; };
+		3F69EA9929B476C100440C41 /* TalkHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkHeaderView.xib; sourceTree = "<group>"; };
+		3F69EA9B29B47A1E00440C41 /* TalkFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkFirst.swift; sourceTree = "<group>"; };
+		3F69EA9C29B47A1E00440C41 /* TalkFirst.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkFirst.xib; sourceTree = "<group>"; };
+		3F69EA9F29B47A2E00440C41 /* TalkOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkOnePresenter.swift; sourceTree = "<group>"; };
+		3F69EAA129B4BF5E00440C41 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		3F69EAA629B4BFED00440C41 /* TabIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIconViewController.swift; sourceTree = "<group>"; };
+		3F69EAA829B4C01300440C41 /* TabiconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabiconView.swift; sourceTree = "<group>"; };
+		3F69EAAA29B4C05200440C41 /* TabbarContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarContainerViewController.swift; sourceTree = "<group>"; };
+		3F69EAAD29B4C16700440C41 /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
+		3F69EAAE29B4C16700440C41 /* MyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVC.xib; sourceTree = "<group>"; };
+		3F69EAB129B4C17500440C41 /* RegistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistVC.swift; sourceTree = "<group>"; };
+		3F69EAB229B4C17500440C41 /* RegistVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistVC.xib; sourceTree = "<group>"; };
+		3F69EAB529B4C20500440C41 /* TabIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabIconViewController.xib; sourceTree = "<group>"; };
+		3F69EAB729B4C23200440C41 /* TabiconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabiconView.xib; sourceTree = "<group>"; };
 		3F7EB5E629B318CA002F03E8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3F7EB5E729B318CA002F03E8 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		3F7EB5EC29B31B57002F03E8 /* HomeFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstCell.swift; sourceTree = "<group>"; };
@@ -157,27 +227,74 @@
 			path = SeventhCell;
 			sourceTree = "<group>";
 		};
-		3F1FE6EE29B36FA7002153C6 /* EighthCell */ = {
+		3F3A233529B38BA600ED756A /* EighthCell */ = {
 			isa = PBXGroup;
 			children = (
-				3F1FE6EF29B36FC3002153C6 /* EighthCell.swift */,
-				3F1FE6F029B36FC3002153C6 /* EighthCell.xib */,
-				3F1FE6F329B36FD9002153C6 /* EighthColCell.swift */,
-				3F1FE6F429B36FD9002153C6 /* EighthColCell.xib */,
-				3F1FE6F729B36FEA002153C6 /* EighthCellPresenter.swift */,
+				3F3A233629B38BDC00ED756A /* EighthCell.swift */,
+				3F3A233729B38BDC00ED756A /* EighthCell.xib */,
+				3F3A233A29B38BF700ED756A /* EighthColCell.swift */,
+				3F3A233B29B38BF700ED756A /* EighthColCell.xib */,
+				3F3A233E29B38C0800ED756A /* EighthCellPresenter.swift */,
 			);
-			name = EighthCell;
-			path = ViewController/SeventhCell/EighthCell;
+			path = EighthCell;
+			sourceTree = "<group>";
+		};
+		3F3A234029B38D8C00ED756A /* TalkVC,Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3F7EB5FE29B333CB002F03E8 /* TalkVC.swift */,
+				3F7EB5FF29B333CB002F03E8 /* TalkVC.xib */,
+				3F69EA9629B4769B00440C41 /* TalkHeaderView */,
+				3F3A234129B38DD800ED756A /* TalkFirstCell */,
+			);
+			path = "TalkVC,Cell";
+			sourceTree = "<group>";
+		};
+		3F3A234129B38DD800ED756A /* TalkFirstCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F69EA9B29B47A1E00440C41 /* TalkFirst.swift */,
+				3F69EA9C29B47A1E00440C41 /* TalkFirst.xib */,
+				3F3A234229B38E0400ED756A /* TalkFirstCell.swift */,
+				3F3A234329B38E0400ED756A /* TalkFirstCell.xib */,
+				3F69EA9F29B47A2E00440C41 /* TalkOnePresenter.swift */,
+			);
+			path = TalkFirstCell;
+			sourceTree = "<group>";
+		};
+		3F3A234629B38E6700ED756A /* SearchVC.Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3F3A234729B38E8C00ED756A /* SearchVC.swift */,
+				3F3A234829B38E8C00ED756A /* SearchVC.xib */,
+				3F3A235129B38EC400ED756A /* SearchFirst */,
+				3F57B74329B451A80009D190 /* SearchTwo */,
+				3F57B75229B461940009D190 /* Search3Cell */,
+			);
+			path = SearchVC.Cell;
+			sourceTree = "<group>";
+		};
+		3F3A235129B38EC400ED756A /* SearchFirst */ = {
+			isa = PBXGroup;
+			children = (
+				3F3A234B29B38EA400ED756A /* SearchFirstCell.swift */,
+				3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */,
+				3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */,
+			);
+			path = SearchFirst;
 			sourceTree = "<group>";
 		};
 		3F432BE529B315850017E245 /* Commonc */ = {
 			isa = PBXGroup;
 			children = (
+				3F69EAA329B4BF9300440C41 /* Tabbar */,
 				3F432BE629B315A90017E245 /* CommonTablePresent.swift */,
 				3F1FE6C629B3422C002153C6 /* CommonHeaderView.swift */,
 				3F1FE6C829B34239002153C6 /* CommonHeaderView.xib */,
 				3F7EB60929B33D4A002F03E8 /* UIView + Border.swift */,
 				3F7EB60B29B33D67002F03E8 /* UIView + Radius.swift */,
+				3F57B74A29B453C10009D190 /* CommonFooterView.swift */,
+				3F57B74C29B453CE0009D190 /* CommonFooterView.xib */,
 			);
 			path = Commonc;
 			sourceTree = "<group>";
@@ -186,16 +303,21 @@
 			isa = PBXGroup;
 			children = (
 				3F432BEE29B317C30017E245 /* HomeVC,Cell */,
-				3F1FE6E729B368BD002153C6 /* SeventhCell */,
+				3F3A234629B38E6700ED756A /* SearchVC.Cell */,
+				3F69EAAC29B4C12B00440C41 /* RegistView */,
+				3F3A234029B38D8C00ED756A /* TalkVC,Cell */,
+				3F432BED29B317BD0017E245 /* MyView */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		3F432BED29B317BD0017E245 /* New Group */ = {
+		3F432BED29B317BD0017E245 /* MyView */ = {
 			isa = PBXGroup;
 			children = (
+				3F69EAAD29B4C16700440C41 /* MyVC.swift */,
+				3F69EAAE29B4C16700440C41 /* MyVC.xib */,
 			);
-			path = "New Group";
+			path = MyView;
 			sourceTree = "<group>";
 		};
 		3F432BEE29B317C30017E245 /* HomeVC,Cell */ = {
@@ -203,16 +325,72 @@
 			children = (
 				3F7EB5E629B318CA002F03E8 /* HomeVC.swift */,
 				3F7EB5E729B318CA002F03E8 /* HomeVC.xib */,
-				3F7EB5FE29B333CB002F03E8 /* TalkVC.swift */,
-				3F7EB5FF29B333CB002F03E8 /* TalkVC.xib */,
 				3F7EB5F629B32708002F03E8 /* FirstCell */,
 				3F7EB5F729B3271F002F03E8 /* SecondCell */,
 				3F7EB60229B338C4002F03E8 /* ThirdCell */,
 				3F1FE6CA29B343ED002153C6 /* FourhCell */,
 				3F1FE6D529B359C3002153C6 /* FifthCell */,
 				3F1FE6DC29B35FCC002153C6 /* SixthCell */,
+				3F1FE6E729B368BD002153C6 /* SeventhCell */,
+				3F3A233529B38BA600ED756A /* EighthCell */,
 			);
 			path = "HomeVC,Cell";
+			sourceTree = "<group>";
+		};
+		3F57B74329B451A80009D190 /* SearchTwo */ = {
+			isa = PBXGroup;
+			children = (
+				3F57B74E29B45C340009D190 /* SearchTwo.swift */,
+				3F57B74F29B45C340009D190 /* SearchTwo.xib */,
+				3F57B74429B451D80009D190 /* SearchTwoCell.swift */,
+				3F57B74529B451D80009D190 /* SearchTwoCell.xib */,
+				3F57B74829B451E30009D190 /* SearchTwoPresenter.swift */,
+			);
+			path = SearchTwo;
+			sourceTree = "<group>";
+		};
+		3F57B75229B461940009D190 /* Search3Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3F57B75329B461BF0009D190 /* SearchThree.swift */,
+				3F57B75429B461BF0009D190 /* SearchThree.xib */,
+				3F57B75729B461EC0009D190 /* SearchThreeCell.swift */,
+				3F57B75829B461EC0009D190 /* SearchThreeCell.xib */,
+				3F57B75B29B461F80009D190 /* SearchThreePresenter.swift */,
+			);
+			path = Search3Cell;
+			sourceTree = "<group>";
+		};
+		3F69EA9629B4769B00440C41 /* TalkHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				3F69EA9729B476B500440C41 /* TalkHeaderView.swift */,
+				3F69EA9929B476C100440C41 /* TalkHeaderView.xib */,
+			);
+			path = TalkHeaderView;
+			sourceTree = "<group>";
+		};
+		3F69EAA329B4BF9300440C41 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				3F69EAA129B4BF5E00440C41 /* RootViewController.swift */,
+				3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */,
+				3F69EAA629B4BFED00440C41 /* TabIconViewController.swift */,
+				3F69EAB529B4C20500440C41 /* TabIconViewController.xib */,
+				3F69EAA829B4C01300440C41 /* TabiconView.swift */,
+				3F69EAB729B4C23200440C41 /* TabiconView.xib */,
+				3F69EAAA29B4C05200440C41 /* TabbarContainerViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		3F69EAAC29B4C12B00440C41 /* RegistView */ = {
+			isa = PBXGroup;
+			children = (
+				3F69EAB129B4C17500440C41 /* RegistVC.swift */,
+				3F69EAB229B4C17500440C41 /* RegistVC.xib */,
+			);
+			path = RegistView;
 			sourceTree = "<group>";
 		};
 		3F7EB5F629B32708002F03E8 /* FirstCell */ = {
@@ -250,10 +428,8 @@
 		3F7EB60629B2ECBA0090A87B = {
 			isa = PBXGroup;
 			children = (
-				3F432BED29B317BD0017E245 /* New Group */,
 				3F432BE529B315850017E245 /* Commonc */,
 				3F432BE829B316020017E245 /* ViewController */,
-				3F1FE6EE29B36FA7002153C6 /* EighthCell */,
 				3F7EB61129B2ECBA0090A87B /* RC Test */,
 				3F7EB61029B2ECBA0090A87B /* Products */,
 			);
@@ -336,20 +512,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1FE6F629B36FD9002153C6 /* EighthColCell.xib in Resources */,
 				3F7EB60629B33926002F03E8 /* ThirdCell.xib in Resources */,
 				3F1FE6E429B36001002153C6 /* SixthColCell.xib in Resources */,
 				3F1FE6D429B344AB002153C6 /* FourthColCell.xib in Resources */,
+				3F69EA9E29B47A1E00440C41 /* TalkFirst.xib in Resources */,
+				3F69EA9A29B476C100440C41 /* TalkHeaderView.xib in Resources */,
 				3F7EB60129B333CC002F03E8 /* TalkVC.xib in Resources */,
 				3F1FE6D929B359ED002153C6 /* FifthCell.xib in Resources */,
 				3F7EB5FB29B3275D002F03E8 /* SecondCell.xib in Resources */,
+				3F69EAB029B4C16700440C41 /* MyVC.xib in Resources */,
+				3F57B75629B461BF0009D190 /* SearchThree.xib in Resources */,
+				3F57B74D29B453CE0009D190 /* CommonFooterView.xib in Resources */,
+				3F3A234A29B38E8C00ED756A /* SearchVC.xib in Resources */,
+				3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */,
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
-				3F1FE6F229B36FC3002153C6 /* EighthCell.xib in Resources */,
 				3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */,
+				3F69EAB829B4C23200440C41 /* TabiconView.xib in Resources */,
 				3F1FE6E029B35FE5002153C6 /* SixthCell.xib in Resources */,
 				3F7EB5EF29B31B57002F03E8 /* HomeFirstCell.xib in Resources */,
+				3F69EAB429B4C17500440C41 /* RegistVC.xib in Resources */,
+				3F69EAB629B4C20500440C41 /* TabIconViewController.xib in Resources */,
 				3F7EB61C29B2ECBB0090A87B /* Assets.xcassets in Resources */,
+				3F3A234529B38E0400ED756A /* TalkFirstCell.xib in Resources */,
+				3F57B75A29B461EC0009D190 /* SearchThreeCell.xib in Resources */,
+				3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */,
+				3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */,
+				3F57B75129B45C340009D190 /* SearchTwo.xib in Resources */,
+				3F3A233D29B38BF700ED756A /* EighthColCell.xib in Resources */,
 				3F7EB5F529B31D0D002F03E8 /* FirstColCell.xib in Resources */,
 				3F1FE6CE29B34422002153C6 /* FourthCell.xib in Resources */,
 				3F1FE6EB29B36901002153C6 /* SevenCell.xib in Resources */,
@@ -364,31 +554,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1FE6C729B3422C002153C6 /* CommonHeaderView.swift in Sources */,
+				3F69EAA729B4BFED00440C41 /* TabIconViewController.swift in Sources */,
 				3F1FE6D829B359ED002153C6 /* FifthCell.swift in Sources */,
 				3F7EB61329B2ECBA0090A87B /* AppDelegate.swift in Sources */,
+				3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */,
+				3F69EAA029B47A2E00440C41 /* TalkOnePresenter.swift in Sources */,
+				3F3A233F29B38C0800ED756A /* EighthCellPresenter.swift in Sources */,
 				3F7EB5F429B31D0D002F03E8 /* FirstColCell.swift in Sources */,
+				3F57B74929B451E30009D190 /* SearchTwoPresenter.swift in Sources */,
 				3F1FE6ED29B3690E002153C6 /* SevenCellPresenter.swift in Sources */,
 				3F7EB5FD29B32ACF002F03E8 /* SecondCellPresenter.swift in Sources */,
+				3F69EA9829B476B500440C41 /* TalkHeaderView.swift in Sources */,
+				3F57B75929B461EC0009D190 /* SearchThreeCell.swift in Sources */,
+				3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */,
 				3F1FE6D329B344AB002153C6 /* FourthColCell.swift in Sources */,
-				3F1FE6F529B36FD9002153C6 /* EighthColCell.swift in Sources */,
 				3F1FE6D029B34439002153C6 /* FourthCellPresenter.swift in Sources */,
+				3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */,
 				3F7EB60A29B33D4A002F03E8 /* UIView + Border.swift in Sources */,
+				3F3A234D29B38EA400ED756A /* SearchFirstCell.swift in Sources */,
+				3F3A234929B38E8C00ED756A /* SearchVC.swift in Sources */,
 				3F7EB60C29B33D67002F03E8 /* UIView + Radius.swift in Sources */,
+				3F57B74B29B453C10009D190 /* CommonFooterView.swift in Sources */,
 				3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */,
+				3F57B75C29B461F80009D190 /* SearchThreePresenter.swift in Sources */,
+				3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */,
+				3F69EAAF29B4C16700440C41 /* MyVC.swift in Sources */,
 				3F7EB60029B333CC002F03E8 /* TalkVC.swift in Sources */,
+				3F3A234429B38E0400ED756A /* TalkFirstCell.swift in Sources */,
+				3F69EA9D29B47A1E00440C41 /* TalkFirst.swift in Sources */,
 				3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */,
 				3F1FE6DB29B35AE2002153C6 /* FifthCellPresenter.swift in Sources */,
-				3F1FE6F129B36FC3002153C6 /* EighthCell.swift in Sources */,
 				3F1FE6E329B36001002153C6 /* SixthColCell.swift in Sources */,
 				3F7EB60829B33938002F03E8 /* ThirdCellPresneter.swift in Sources */,
 				3F1FE6CD29B34422002153C6 /* FourthCell.swift in Sources */,
+				3F69EAA929B4C01300440C41 /* TabiconView.swift in Sources */,
 				3F7EB60529B33926002F03E8 /* ThirdCell.swift in Sources */,
+				3F57B75029B45C340009D190 /* SearchTwo.swift in Sources */,
 				3F7EB5F129B31B66002F03E8 /* FirstCellPresenter.swift in Sources */,
-				3F1FE6F829B36FEA002153C6 /* EighthCellPresenter.swift in Sources */,
+				3F3B415A29B38F3A003827A2 /* SearchOnePresenter.swift in Sources */,
 				3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */,
 				3F1FE6EA29B36901002153C6 /* SevenCell.swift in Sources */,
 				3F1FE6DF29B35FE5002153C6 /* SixthCell.swift in Sources */,
+				3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */,
 				3F7EB5FA29B3275D002F03E8 /* SecondCell.swift in Sources */,
+				3F69EAA229B4BF5E00440C41 /* RootViewController.swift in Sources */,
+				3F57B74629B451D80009D190 /* SearchTwoCell.swift in Sources */,
+				3F57B75529B461BF0009D190 /* SearchThree.swift in Sources */,
 				3F1FE6E629B3600D002153C6 /* SixthCellPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ class FirstColCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+  
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var topImage: UIImageView!
     func bind(image : UIImage,label : String){

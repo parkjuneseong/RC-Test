@@ -58,14 +58,14 @@
 		3F69EAA229B4BF5E00440C41 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA129B4BF5E00440C41 /* RootViewController.swift */; };
 		3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */; };
 		3F69EAA729B4BFED00440C41 /* TabIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA629B4BFED00440C41 /* TabIconViewController.swift */; };
-		3F69EAA929B4C01300440C41 /* TabiconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAA829B4C01300440C41 /* TabiconView.swift */; };
 		3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAAA29B4C05200440C41 /* TabbarContainerViewController.swift */; };
 		3F69EAAF29B4C16700440C41 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAAD29B4C16700440C41 /* MyVC.swift */; };
 		3F69EAB029B4C16700440C41 /* MyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAAE29B4C16700440C41 /* MyVC.xib */; };
 		3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAB129B4C17500440C41 /* RegistVC.swift */; };
 		3F69EAB429B4C17500440C41 /* RegistVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB229B4C17500440C41 /* RegistVC.xib */; };
 		3F69EAB629B4C20500440C41 /* TabIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB529B4C20500440C41 /* TabIconViewController.xib */; };
-		3F69EAB829B4C23200440C41 /* TabiconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB729B4C23200440C41 /* TabiconView.xib */; };
+		3F69EABA29B4DEEC00440C41 /* TabIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAB929B4DEEC00440C41 /* TabIconView.swift */; };
+		3F69EABC29B4DEF600440C41 /* TabIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EABB29B4DEF600440C41 /* TabIconView.xib */; };
 		3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB5E629B318CA002F03E8 /* HomeVC.swift */; };
 		3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7EB5E729B318CA002F03E8 /* HomeVC.xib */; };
 		3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB5EC29B31B57002F03E8 /* HomeFirstCell.swift */; };
@@ -140,14 +140,14 @@
 		3F69EAA129B4BF5E00440C41 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		3F69EAA629B4BFED00440C41 /* TabIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIconViewController.swift; sourceTree = "<group>"; };
-		3F69EAA829B4C01300440C41 /* TabiconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabiconView.swift; sourceTree = "<group>"; };
 		3F69EAAA29B4C05200440C41 /* TabbarContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarContainerViewController.swift; sourceTree = "<group>"; };
 		3F69EAAD29B4C16700440C41 /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		3F69EAAE29B4C16700440C41 /* MyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVC.xib; sourceTree = "<group>"; };
 		3F69EAB129B4C17500440C41 /* RegistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistVC.swift; sourceTree = "<group>"; };
 		3F69EAB229B4C17500440C41 /* RegistVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistVC.xib; sourceTree = "<group>"; };
 		3F69EAB529B4C20500440C41 /* TabIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabIconViewController.xib; sourceTree = "<group>"; };
-		3F69EAB729B4C23200440C41 /* TabiconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabiconView.xib; sourceTree = "<group>"; };
+		3F69EAB929B4DEEC00440C41 /* TabIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIconView.swift; sourceTree = "<group>"; };
+		3F69EABB29B4DEF600440C41 /* TabIconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabIconView.xib; sourceTree = "<group>"; };
 		3F7EB5E629B318CA002F03E8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3F7EB5E729B318CA002F03E8 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		3F7EB5EC29B31B57002F03E8 /* HomeFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstCell.swift; sourceTree = "<group>"; };
@@ -375,10 +375,10 @@
 			children = (
 				3F69EAA129B4BF5E00440C41 /* RootViewController.swift */,
 				3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */,
+				3F69EAB929B4DEEC00440C41 /* TabIconView.swift */,
+				3F69EABB29B4DEF600440C41 /* TabIconView.xib */,
 				3F69EAA629B4BFED00440C41 /* TabIconViewController.swift */,
 				3F69EAB529B4C20500440C41 /* TabIconViewController.xib */,
-				3F69EAA829B4C01300440C41 /* TabiconView.swift */,
-				3F69EAB729B4C23200440C41 /* TabiconView.xib */,
 				3F69EAAA29B4C05200440C41 /* TabbarContainerViewController.swift */,
 			);
 			path = Tabbar;
@@ -516,6 +516,7 @@
 				3F1FE6E429B36001002153C6 /* SixthColCell.xib in Resources */,
 				3F1FE6D429B344AB002153C6 /* FourthColCell.xib in Resources */,
 				3F69EA9E29B47A1E00440C41 /* TalkFirst.xib in Resources */,
+				3F69EABC29B4DEF600440C41 /* TabIconView.xib in Resources */,
 				3F69EA9A29B476C100440C41 /* TalkHeaderView.xib in Resources */,
 				3F7EB60129B333CC002F03E8 /* TalkVC.xib in Resources */,
 				3F1FE6D929B359ED002153C6 /* FifthCell.xib in Resources */,
@@ -528,7 +529,6 @@
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
 				3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */,
-				3F69EAB829B4C23200440C41 /* TabiconView.xib in Resources */,
 				3F1FE6E029B35FE5002153C6 /* SixthCell.xib in Resources */,
 				3F7EB5EF29B31B57002F03E8 /* HomeFirstCell.xib in Resources */,
 				3F69EAB429B4C17500440C41 /* RegistVC.xib in Resources */,
@@ -587,12 +587,12 @@
 				3F1FE6E329B36001002153C6 /* SixthColCell.swift in Sources */,
 				3F7EB60829B33938002F03E8 /* ThirdCellPresneter.swift in Sources */,
 				3F1FE6CD29B34422002153C6 /* FourthCell.swift in Sources */,
-				3F69EAA929B4C01300440C41 /* TabiconView.swift in Sources */,
 				3F7EB60529B33926002F03E8 /* ThirdCell.swift in Sources */,
 				3F57B75029B45C340009D190 /* SearchTwo.swift in Sources */,
 				3F7EB5F129B31B66002F03E8 /* FirstCellPresenter.swift in Sources */,
 				3F3B415A29B38F3A003827A2 /* SearchOnePresenter.swift in Sources */,
 				3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */,
+				3F69EABA29B4DEEC00440C41 /* TabIconView.swift in Sources */,
 				3F1FE6EA29B36901002153C6 /* SevenCell.swift in Sources */,
 				3F1FE6DF29B35FE5002153C6 /* SixthCell.swift in Sources */,
 				3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */,

@@ -18,9 +18,9 @@ class TabbarViewController: UIViewController {
    let tabbar = TabIconViewController(nibName: "\(TabIconViewController.self)", bundle: nil)
    
    private let tabbarHeight: CGFloat = 50
-   var viewControllers: [UINavigationController]?
+   var viewControllers: [UIViewController]?
    var tabbarContainer: TabbarContainerViewController?
-   var selectedViewController: UINavigationController?
+   var selectedViewController: UIViewController?
    private var containerViewController = UIViewController(nibName: nil, bundle: nil)
    var selectedIndex: Int = -1 {
        willSet(newVal) {
@@ -41,13 +41,10 @@ class TabbarViewController: UIViewController {
        }
    }
    
-   func setViewControllers(_ viewControllers: [UINavigationController]?, iconSet: [TabIconComponent], animated: Bool) {
+   func setViewControllers(_ viewControllers: [UIViewController]?, iconSet: [TabIconComponent], animated: Bool) {
        guard viewControllers?.first != nil && self.isViewLoaded else {
            return
        }
-//        viewControllers.forEach {
-//            $0.interactivePopGestureRecognizer?.addTarget(self, action: #selector())
-//        }
        containerViewController.children.forEach {
            $0.remove()
        }
@@ -119,13 +116,20 @@ class TabbarViewController: UIViewController {
 
 extension TabbarViewController: TabIconViewControllerDelegate {
    func selected(index: Int) {
-       if self.selectedIndex != index {
-           self.selectedIndex = index
-       } else {
-           guard let navigationController = self.viewControllers?[index] else {
+       if index == 1 {
+           guard let navigationController = self.navigationController else {
                return
            }
-           navigationController.popToRootViewController(animated: true)
+           let searchVc = SearchVC(nibName: "SearchVC", bundle: nil)
+           navigationController.pushViewController(searchVc, animated: true)
+           return
+       } else if index == 2 {
+           let registVc = RegistVC(nibName: "RegistVC", bundle: nil)
+           registVc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+           self.present(registVc, animated: true)
+//           navigationController?.pushViewController(registVc, animated: true)
+       }else{
+           self.selectedIndex = index
        }
    }
 }

@@ -9,13 +9,21 @@ import UIKit
 
 class RegistVC: UIViewController {
 
+    @IBOutlet weak var registBtn: UIControl!
+    @IBOutlet weak var backButton: UIControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func backBtnAction(_ sender: Any) {
+         let vc = RootViewController()
+        self.dismiss(animated: true, completion: nil)
+//        self.navigationController?.popViewController(animated: false)
+        
+    }
+    
     /*
     // MARK: - Navigation
 

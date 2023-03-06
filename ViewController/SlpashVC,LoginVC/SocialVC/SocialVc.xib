@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialVc" customModule="RC_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="4st-Dl-tZR" id="SHM-EG-HZg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-nc-ump">
+                    <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGB-ec-e05" customClass="UIControl">
+                            <rect key="frame" x="25" y="5" width="325" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kakao" translatesAutoresizingMaskIntoConstraints="NO" id="RJ5-Pn-AWu">
+                                    <rect key="frame" x="10" y="7.6666666666666856" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="aL1-vI-syu"/>
+                                        <constraint firstAttribute="height" constant="35" id="rcN-12-O2i"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡으로 로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bev-1D-5V3">
+                                    <rect key="frame" x="102" y="16" width="121" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3nJ-Yi-bQu"/>
+                                <constraint firstItem="RJ5-Pn-AWu" firstAttribute="centerY" secondItem="NGB-ec-e05" secondAttribute="centerY" id="CV4-EG-4TP"/>
+                                <constraint firstItem="RJ5-Pn-AWu" firstAttribute="leading" secondItem="NGB-ec-e05" secondAttribute="leading" constant="10" id="LuI-D6-w9O"/>
+                                <constraint firstItem="bev-1D-5V3" firstAttribute="centerY" secondItem="NGB-ec-e05" secondAttribute="centerY" id="OHm-OL-BpC"/>
+                                <constraint firstItem="bev-1D-5V3" firstAttribute="centerX" secondItem="NGB-ec-e05" secondAttribute="centerX" id="fT5-pi-ocx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbD-Pf-kTA" customClass="UIControl">
+                            <rect key="frame" x="25" y="61" width="325" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="Vtp-D9-lC1">
+                                    <rect key="frame" x="15" y="12.666666666666629" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="BoF-6g-zxo"/>
+                                        <constraint firstAttribute="height" constant="25" id="Hoa-We-ZbZ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple로 로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W02-PU-SGA">
+                                    <rect key="frame" x="114.66666666666666" y="16" width="95.666666666666657" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6HJ-K1-Vct"/>
+                                <constraint firstItem="W02-PU-SGA" firstAttribute="centerX" secondItem="XbD-Pf-kTA" secondAttribute="centerX" id="AaK-k1-NTY"/>
+                                <constraint firstItem="W02-PU-SGA" firstAttribute="centerY" secondItem="XbD-Pf-kTA" secondAttribute="centerY" id="Phc-XT-X7C"/>
+                                <constraint firstItem="Vtp-D9-lC1" firstAttribute="centerY" secondItem="XbD-Pf-kTA" secondAttribute="centerY" id="Udz-1N-tep"/>
+                                <constraint firstItem="Vtp-D9-lC1" firstAttribute="leading" secondItem="XbD-Pf-kTA" secondAttribute="leading" constant="15" id="tnB-su-wj7"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.80000000000000004"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5y-Qp-0hy" customClass="UIControl">
+                            <rect key="frame" x="100" y="126" width="175" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다른 방법으로 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQZ-CC-JmT">
+                                    <rect key="frame" x="33.33333333333335" y="12.333333333333371" width="108.66666666666669" height="15.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="RQZ-CC-JmT" firstAttribute="centerX" secondItem="U5y-Qp-0hy" secondAttribute="centerX" id="WGh-03-ZZx"/>
+                                <constraint firstAttribute="height" constant="40" id="acD-z3-ycV"/>
+                                <constraint firstItem="RQZ-CC-JmT" firstAttribute="centerY" secondItem="U5y-Qp-0hy" secondAttribute="centerY" id="ecD-kO-aSn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="7ol-ln-45A"/>
+                        <constraint firstItem="NGB-ec-e05" firstAttribute="leading" secondItem="k4W-nc-ump" secondAttribute="leading" constant="25" id="8tn-9e-u6i"/>
+                        <constraint firstItem="XbD-Pf-kTA" firstAttribute="top" secondItem="NGB-ec-e05" secondAttribute="bottom" constant="6" id="Cn2-ea-NdP"/>
+                        <constraint firstAttribute="trailing" secondItem="NGB-ec-e05" secondAttribute="trailing" constant="25" id="IAn-da-EEy"/>
+                        <constraint firstItem="U5y-Qp-0hy" firstAttribute="top" secondItem="XbD-Pf-kTA" secondAttribute="bottom" constant="15" id="RZQ-YP-QHM"/>
+                        <constraint firstAttribute="trailing" secondItem="XbD-Pf-kTA" secondAttribute="trailing" constant="25" id="dbc-gx-u5o"/>
+                        <constraint firstItem="U5y-Qp-0hy" firstAttribute="leading" secondItem="k4W-nc-ump" secondAttribute="leading" constant="100" id="uAQ-9a-ZbC"/>
+                        <constraint firstItem="XbD-Pf-kTA" firstAttribute="leading" secondItem="k4W-nc-ump" secondAttribute="leading" constant="25" id="wb7-0w-ZJe"/>
+                        <constraint firstAttribute="trailing" secondItem="U5y-Qp-0hy" secondAttribute="trailing" constant="100" id="zo4-EA-JKR"/>
+                        <constraint firstItem="NGB-ec-e05" firstAttribute="top" secondItem="k4W-nc-ump" secondAttribute="top" constant="5" id="zua-mK-zk5"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4st-Dl-tZR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CqP-wc-LJn">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LDK-tL-op3"/>
+                        <outlet property="delegate" destination="-1" id="1Vg-8m-N1M"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4st-Dl-tZR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7pu-cd-5Bi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4st-Dl-tZR" secondAttribute="trailing" id="I2X-YC-2cj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="k4W-nc-ump" secondAttribute="bottom" id="NQV-fP-fhu"/>
+                <constraint firstItem="4st-Dl-tZR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V5t-B7-QiW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k4W-nc-ump" secondAttribute="trailing" id="nX8-nj-YFL"/>
+                <constraint firstItem="k4W-nc-ump" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y5w-aV-uOE"/>
+                <constraint firstItem="k4W-nc-ump" firstAttribute="top" secondItem="4st-Dl-tZR" secondAttribute="bottom" id="yuZ-tl-U2N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-619" y="4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple" width="14.333333015441895" height="17.666666030883789"/>
+        <image name="kakao" width="61.666667938232422" height="61.666667938232422"/>
+        <namedColor name="Color">
+            <color red="0.95686274509803926" green="0.87058823529411766" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

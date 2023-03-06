@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,7 +33,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2oG-M1-749">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rollret" translatesAutoresizingMaskIntoConstraints="NO" id="2oG-M1-749">
                                 <rect key="frame" x="220" y="0.0" width="70" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="3Me-S4-0Bg"/>
@@ -45,14 +46,23 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imark" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-px-qIz">
+                                <rect key="frame" x="303" y="2" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="9L8-vg-2vu"/>
+                                    <constraint firstAttribute="height" constant="15" id="KxQ-Uj-lhd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="bannerColor"/>
                         <constraints>
                             <constraint firstItem="2oG-M1-749" firstAttribute="leading" secondItem="rpG-S7-gdb" secondAttribute="trailing" id="3Gi-uo-4ev"/>
                             <constraint firstItem="2oG-M1-749" firstAttribute="centerY" secondItem="bdo-zW-5WS" secondAttribute="centerY" id="5CR-yH-y48"/>
                             <constraint firstAttribute="height" constant="80" id="8AM-jG-q0j"/>
                             <constraint firstItem="rpG-S7-gdb" firstAttribute="top" secondItem="Ar8-VG-7xH" secondAttribute="bottom" constant="5" id="Fky-ei-Pvl"/>
                             <constraint firstItem="rpG-S7-gdb" firstAttribute="leading" secondItem="bdo-zW-5WS" secondAttribute="leading" constant="18" id="KIO-5Y-YA9"/>
+                            <constraint firstItem="6b1-px-qIz" firstAttribute="top" secondItem="bdo-zW-5WS" secondAttribute="top" constant="2" id="VcE-yV-ewL"/>
+                            <constraint firstAttribute="trailing" secondItem="6b1-px-qIz" secondAttribute="trailing" constant="2" id="Wpx-WP-xVg"/>
                             <constraint firstItem="2oG-M1-749" firstAttribute="leading" secondItem="Pj2-na-akS" secondAttribute="trailing" constant="30" id="Xlg-dU-qEz"/>
                             <constraint firstItem="Ar8-VG-7xH" firstAttribute="leading" secondItem="bdo-zW-5WS" secondAttribute="leading" constant="15" id="YN8-2V-sGW"/>
                             <constraint firstItem="Ar8-VG-7xH" firstAttribute="top" secondItem="Pj2-na-akS" secondAttribute="bottom" constant="5" id="gx1-EN-Rss"/>
@@ -508,6 +518,11 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="imark" width="9" height="9"/>
+        <image name="rollret" width="41.333332061767578" height="40"/>
+        <namedColor name="bannerColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

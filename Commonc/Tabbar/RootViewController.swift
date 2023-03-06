@@ -52,13 +52,7 @@ class RootViewController: UIViewController {
            TabIconComponent(icon: UIImage(named: "Talk") ?? UIImage(), selectedIcon: UIImage(named: "clickTalk") ?? UIImage(), title: "번개톡"),
            TabIconComponent(icon: UIImage(named: "My") ?? UIImage(), selectedIcon: UIImage(named: "clickMy") ?? UIImage(), title: "MY")
        ]
-       var naviVCs: [UINavigationController] = []
-       VCs.forEach {
-           let naviVc = UINavigationController(rootViewController: $0)
-           naviVc.navigationBar.isHidden = true
-           naviVCs.append(naviVc)
-       }
-       tabbarController.setViewControllers(naviVCs, iconSet: tabComponents, animated: true)
+       tabbarController.setViewControllers(VCs, iconSet: tabComponents, animated: true)
    }
    
    override var childForStatusBarHidden: UIViewController? {

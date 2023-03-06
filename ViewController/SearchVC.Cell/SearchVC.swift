@@ -12,6 +12,18 @@ class SearchVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+    @IBAction func backBtn(_ sender: Any) {
+        let vc = RootViewController()
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    
+    @IBAction func backHomeBtn(_ sender: Any) {
+        _ = RootViewController(nibName: "HomeVC", bundle: nil)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     private var tablePresenters: [CommonTablePresenter?] = []
     private var searchOneCellPresenter = SearchOnePresenter()
     private var searchTwoPresenter = SearchTwoPresenter()
@@ -27,9 +39,9 @@ class SearchVC: UIViewController {
         ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
     ]
     let threeList = [
-        ["image":"test","title" : "스니커즈 전자레인지 전으능능는","image2":"test","title2" : "스니커즈 전자레인지 전으능능는","image3":"test","title3" : "스니커즈 전자레인지 전으능능는","image4":"test","title4" : "스니커즈 전자레인지 전으능능는"],
-        ["image":"test","title" : "스니커즈 전자레인지 전으능능는","image2":"test","title2" : "스니커즈 전자레인지 전으능능는","image3":"test","title3" : "오토바이/스쿠터","image4":"test","title4" : "스니커즈 전자레인지 전으능능는"],
-        ["image":"test","title" : "스니커즈 전자레인지 전으능능는","image2":"test","title2" : "스니커즈 전자레인지 전으능능는","image3":"test","title3" : "전동킥보드/전동휠","image4":"test","title4" : "스니커즈 전자레인지 전으능능는"]
+        ["image":"shoes","title" : "스니커즈","image2":"watch","title2" : "시계","image3":"star","title3" : "스타굿즈","image4":"bike","title4" : "자전거"],
+        ["image":"motorBike","title" : "오토바이/스쿠터","image2":"doll","title2" : "피규어/인형","image3":"dsGame","title3" : "닌텐도/NDS/Wii","image4":"health","title4" : "헬스/요가/필라테스"],
+        ["image":"ball","title" : "축구","image2":"kickboard","title2" : "전동킥보드/전동휠","image3":"camping","title3" : "캠핑","image4":"camera","title4" : "카메라/DSLR"]
     ]
     override func viewDidLoad() {
         super.viewDidLoad()

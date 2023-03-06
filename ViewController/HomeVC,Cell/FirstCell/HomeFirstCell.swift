@@ -33,6 +33,7 @@ extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataArray.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
@@ -72,13 +73,17 @@ extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
         
         if nowPage == dataArray.count-1 {
             // 맨 처음 페이지로 돌아감
-            collectionView.scrollToItem(at: NSIndexPath(item: 0, section: 0) as IndexPath, at: .right, animated: true)
+            collectionView.isPagingEnabled = false
+            collectionView.scrollToItem(at: IndexPath(row: 0, section: 0) as IndexPath, at: .right, animated: true)
+            collectionView.isPagingEnabled = true
             nowPage = 0
             return
         }
         // 다음 페이지로 전환
         nowPage += 1
-        collectionView.scrollToItem(at: NSIndexPath(item: nowPage, section: 0) as IndexPath, at: .right, animated: true)
+        collectionView.isPagingEnabled = false
+        collectionView.scrollToItem(at: IndexPath(row: nowPage, section: 0) as IndexPath, at: .right, animated: true)
+        collectionView.isPagingEnabled = true
     }
 }
 

@@ -12,6 +12,7 @@ class TalkVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+    @IBOutlet weak var label: UILabel!
     private var tablePresenters: [CommonTablePresenter?] = []
     private var talkOnePresenter = TalkOnePresenter()
     

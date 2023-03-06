@@ -83,7 +83,7 @@
                 <outlet property="twoImage" destination="DdK-Ld-rJw" id="3yv-5e-4jO"/>
                 <outlet property="twoTitle" destination="ctS-19-RZJ" id="ebV-Td-jNL"/>
             </connections>
-            <point key="canvasLocation" x="91.603053435114504" y="-1.4084507042253522"/>
+            <point key="canvasLocation" x="99" y="-34"/>
         </tableViewCell>
     </objects>
 </document>

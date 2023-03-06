@@ -66,6 +66,7 @@ class HomeVC: UIViewController {
         setPresenterModel()
         setTablePresenters()
     }
+    
 //    let firstCell = firstCellModel or listArray
     private func setPresenterModel() {
         
@@ -76,6 +77,8 @@ class HomeVC: UIViewController {
         
         
     }
+    
+    
     private func setTablePresenters() {
         tablePresenters.removeAll()
         tablePresenters.append(firstCellPresenter)

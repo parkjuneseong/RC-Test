@@ -19,8 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fym-GJ-d3G">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fym-GJ-d3G">
+                    <rect key="frame" x="0.0" y="99" width="393" height="753"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="KfU-G6-CdA"/>
@@ -28,30 +28,57 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4m-cd-iz6">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="40"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTX-Ec-9Kt">
                             <rect key="frame" x="10" y="5" width="30" height="30"/>
-                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBuger" translatesAutoresizingMaskIntoConstraints="NO" id="MVQ-3I-fTN">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="MVQ-3I-fTN" secondAttribute="bottom" id="XAx-L0-M4M"/>
+                                <constraint firstItem="MVQ-3I-fTN" firstAttribute="leading" secondItem="CTX-Ec-9Kt" secondAttribute="leading" id="e5E-bS-8WY"/>
+                                <constraint firstItem="MVQ-3I-fTN" firstAttribute="top" secondItem="CTX-Ec-9Kt" secondAttribute="top" id="eII-Gc-ezJ"/>
                                 <constraint firstAttribute="width" constant="30" id="vHe-bP-nIB"/>
                                 <constraint firstAttribute="height" constant="30" id="w8e-2c-lCP"/>
+                                <constraint firstAttribute="trailing" secondItem="MVQ-3I-fTN" secondAttribute="trailing" id="ymz-nS-9gE"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFt-Vt-ekV">
                             <rect key="frame" x="353" y="5" width="30" height="30"/>
-                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitebell" translatesAutoresizingMaskIntoConstraints="NO" id="ZHR-9I-0Vd">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="2ll-ba-7Lz"/>
+                                <constraint firstItem="ZHR-9I-0Vd" firstAttribute="leading" secondItem="PFt-Vt-ekV" secondAttribute="leading" id="8CU-cF-Mch"/>
+                                <constraint firstAttribute="bottom" secondItem="ZHR-9I-0Vd" secondAttribute="bottom" id="9vj-7x-lxU"/>
                                 <constraint firstAttribute="width" constant="30" id="NfA-Ob-d9Z"/>
+                                <constraint firstItem="ZHR-9I-0Vd" firstAttribute="top" secondItem="PFt-Vt-ekV" secondAttribute="top" id="QNt-IR-cwk"/>
+                                <constraint firstAttribute="trailing" secondItem="ZHR-9I-0Vd" secondAttribute="trailing" id="Wsk-Ks-xdf"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-HR-6Dp">
                             <rect key="frame" x="313" y="5" width="30" height="30"/>
-                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteSearch" translatesAutoresizingMaskIntoConstraints="NO" id="KCQ-IG-daL">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="KCQ-IG-daL" secondAttribute="trailing" id="2YZ-o3-xp1"/>
                                 <constraint firstAttribute="height" constant="30" id="WdL-jF-oX1"/>
                                 <constraint firstAttribute="width" constant="30" id="bba-qK-Jlb"/>
+                                <constraint firstItem="KCQ-IG-daL" firstAttribute="top" secondItem="TDK-HR-6Dp" secondAttribute="top" id="n3L-rA-uKv"/>
+                                <constraint firstItem="KCQ-IG-daL" firstAttribute="leading" secondItem="TDK-HR-6Dp" secondAttribute="leading" id="sLr-97-D1S"/>
+                                <constraint firstAttribute="bottom" secondItem="KCQ-IG-daL" secondAttribute="bottom" id="xpW-Ph-9iw"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -74,19 +101,19 @@
                 <constraint firstItem="u4m-cd-iz6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DQp-w7-agl"/>
                 <constraint firstItem="fym-GJ-d3G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KoW-R3-zjS"/>
                 <constraint firstItem="u4m-cd-iz6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Lg5-Od-oNb"/>
+                <constraint firstItem="fym-GJ-d3G" firstAttribute="top" secondItem="u4m-cd-iz6" secondAttribute="bottom" id="OMA-Wh-70C"/>
                 <constraint firstAttribute="bottom" secondItem="fym-GJ-d3G" secondAttribute="bottom" id="SRO-NW-NCn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u4m-cd-iz6" secondAttribute="trailing" id="UBJ-q2-PDo"/>
-                <constraint firstItem="fym-GJ-d3G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zQR-08-n7M"/>
             </constraints>
-            <point key="canvasLocation" x="89" y="21"/>
+            <point key="canvasLocation" x="87.786259541984734" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>
+        <image name="whiteBuger" width="11.666666984558105" height="10.666666984558105"/>
+        <image name="whiteSearch" width="12.333333015441895" height="12.333333015441895"/>
+        <image name="whitebell" width="12" height="12.333333015441895"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

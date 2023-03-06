@@ -44,13 +44,13 @@ extension TalkOnePresenter: CommonTablePresenter
         get {
             let view = TalkHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 250))
             view.headerLabel.text = "전체 대화"
-            view.headerImage.image = UIImage(named:"test")
+            view.headerImage.image = UIImage(named:"downArrow")
             view.adverTitle.text = "강아지 무료 분양 & 무료 보호"
             view.adverTitle2.text = "안락사 없는 진짜 보호소, 따뜻한 분양소"
             view.lowLabel1.text = "채팅 알림이 꺼져 있어여!"
-            view.headerLabel.text = "알림 켜고 채팅 놓치지 않기"
-            view.lowImage.image = UIImage(named:"testImage")
-            view.lowImage2.image = UIImage(named:"test")
+            view.lowLabel2.text = "알림 켜고 채팅 놓치지 않기"
+            view.lowImage.image = UIImage(named:"sound")
+            view.lowImage2.image = UIImage(named:"rightArrow")
             
 //            view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
             

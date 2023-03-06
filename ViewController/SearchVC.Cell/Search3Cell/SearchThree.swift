@@ -35,7 +35,7 @@ extension SearchThree : UITableViewDelegate,UITableViewDataSource {
               let list = self.list else {
             return UITableViewCell()
         }
-        cell.bind(title: list[indexPath.row]["title"] ?? "", image:UIImage(named:list[indexPath.row]["image"] ?? "") ?? UIImage(),image2: UIImage(named:list[indexPath.row]["image2"] ?? "") ?? UIImage(), image3:UIImage(named:list[indexPath.row]["image2"] ?? "") ?? UIImage(),image4: UIImage(named:list[indexPath.row]["image4"] ?? "") ?? UIImage(), title2:list[indexPath.row]["title2"] ?? "",title3: list[indexPath.row]["title3"] ?? "", title4:list[indexPath.row]["title4"] ?? "")
+        cell.bind(title: list[indexPath.row]["title"] ?? "", image:UIImage(named:list[indexPath.row]["image"] ?? "") ?? UIImage(),image2: UIImage(named:list[indexPath.row]["image2"] ?? "") ?? UIImage(), image3:UIImage(named:list[indexPath.row]["image3"] ?? "") ?? UIImage(),image4: UIImage(named:list[indexPath.row]["image4"] ?? "") ?? UIImage(), title2:list[indexPath.row]["title2"] ?? "",title3: list[indexPath.row]["title3"] ?? "", title4:list[indexPath.row]["title4"] ?? "")
         cell.selectionStyle = .none
         return cell
         

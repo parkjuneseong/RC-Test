@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TalkVC" customModule="RC_Test" customModuleProvider="target">
             <connections>
+                <outlet property="label" destination="hRT-DT-DrP" id="uFN-lx-DXt"/>
                 <outlet property="tableView" destination="nPW-B9-4an" id="73U-QY-AIZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nPW-B9-4an">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nPW-B9-4an">
+                    <rect key="frame" x="0.0" y="50" width="393" height="802"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="f0X-6N-O1C"/>
@@ -28,35 +29,42 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHC-gs-JmE">
-                    <rect key="frame" x="0.0" y="19" width="393" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRT-DT-DrP">
-                            <rect key="frame" x="314" y="14.666666666666664" width="59" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRT-DT-DrP">
+                            <rect key="frame" x="314" y="14.666666666666629" width="59" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <attributedString key="attributedText">
+                                <fragment content="대화설정">
+                                    <attributes>
+                                        <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                        <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                        <integer key="NSUnderline" value="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="hRT-DT-DrP" secondAttribute="trailing" constant="20" id="7YN-PV-ELW"/>
-                        <constraint firstAttribute="height" constant="50" id="UCI-iT-d7l"/>
-                        <constraint firstItem="hRT-DT-DrP" firstAttribute="centerY" secondItem="JHC-gs-JmE" secondAttribute="centerY" id="WmP-AQ-DAx"/>
+                        <constraint firstAttribute="height" constant="50" id="WYr-ND-E22"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="JHC-gs-JmE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-40" id="8i0-lC-9gg"/>
+                <constraint firstItem="JHC-gs-JmE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4gN-Gm-vPZ"/>
+                <constraint firstItem="nPW-B9-4an" firstAttribute="top" secondItem="JHC-gs-JmE" secondAttribute="bottom" id="Exu-ar-16H"/>
+                <constraint firstItem="JHC-gs-JmE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PuN-Se-vmI"/>
+                <constraint firstItem="JHC-gs-JmE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RLy-Dw-Mcm"/>
+                <constraint firstItem="JHC-gs-JmE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VSb-65-3KQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nPW-B9-4an" secondAttribute="trailing" id="XvW-gh-JIG"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JHC-gs-JmE" secondAttribute="trailing" id="clM-ME-TL3"/>
                 <constraint firstItem="nPW-B9-4an" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dmq-oZ-JPf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nPW-B9-4an" secondAttribute="bottom" id="s58-Rh-dm2"/>
-                <constraint firstItem="nPW-B9-4an" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="t7w-ZI-oLQ"/>
-                <constraint firstItem="JHC-gs-JmE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xYU-g5-HVr"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="21"/>
+            <point key="canvasLocation" x="132" y="0.0"/>
         </view>
     </objects>
     <resources>

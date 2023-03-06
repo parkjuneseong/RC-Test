@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +29,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" name="bannerColor"/>
                     <constraints>
                         <constraint firstItem="6sX-iD-KFs" firstAttribute="centerX" secondItem="lbo-wo-ivr" secondAttribute="centerX" id="Bdr-HK-Bdu"/>
                         <constraint firstAttribute="height" constant="40" id="D9x-n5-omL"/>
@@ -56,10 +57,13 @@
                 <constraint firstItem="lbo-wo-ivr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="u0F-Hq-swc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-102" y="21"/>
+            <point key="canvasLocation" x="303" y="0.0"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="bannerColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

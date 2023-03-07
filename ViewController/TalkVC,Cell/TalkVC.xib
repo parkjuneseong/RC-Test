@@ -37,7 +37,7 @@
                             <attributedString key="attributedText">
                                 <fragment content="대화설정">
                                     <attributes>
-                                        <font key="NSFont" size="17" name=".AppleSDGothicNeoI-Regular"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
                                         <font key="NSOriginalFont" metaFont="system" size="17"/>
                                         <integer key="NSUnderline" value="1"/>
                                     </attributes>

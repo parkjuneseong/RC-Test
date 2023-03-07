@@ -728,7 +728,7 @@
     </objects>
     <resources>
         <image name="heartImage" width="10.666666984558105" height="10.666666984558105"/>
-        <image name="test" width="58.666667938232422" height="60"/>
+        <image name="test" width="165.33332824707031" height="159.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

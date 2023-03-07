@@ -28,7 +28,7 @@ class SearchOnePresenter {
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 170
+        return 150
     }
     
     func numberOfRows(in section: Int) -> Int {

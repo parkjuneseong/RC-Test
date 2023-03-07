@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="RC_Test" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="5Aj-9r-MMD" id="8jL-FW-mVn"/>
+                <outlet property="textField" destination="txx-so-CMh" id="Jto-43-Odw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Aj-9r-MMD">
-                    <rect key="frame" x="0.0" y="89" width="393" height="729"/>
+                    <rect key="frame" x="0.0" y="149" width="393" height="669"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="fDr-32-d2O"/>
@@ -28,15 +30,19 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRE-Nq-QqU">
-                    <rect key="frame" x="0.0" y="59" width="393" height="30"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txx-so-CMh">
-                            <rect key="frame" x="42" y="-2" width="304" height="34"/>
+                            <rect key="frame" x="42" y="7.6666666666666714" width="304" height="35"/>
+                            <color key="backgroundColor" name="showMore"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="DSk-9Z-0na"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-vI-MKI" customClass="UIControl">
-                            <rect key="frame" x="2" y="0.0" width="30" height="30"/>
+                            <rect key="frame" x="2" y="10" width="30" height="30"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="HWb-LD-MaM">
                                     <rect key="frame" x="10" y="0.0" width="20" height="30"/>
@@ -56,7 +62,7 @@
                             </connections>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDt-qJ-2Wt" customClass="UIControl">
-                            <rect key="frame" x="356" y="-2.3333333333333357" width="35" height="35"/>
+                            <rect key="frame" x="356" y="7.6666666666666714" width="35" height="35"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clickHome" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-Df-6YQ">
                                     <rect key="frame" x="0.0" y="0.0" width="25" height="35"/>
@@ -82,7 +88,7 @@
                         <constraint firstItem="mmL-vI-MKI" firstAttribute="centerY" secondItem="rRE-Nq-QqU" secondAttribute="centerY" id="7tu-6A-lEw"/>
                         <constraint firstItem="dDt-qJ-2Wt" firstAttribute="leading" secondItem="txx-so-CMh" secondAttribute="trailing" constant="10" id="7y3-CY-HQN"/>
                         <constraint firstItem="txx-so-CMh" firstAttribute="centerY" secondItem="rRE-Nq-QqU" secondAttribute="centerY" id="MK3-UW-JRS"/>
-                        <constraint firstAttribute="height" constant="30" id="c6P-8L-Ary"/>
+                        <constraint firstAttribute="height" constant="50" id="c6P-8L-Ary"/>
                         <constraint firstItem="mmL-vI-MKI" firstAttribute="leading" secondItem="rRE-Nq-QqU" secondAttribute="leading" constant="2" id="duN-O7-NbP"/>
                         <constraint firstItem="dDt-qJ-2Wt" firstAttribute="centerY" secondItem="rRE-Nq-QqU" secondAttribute="centerY" id="qWq-o5-D0W"/>
                         <constraint firstAttribute="trailing" secondItem="dDt-qJ-2Wt" secondAttribute="trailing" constant="2" id="yNS-Xy-h9d"/>
@@ -98,7 +104,7 @@
                 <constraint firstAttribute="trailing" secondItem="rRE-Nq-QqU" secondAttribute="trailing" id="aOk-Zd-e0R"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Aj-9r-MMD" secondAttribute="trailing" id="px1-K3-lyf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Aj-9r-MMD" secondAttribute="bottom" id="x74-VH-teH"/>
-                <constraint firstItem="5Aj-9r-MMD" firstAttribute="top" secondItem="rRE-Nq-QqU" secondAttribute="bottom" id="zO3-Sf-JVN"/>
+                <constraint firstItem="5Aj-9r-MMD" firstAttribute="top" secondItem="rRE-Nq-QqU" secondAttribute="bottom" constant="40" id="zO3-Sf-JVN"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
         </view>
@@ -106,6 +112,9 @@
     <resources>
         <image name="clickHome" width="10.666666984558105" height="12"/>
         <image name="leftArrow" width="8.6666669845581055" height="12.333333015441895"/>
+        <namedColor name="showMore">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

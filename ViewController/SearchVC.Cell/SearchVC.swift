@@ -11,6 +11,7 @@ class SearchVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var textField: UITextField!
     
     @IBAction func backBtn(_ sender: Any) {
         let vc = RootViewController()
@@ -48,7 +49,7 @@ class SearchVC: UIViewController {
  
         
         
-        
+        textField.borderStyle = .none
         
         
         setPresenterModel()

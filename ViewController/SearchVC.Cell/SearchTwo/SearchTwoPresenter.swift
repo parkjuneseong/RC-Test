@@ -61,7 +61,7 @@ extension SearchTwoPresenter: CommonTablePresenter
     }
      var footerView: UIView? {
          get {
-             let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+             let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 100))
              view.footerLabel.text = "브랜드 모두보기"
             
              
@@ -73,7 +73,7 @@ extension SearchTwoPresenter: CommonTablePresenter
      
      var footerHeight: CGFloat {
          get {
-             return 50
+             return 100
          } set {
              _ = newValue
          }

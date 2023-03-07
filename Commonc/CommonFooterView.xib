@@ -29,7 +29,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" name="bannerColor"/>
+                    <color key="backgroundColor" name="showMore"/>
                     <constraints>
                         <constraint firstItem="6sX-iD-KFs" firstAttribute="centerX" secondItem="lbo-wo-ivr" secondAttribute="centerX" id="Bdr-HK-Bdu"/>
                         <constraint firstAttribute="height" constant="40" id="D9x-n5-omL"/>
@@ -39,10 +39,7 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                             <color key="value" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="0.5"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="8"/>
                         </userDefinedRuntimeAttribute>
@@ -61,8 +58,8 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="bannerColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="showMore">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

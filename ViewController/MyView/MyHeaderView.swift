@@ -11,6 +11,27 @@ class MyHeaderView: UIView {
     private var nibName: String {
         "\(MyHeaderView.self)"
     }
+     
+    @IBOutlet weak var control1: UIControl!
+    
+    @IBOutlet weak var control2: UIControl!
+    
+    
+    @IBOutlet weak var control3: UIControl!
+    var zzimDelegate : ZZimDelegate?
+    
+    @IBAction func btnAction3(_ sender: Any) {
+         
+        zzimDelegate?.zzimAction()
+     
+    }
+    
+    
+    @IBOutlet weak var headerLabel1 : UILabel!
+    
+    @IBOutlet weak var headerLabel2: UILabel!
+    
+    @IBOutlet weak var headerLabel3: UILabel!
     private var containerView = UIView()
     
      
@@ -39,5 +60,4 @@ class MyHeaderView: UIView {
     private func customViewDidLoad() {
     }
 }
-
-
+ 

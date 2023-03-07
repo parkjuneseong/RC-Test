@@ -18,4 +18,9 @@ SplashVC와 로그인 회원가입 VC만들기
 splashVC는 잘 구현되었고 
 image 리소스를 받아 넣어주었다 
 My VC 와 RegistVC를 만들었고 Cell들을 세부적으로 수정하였다
+ 3/7 
+ MyVC 를 마무리 하고 
+ RegistVC 만들고 있다 .. 
+ UIView에서는 UINavigationController가 없어서 UIViewController로 protocol delegate를 사용하여 데이터 전달 후 ViewController에서 Navigation활용
+ label 의 attrubute 사용 하여 밑줄 밑 부분 색깔 변경 
  

@@ -39,7 +39,7 @@
                                     <fragment content="상점">
                                         <attributes>
                                             <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <font key="NSOriginalFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
@@ -56,7 +56,7 @@
                                     <fragment content="소개">
                                         <attributes>
                                             <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <font key="NSOriginalFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
@@ -73,7 +73,7 @@
                                     <fragment content="편집">
                                         <attributes>
                                             <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="13" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <font key="NSOriginalFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
@@ -235,7 +235,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="-76" y="18"/>
+            <point key="canvasLocation" x="212" y="10"/>
         </tableViewCell>
     </objects>
     <resources>

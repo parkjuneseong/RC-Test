@@ -74,6 +74,9 @@
 		3F69EAB629B4C20500440C41 /* TabIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EAB529B4C20500440C41 /* TabIconViewController.xib */; };
 		3F69EABA29B4DEEC00440C41 /* TabIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69EAB929B4DEEC00440C41 /* TabIconView.swift */; };
 		3F69EABC29B4DEF600440C41 /* TabIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F69EABB29B4DEF600440C41 /* TabIconView.xib */; };
+		3F756EBA29B7081B00C82827 /* MyFourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F756EB829B7081B00C82827 /* MyFourCell.swift */; };
+		3F756EBB29B7081B00C82827 /* MyFourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F756EB929B7081B00C82827 /* MyFourCell.xib */; };
+		3F756EBD29B7083A00C82827 /* MyFourCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F756EBC29B7083A00C82827 /* MyFourCellPresenter.swift */; };
 		3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB5E629B318CA002F03E8 /* HomeVC.swift */; };
 		3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7EB5E729B318CA002F03E8 /* HomeVC.xib */; };
 		3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB5EC29B31B57002F03E8 /* HomeFirstCell.swift */; };
@@ -94,6 +97,16 @@
 		3F7EB61329B2ECBA0090A87B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EB61229B2ECBA0090A87B /* AppDelegate.swift */; };
 		3F7EB61C29B2ECBB0090A87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7EB61B29B2ECBB0090A87B /* Assets.xcassets */; };
 		3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7EB61D29B2ECBB0090A87B /* LaunchScreen.storyboard */; };
+		3F87044E29B7107800CB5D87 /* ZZimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87044C29B7107800CB5D87 /* ZZimVC.swift */; };
+		3F87044F29B7107800CB5D87 /* ZZimVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87044D29B7107800CB5D87 /* ZZimVC.xib */; };
+		3F87045329B71A3400CB5D87 /* MyFiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87045129B71A3400CB5D87 /* MyFiveCell.swift */; };
+		3F87045429B71A3400CB5D87 /* MyFiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87045229B71A3400CB5D87 /* MyFiveCell.xib */; };
+		3F87045629B71A4000CB5D87 /* MyFiveCellPresneter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87045529B71A4000CB5D87 /* MyFiveCellPresneter.swift */; };
+		3F87045A29B71B3600CB5D87 /* MySixCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87045829B71B3600CB5D87 /* MySixCell.swift */; };
+		3F87045B29B71B3600CB5D87 /* MySixCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87045929B71B3600CB5D87 /* MySixCell.xib */; };
+		3F87045D29B71B4800CB5D87 /* MySixCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87045C29B71B4800CB5D87 /* MySixCellPresenter.swift */; };
+		3F87046129B72C0400CB5D87 /* ZZimDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87046029B72C0400CB5D87 /* ZZimDelegate.swift */; };
+		3F87046429B73AD100CB5D87 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F87046329B73AD100CB5D87 /* Alamofire */; };
 		3FB911F729B59C7400646D8C /* SocialVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB911F529B59C7400646D8C /* SocialVCCell.swift */; };
 		3FB911F829B59C7400646D8C /* SocialVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB911F629B59C7400646D8C /* SocialVCCell.xib */; };
 		3FB911FC29B5D71600646D8C /* MyOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB911FA29B5D71600646D8C /* MyOneCell.swift */; };
@@ -179,6 +192,9 @@
 		3F69EAB529B4C20500440C41 /* TabIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabIconViewController.xib; sourceTree = "<group>"; };
 		3F69EAB929B4DEEC00440C41 /* TabIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIconView.swift; sourceTree = "<group>"; };
 		3F69EABB29B4DEF600440C41 /* TabIconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabIconView.xib; sourceTree = "<group>"; };
+		3F756EB829B7081B00C82827 /* MyFourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFourCell.swift; sourceTree = "<group>"; };
+		3F756EB929B7081B00C82827 /* MyFourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFourCell.xib; sourceTree = "<group>"; };
+		3F756EBC29B7083A00C82827 /* MyFourCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFourCellPresenter.swift; sourceTree = "<group>"; };
 		3F7EB5E629B318CA002F03E8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3F7EB5E729B318CA002F03E8 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		3F7EB5EC29B31B57002F03E8 /* HomeFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstCell.swift; sourceTree = "<group>"; };
@@ -201,6 +217,15 @@
 		3F7EB61B29B2ECBB0090A87B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7EB61E29B2ECBB0090A87B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7EB62029B2ECBB0090A87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F87044C29B7107800CB5D87 /* ZZimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZZimVC.swift; sourceTree = "<group>"; };
+		3F87044D29B7107800CB5D87 /* ZZimVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZimVC.xib; sourceTree = "<group>"; };
+		3F87045129B71A3400CB5D87 /* MyFiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFiveCell.swift; sourceTree = "<group>"; };
+		3F87045229B71A3400CB5D87 /* MyFiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFiveCell.xib; sourceTree = "<group>"; };
+		3F87045529B71A4000CB5D87 /* MyFiveCellPresneter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFiveCellPresneter.swift; sourceTree = "<group>"; };
+		3F87045829B71B3600CB5D87 /* MySixCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySixCell.swift; sourceTree = "<group>"; };
+		3F87045929B71B3600CB5D87 /* MySixCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySixCell.xib; sourceTree = "<group>"; };
+		3F87045C29B71B4800CB5D87 /* MySixCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySixCellPresenter.swift; sourceTree = "<group>"; };
+		3F87046029B72C0400CB5D87 /* ZZimDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZZimDelegate.swift; sourceTree = "<group>"; };
 		3FB911F529B59C7400646D8C /* SocialVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialVCCell.swift; sourceTree = "<group>"; };
 		3FB911F629B59C7400646D8C /* SocialVCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialVCCell.xib; sourceTree = "<group>"; };
 		3FB911FA29B5D71600646D8C /* MyOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOneCell.swift; sourceTree = "<group>"; };
@@ -223,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F87046429B73AD100CB5D87 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +394,9 @@
 				3F69EAAC29B4C12B00440C41 /* RegistView */,
 				3F3A234029B38D8C00ED756A /* TalkVC,Cell */,
 				3F432BED29B317BD0017E245 /* MyView */,
+				3F87046529B73E1B00CB5D87 /* MyFeed */,
+				3F87044C29B7107800CB5D87 /* ZZimVC.swift */,
+				3F87044D29B7107800CB5D87 /* ZZimVC.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -380,6 +409,9 @@
 				3FB911FE29B5D74600646D8C /* MyHeaderView.swift */,
 				3FB9120029B5D75100646D8C /* MyHeaderView.xib */,
 				3FB911F929B5D6EF00646D8C /* MyVCCell */,
+				3F756EB529B707E400C82827 /* MyFourCell */,
+				3F87045029B71A0B00CB5D87 /* MyFiveCell */,
+				3F87045729B71B1D00CB5D87 /* MySixCell */,
 			);
 			path = MyView;
 			sourceTree = "<group>";
@@ -438,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				3F69EAA129B4BF5E00440C41 /* RootViewController.swift */,
+				3F87046029B72C0400CB5D87 /* ZZimDelegate.swift */,
 				3F69EAA429B4BFAB00440C41 /* TabbarViewController.swift */,
 				3F69EAB929B4DEEC00440C41 /* TabIconView.swift */,
 				3F69EABB29B4DEF600440C41 /* TabIconView.xib */,
@@ -455,6 +488,16 @@
 				3F69EAB229B4C17500440C41 /* RegistVC.xib */,
 			);
 			path = RegistView;
+			sourceTree = "<group>";
+		};
+		3F756EB529B707E400C82827 /* MyFourCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F756EB829B7081B00C82827 /* MyFourCell.swift */,
+				3F756EB929B7081B00C82827 /* MyFourCell.xib */,
+				3F756EBC29B7083A00C82827 /* MyFourCellPresenter.swift */,
+			);
+			path = MyFourCell;
 			sourceTree = "<group>";
 		};
 		3F7EB5F629B32708002F03E8 /* FirstCell */ = {
@@ -518,6 +561,33 @@
 			path = "RC Test";
 			sourceTree = "<group>";
 		};
+		3F87045029B71A0B00CB5D87 /* MyFiveCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F87045129B71A3400CB5D87 /* MyFiveCell.swift */,
+				3F87045229B71A3400CB5D87 /* MyFiveCell.xib */,
+				3F87045529B71A4000CB5D87 /* MyFiveCellPresneter.swift */,
+			);
+			path = MyFiveCell;
+			sourceTree = "<group>";
+		};
+		3F87045729B71B1D00CB5D87 /* MySixCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F87045829B71B3600CB5D87 /* MySixCell.swift */,
+				3F87045929B71B3600CB5D87 /* MySixCell.xib */,
+				3F87045C29B71B4800CB5D87 /* MySixCellPresenter.swift */,
+			);
+			path = MySixCell;
+			sourceTree = "<group>";
+		};
+		3F87046529B73E1B00CB5D87 /* MyFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyFeed;
+			sourceTree = "<group>";
+		};
 		3FB911F429B59C4C00646D8C /* SocialVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,6 +649,9 @@
 			dependencies = (
 			);
 			name = "RC Test";
+			packageProductDependencies = (
+				3F87046329B73AD100CB5D87 /* Alamofire */,
+			);
 			productName = "RC Test";
 			productReference = 3F7EB60F29B2ECBA0090A87B /* RC Test.app */;
 			productType = "com.apple.product-type.application";
@@ -607,6 +680,9 @@
 				Base,
 			);
 			mainGroup = 3F7EB60629B2ECBA0090A87B;
+			packageReferences = (
+				3F87046229B73AD100CB5D87 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3F7EB61029B2ECBA0090A87B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -625,6 +701,7 @@
 				3F25A47E29B58FF80072A034 /* SplashVC.xib in Resources */,
 				3F1FE6E429B36001002153C6 /* SixthColCell.xib in Resources */,
 				3F1FE6D429B344AB002153C6 /* FourthColCell.xib in Resources */,
+				3F87044F29B7107800CB5D87 /* ZZimVC.xib in Resources */,
 				3F69EA9E29B47A1E00440C41 /* TalkFirst.xib in Resources */,
 				3FB911F829B59C7400646D8C /* SocialVCCell.xib in Resources */,
 				3F69EABC29B4DEF600440C41 /* TabIconView.xib in Resources */,
@@ -639,9 +716,11 @@
 				3FB911FD29B5D71600646D8C /* MyOneCell.xib in Resources */,
 				3F57B74D29B453CE0009D190 /* CommonFooterView.xib in Resources */,
 				3F3A234A29B38E8C00ED756A /* SearchVC.xib in Resources */,
+				3F87045B29B71B3600CB5D87 /* MySixCell.xib in Resources */,
 				3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */,
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
+				3F756EBB29B7081B00C82827 /* MyFourCell.xib in Resources */,
 				3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */,
 				3F1FE6E029B35FE5002153C6 /* SixthCell.xib in Resources */,
 				3FB9120E29B6041300646D8C /* MyTwoColCell.xib in Resources */,
@@ -662,6 +741,7 @@
 				3F25A48A29B592BC0072A034 /* SocialVc.xib in Resources */,
 				3FB9121329B607BE00646D8C /* MyThreeCell.xib in Resources */,
 				3F1FE6EB29B36901002153C6 /* SevenCell.xib in Resources */,
+				3F87045429B71A3400CB5D87 /* MyFiveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +762,7 @@
 				3F3A233F29B38C0800ED756A /* EighthCellPresenter.swift in Sources */,
 				3FB911FC29B5D71600646D8C /* MyOneCell.swift in Sources */,
 				3F7EB5F429B31D0D002F03E8 /* FirstColCell.swift in Sources */,
+				3F87044E29B7107800CB5D87 /* ZZimVC.swift in Sources */,
 				3F57B74929B451E30009D190 /* SearchTwoPresenter.swift in Sources */,
 				3F1FE6ED29B3690E002153C6 /* SevenCellPresenter.swift in Sources */,
 				3F7EB5FD29B32ACF002F03E8 /* SecondCellPresenter.swift in Sources */,
@@ -694,25 +775,31 @@
 				3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */,
 				3FB9121529B607CA00646D8C /* MyThreeCellPresenter.swift in Sources */,
 				3F7EB60A29B33D4A002F03E8 /* UIView + Border.swift in Sources */,
+				3F756EBD29B7083A00C82827 /* MyFourCellPresenter.swift in Sources */,
 				3F3A234D29B38EA400ED756A /* SearchFirstCell.swift in Sources */,
 				3F3A234929B38E8C00ED756A /* SearchVC.swift in Sources */,
 				3F25A47D29B58FF80072A034 /* SplashVC.swift in Sources */,
 				3F7EB60C29B33D67002F03E8 /* UIView + Radius.swift in Sources */,
 				3FB9120D29B6041300646D8C /* MyTwoColCell.swift in Sources */,
+				3F87045D29B71B4800CB5D87 /* MySixCellPresenter.swift in Sources */,
 				3F57B74B29B453C10009D190 /* CommonFooterView.swift in Sources */,
 				3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */,
 				3F57B75C29B461F80009D190 /* SearchThreePresenter.swift in Sources */,
 				3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */,
 				3F69EAAF29B4C16700440C41 /* MyVC.swift in Sources */,
 				3FB911FF29B5D74600646D8C /* MyHeaderView.swift in Sources */,
+				3F756EBA29B7081B00C82827 /* MyFourCell.swift in Sources */,
 				3F7EB60029B333CC002F03E8 /* TalkVC.swift in Sources */,
+				3F87046129B72C0400CB5D87 /* ZZimDelegate.swift in Sources */,
 				3F3A234429B38E0400ED756A /* TalkFirstCell.swift in Sources */,
 				3F69EA9D29B47A1E00440C41 /* TalkFirst.swift in Sources */,
+				3F87045A29B71B3600CB5D87 /* MySixCell.swift in Sources */,
 				3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */,
 				3FB911F729B59C7400646D8C /* SocialVCCell.swift in Sources */,
 				3F1FE6DB29B35AE2002153C6 /* FifthCellPresenter.swift in Sources */,
 				3F1FE6E329B36001002153C6 /* SixthColCell.swift in Sources */,
 				3F7EB60829B33938002F03E8 /* ThirdCellPresneter.swift in Sources */,
+				3F87045629B71A4000CB5D87 /* MyFiveCellPresneter.swift in Sources */,
 				3F25A48129B590280072A034 /* LoginVC.swift in Sources */,
 				3F1FE6CD29B34422002153C6 /* FourthCell.swift in Sources */,
 				3F7EB60529B33926002F03E8 /* ThirdCell.swift in Sources */,
@@ -730,6 +817,7 @@
 				3F69EAA229B4BF5E00440C41 /* RootViewController.swift in Sources */,
 				3FB9120729B603DE00646D8C /* MyTwoCell.swift in Sources */,
 				3F57B74629B451D80009D190 /* SearchTwoCell.swift in Sources */,
+				3F87045329B71A3400CB5D87 /* MyFiveCell.swift in Sources */,
 				3F57B75529B461BF0009D190 /* SearchThree.swift in Sources */,
 				3FB9121229B607BE00646D8C /* MyThreeCell.swift in Sources */,
 				3F1FE6E629B3600D002153C6 /* SixthCellPresenter.swift in Sources */,
@@ -940,6 +1028,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F87046229B73AD100CB5D87 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F87046329B73AD100CB5D87 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F87046229B73AD100CB5D87 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F7EB60729B2ECBA0090A87B /* Project object */;
 }

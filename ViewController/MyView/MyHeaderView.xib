@@ -8,13 +8,89 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyHeaderView"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyHeaderView">
+            <connections>
+                <outlet property="control1" destination="ZMH-Nw-Yta" id="3Yg-NF-MTw"/>
+                <outlet property="control2" destination="BQG-zx-tnT" id="IQ3-K9-6qn"/>
+                <outlet property="control3" destination="AJf-Pd-Dsc" id="Rg8-Pv-0xg"/>
+                <outlet property="headerLabel1" destination="kkn-JT-WdI" id="Ccd-EK-FYf"/>
+                <outlet property="headerLabel2" destination="DyY-IT-Wa5" id="xXU-0m-rNM"/>
+                <outlet property="headerLabel3" destination="AQB-CS-QYl" id="nmf-1z-K6A"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMH-Nw-Yta" customClass="UIControl">
+                    <rect key="frame" x="15" y="10" width="60" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkn-JT-WdI">
+                            <rect key="frame" x="10" y="11" width="40" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="kkn-JT-WdI" firstAttribute="centerX" secondItem="ZMH-Nw-Yta" secondAttribute="centerX" id="H5W-s1-ScE"/>
+                        <constraint firstItem="kkn-JT-WdI" firstAttribute="centerY" secondItem="ZMH-Nw-Yta" secondAttribute="centerY" id="agc-hI-sgy"/>
+                        <constraint firstAttribute="height" constant="40" id="imW-VA-OZo"/>
+                        <constraint firstAttribute="width" constant="60" id="set-rk-xWw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQG-zx-tnT" customClass="UIControl">
+                    <rect key="frame" x="90" y="10" width="60" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyY-IT-Wa5">
+                            <rect key="frame" x="10" y="11" width="40" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DyY-IT-Wa5" firstAttribute="centerX" secondItem="BQG-zx-tnT" secondAttribute="centerX" id="Buw-87-ku0"/>
+                        <constraint firstAttribute="height" constant="40" id="b9d-pE-gGv"/>
+                        <constraint firstAttribute="width" constant="60" id="gJW-rF-KSh"/>
+                        <constraint firstItem="DyY-IT-Wa5" firstAttribute="centerY" secondItem="BQG-zx-tnT" secondAttribute="centerY" id="nx6-Uj-ntR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-Pd-Dsc" customClass="UIControl">
+                    <rect key="frame" x="165" y="10" width="60" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQB-CS-QYl">
+                            <rect key="frame" x="10" y="11" width="40" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Mc-LW-2kS"/>
+                        <constraint firstAttribute="width" constant="60" id="50c-RH-zCu"/>
+                        <constraint firstItem="AQB-CS-QYl" firstAttribute="centerY" secondItem="AJf-Pd-Dsc" secondAttribute="centerY" id="Mps-xG-zsN"/>
+                        <constraint firstItem="AQB-CS-QYl" firstAttribute="centerX" secondItem="AJf-Pd-Dsc" secondAttribute="centerX" id="Qv6-NW-xXt"/>
+                    </constraints>
+                    <connections>
+                        <action selector="btnAction3:" destination="-1" eventType="touchUpInside" id="NZl-dZ-6xE"/>
+                    </connections>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AJf-Pd-Dsc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="31M-av-8ft"/>
+                <constraint firstItem="AJf-Pd-Dsc" firstAttribute="leading" secondItem="BQG-zx-tnT" secondAttribute="trailing" constant="15" id="9Au-xF-hpD"/>
+                <constraint firstItem="ZMH-Nw-Yta" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="C5r-5P-Pq0"/>
+                <constraint firstItem="ZMH-Nw-Yta" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lp7-s6-2D1"/>
+                <constraint firstItem="BQG-zx-tnT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="n7X-Or-dXY"/>
+                <constraint firstItem="BQG-zx-tnT" firstAttribute="leading" secondItem="ZMH-Nw-Yta" secondAttribute="trailing" constant="15" id="xkB-bp-h1r"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-44" y="21"/>
         </view>

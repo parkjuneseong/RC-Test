@@ -38,6 +38,24 @@ extension MyOneCellPresenter: CommonTablePresenter
     func numberOfRows(in section: Int) -> Int {
         return 1
     }
+    var headerView: UIView? {
+        get {
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 0.01))
+             
+            view.headerLabel.text = ""
+            
+            return view
+        } set {
+            _ = newValue
+        }
+    }
     
+    var headerHeight: CGFloat {
+        get {
+            return 0.01
+        } set {
+            _ = newValue
+        }
+    }
     
 }

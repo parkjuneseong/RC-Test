@@ -86,24 +86,55 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xf5-a7-RID">
-                    <rect key="frame" x="0.0" y="94" width="393" height="724"/>
+                    <rect key="frame" x="0.0" y="94" width="393" height="758"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="81J-Uc-1mo"/>
                         <outlet property="delegate" destination="-1" id="tvB-Fz-uHk"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJc-QF-Wk1">
+                    <rect key="frame" x="333" y="763" width="45" height="45"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upArrow" translatesAutoresizingMaskIntoConstraints="NO" id="cXK-lc-xrm">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cXK-lc-xrm" secondAttribute="bottom" id="1Nr-eB-qTb"/>
+                        <constraint firstAttribute="height" constant="45" id="3y3-J5-il8"/>
+                        <constraint firstAttribute="width" constant="45" id="P3S-C3-4fy"/>
+                        <constraint firstItem="cXK-lc-xrm" firstAttribute="top" secondItem="DJc-QF-Wk1" secondAttribute="top" id="Vbu-Ul-Xby"/>
+                        <constraint firstItem="cXK-lc-xrm" firstAttribute="leading" secondItem="DJc-QF-Wk1" secondAttribute="leading" id="jjQ-wg-nM1"/>
+                        <constraint firstAttribute="trailing" secondItem="cXK-lc-xrm" secondAttribute="trailing" id="ubD-XO-IMp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xf5-a7-RID" secondAttribute="trailing" id="2ka-zQ-eBR"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xf5-a7-RID" secondAttribute="bottom" id="7ol-Bv-uqd"/>
+                <constraint firstAttribute="bottom" secondItem="xf5-a7-RID" secondAttribute="bottom" id="7ol-Bv-uqd"/>
                 <constraint firstItem="crI-H6-A5J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8nX-oL-WCV"/>
                 <constraint firstItem="xf5-a7-RID" firstAttribute="top" secondItem="crI-H6-A5J" secondAttribute="bottom" id="CIE-C7-LnJ"/>
                 <constraint firstItem="xf5-a7-RID" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cyr-yJ-qOH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DJc-QF-Wk1" secondAttribute="bottom" constant="10" id="PXk-dF-Mm5"/>
                 <constraint firstItem="crI-H6-A5J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="chw-CY-8li"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="crI-H6-A5J" secondAttribute="trailing" id="jCg-wN-YEJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DJc-QF-Wk1" secondAttribute="trailing" constant="15" id="mEq-1d-o33"/>
             </constraints>
             <point key="canvasLocation" x="33" y="-36"/>
         </view>
@@ -112,6 +143,7 @@
         <image name="3..." width="14.333333015441895" height="9.3333330154418945"/>
         <image name="balckUp" width="11.666666984558105" height="11.666666984558105"/>
         <image name="blackBell" width="11.666666984558105" height="11.333333015441895"/>
+        <image name="upArrow" width="22" height="19.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

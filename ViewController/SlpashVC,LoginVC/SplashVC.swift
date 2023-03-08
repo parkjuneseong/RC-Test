@@ -17,7 +17,7 @@ class SplashVC: UIViewController {
 //            let user = UserDefaultsManager.shared.getUser()
             
 //            if user != nil {
-                vc = UINavigationController(rootViewController: RootViewController())
+                vc = UINavigationController(rootViewController: SocialVc())
 //            } else {
 //                vc = UINavigationController(rootViewController: LoginVC(isShowAlert: true))
 //            }

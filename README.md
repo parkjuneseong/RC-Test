@@ -23,4 +23,8 @@ My VC 와 RegistVC를 만들었고 Cell들을 세부적으로 수정하였다
  RegistVC 만들고 있다 .. 
  UIView에서는 UINavigationController가 없어서 UIViewController로 protocol delegate를 사용하여 데이터 전달 후 ViewController에서 Navigation활용
  label 의 attrubute 사용 하여 밑줄 밑 부분 색깔 변경 
- 
+ 3/8 
+ registVC의 textField와 태그 , 카테고리 vc 으로 넘어가게 만들어줬고
+ SocialVC에서 다른 방식으로 로그인과 본인 인증으로 로그인을vc를 만들어 클릭하게되면 회원가입 vc가나오고
+ 회원가입VC이 처음에 나왔을때 처음나온 공란이 작성되면 숨어있던 다른 작성창이 나오도록 만들어줬다
+작성이 마무리 되면 확인 버튼으로 다시 rootView로 돌아가게 만들었다

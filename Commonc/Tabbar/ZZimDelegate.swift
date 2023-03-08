@@ -6,6 +6,6 @@
 //
 
 import Foundation
-protocol ZZimDelegate{
+protocol ZZimDelegate : AnyObject{
     func zzimAction()
 }

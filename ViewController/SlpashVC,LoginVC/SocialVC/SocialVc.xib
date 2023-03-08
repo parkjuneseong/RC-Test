@@ -106,6 +106,9 @@
                                 <constraint firstAttribute="height" constant="40" id="acD-z3-ycV"/>
                                 <constraint firstItem="RQZ-CC-JmT" firstAttribute="centerY" secondItem="U5y-Qp-0hy" secondAttribute="centerY" id="ecD-kO-aSn"/>
                             </constraints>
+                            <connections>
+                                <action selector="moveSgin:" destination="-1" eventType="touchUpInside" id="gg2-lP-MZw"/>
+                            </connections>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -125,7 +128,7 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4st-Dl-tZR">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CqP-wc-LJn">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CqP-wc-LJn">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

@@ -10,6 +10,7 @@ import UIKit
 class MyVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+
     
     
     private var tablePresenters: [CommonTablePresenter?] = []
@@ -34,8 +35,7 @@ class MyVC: UIViewController {
  
         
         
-        
-        
+       
         
         setPresenterModel()
         setTablePresenters()
@@ -44,7 +44,7 @@ class MyVC: UIViewController {
 //    let firstCell = firstCellModel or listArray
     private func setPresenterModel() {
         myTwoCellPresenter.set(model: twoList)
-        
+        myFourCellPresenter.zzimDelegate = self
     }
     
     
@@ -54,8 +54,7 @@ class MyVC: UIViewController {
         tablePresenters.append(myTwoCellPresenter)
         tablePresenters.append(myThreeCellPresenter)
         tablePresenters.append(myFourCellPresenter)
-        tablePresenters.append(myFiveCellPresenter)
-        tablePresenters.append(mySixCellPresenter)
+        
         registerCells()
         tableView.reloadData()
     }
@@ -129,5 +128,12 @@ extension MyVC: UITableViewDelegate, UITableViewDataSource{
         }
         
         return presenter.footerHeight
+    }
+}
+
+extension MyVC: ZZimDelegate {
+    func zzimAction() {
+        let vc = ZZimVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

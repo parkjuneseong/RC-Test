@@ -29,8 +29,8 @@
 		3F25A47E29B58FF80072A034 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A47C29B58FF80072A034 /* SplashVC.xib */; };
 		3F25A48129B590280072A034 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A47F29B590280072A034 /* LoginVC.swift */; };
 		3F25A48229B590280072A034 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A48029B590280072A034 /* LoginVC.xib */; };
-		3F25A48529B590380072A034 /* SignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A48329B590380072A034 /* SignVC.swift */; };
-		3F25A48629B590380072A034 /* SignVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A48429B590380072A034 /* SignVC.xib */; };
+		3F25A48529B590380072A034 /* SginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A48329B590380072A034 /* SginVC.swift */; };
+		3F25A48629B590380072A034 /* SginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A48429B590380072A034 /* SginVC.xib */; };
 		3F25A48929B592BC0072A034 /* SocialVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A48729B592BC0072A034 /* SocialVc.swift */; };
 		3F25A48A29B592BC0072A034 /* SocialVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A48829B592BC0072A034 /* SocialVc.xib */; };
 		3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233629B38BDC00ED756A /* EighthCell.swift */; };
@@ -46,6 +46,14 @@
 		3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */; };
 		3F3B415A29B38F3A003827A2 /* SearchOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */; };
 		3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F432BE629B315A90017E245 /* CommonTablePresent.swift */; };
+		3F55874529B891D600E5127E /* BirthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55874429B891D600E5127E /* BirthTextField.swift */; };
+		3F55874729B891E400E5127E /* BirthTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F55874629B891E400E5127E /* BirthTextField.xib */; };
+		3F55874929B891FA00E5127E /* LGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55874829B891FA00E5127E /* LGTextField.swift */; };
+		3F55874B29B8920400E5127E /* LGTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F55874A29B8920400E5127E /* LGTextField.xib */; };
+		3F55874D29B8921200E5127E /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55874C29B8921200E5127E /* NumberTextField.swift */; };
+		3F55874F29B8921B00E5127E /* NumberTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F55874E29B8921B00E5127E /* NumberTextField.xib */; };
+		3F55875229B8DC4F00E5127E /* SelectedLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55875029B8DC4F00E5127E /* SelectedLogin.swift */; };
+		3F55875329B8DC4F00E5127E /* SelectedLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F55875129B8DC4F00E5127E /* SelectedLogin.xib */; };
 		3F57B74629B451D80009D190 /* SearchTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B74429B451D80009D190 /* SearchTwoCell.swift */; };
 		3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F57B74529B451D80009D190 /* SearchTwoCell.xib */; };
 		3F57B74929B451E30009D190 /* SearchTwoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57B74829B451E30009D190 /* SearchTwoPresenter.swift */; };
@@ -107,6 +115,14 @@
 		3F87045D29B71B4800CB5D87 /* MySixCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87045C29B71B4800CB5D87 /* MySixCellPresenter.swift */; };
 		3F87046129B72C0400CB5D87 /* ZZimDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87046029B72C0400CB5D87 /* ZZimDelegate.swift */; };
 		3F87046429B73AD100CB5D87 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F87046329B73AD100CB5D87 /* Alamofire */; };
+		3F87046729B86A5300CB5D87 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87046629B86A5300CB5D87 /* UnderlineTextField.swift */; };
+		3F87046929B86A6900CB5D87 /* UnderlineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87046829B86A6900CB5D87 /* UnderlineTextField.xib */; };
+		3F87046D29B8789B00CB5D87 /* TagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87046B29B8789B00CB5D87 /* TagVC.swift */; };
+		3F87046E29B8789B00CB5D87 /* TagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87046C29B8789B00CB5D87 /* TagVC.xib */; };
+		3F87047129B878AE00CB5D87 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87046F29B878AE00CB5D87 /* CategoryVC.swift */; };
+		3F87047229B878AE00CB5D87 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87047029B878AE00CB5D87 /* CategoryVC.xib */; };
+		3F87047529B883BC00CB5D87 /* SginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87047429B883BC00CB5D87 /* SginTextField.swift */; };
+		3F87047729B883D000CB5D87 /* SginTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87047629B883CF00CB5D87 /* SginTextField.xib */; };
 		3FB911F729B59C7400646D8C /* SocialVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB911F529B59C7400646D8C /* SocialVCCell.swift */; };
 		3FB911F829B59C7400646D8C /* SocialVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB911F629B59C7400646D8C /* SocialVCCell.xib */; };
 		3FB911FC29B5D71600646D8C /* MyOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB911FA29B5D71600646D8C /* MyOneCell.swift */; };
@@ -147,8 +163,8 @@
 		3F25A47C29B58FF80072A034 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		3F25A47F29B590280072A034 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3F25A48029B590280072A034 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
-		3F25A48329B590380072A034 /* SignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVC.swift; sourceTree = "<group>"; };
-		3F25A48429B590380072A034 /* SignVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignVC.xib; sourceTree = "<group>"; };
+		3F25A48329B590380072A034 /* SginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginVC.swift; sourceTree = "<group>"; };
+		3F25A48429B590380072A034 /* SginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginVC.xib; sourceTree = "<group>"; };
 		3F25A48729B592BC0072A034 /* SocialVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialVc.swift; sourceTree = "<group>"; };
 		3F25A48829B592BC0072A034 /* SocialVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SocialVc.xib; path = "ViewController/SlpashVC,LoginVC/SocialVC/SocialVc.xib"; sourceTree = SOURCE_ROOT; };
 		3F3A233629B38BDC00ED756A /* EighthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCell.swift; sourceTree = "<group>"; };
@@ -164,6 +180,14 @@
 		3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFirstCell.xib; sourceTree = "<group>"; };
 		3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnePresenter.swift; sourceTree = "<group>"; };
 		3F432BE629B315A90017E245 /* CommonTablePresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTablePresent.swift; sourceTree = "<group>"; };
+		3F55874429B891D600E5127E /* BirthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthTextField.swift; sourceTree = "<group>"; };
+		3F55874629B891E400E5127E /* BirthTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BirthTextField.xib; sourceTree = "<group>"; };
+		3F55874829B891FA00E5127E /* LGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGTextField.swift; sourceTree = "<group>"; };
+		3F55874A29B8920400E5127E /* LGTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LGTextField.xib; sourceTree = "<group>"; };
+		3F55874C29B8921200E5127E /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
+		3F55874E29B8921B00E5127E /* NumberTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberTextField.xib; sourceTree = "<group>"; };
+		3F55875029B8DC4F00E5127E /* SelectedLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedLogin.swift; sourceTree = "<group>"; };
+		3F55875129B8DC4F00E5127E /* SelectedLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedLogin.xib; sourceTree = "<group>"; };
 		3F57B74429B451D80009D190 /* SearchTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTwoCell.swift; sourceTree = "<group>"; };
 		3F57B74529B451D80009D190 /* SearchTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTwoCell.xib; sourceTree = "<group>"; };
 		3F57B74829B451E30009D190 /* SearchTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTwoPresenter.swift; sourceTree = "<group>"; };
@@ -226,6 +250,14 @@
 		3F87045929B71B3600CB5D87 /* MySixCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySixCell.xib; sourceTree = "<group>"; };
 		3F87045C29B71B4800CB5D87 /* MySixCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySixCellPresenter.swift; sourceTree = "<group>"; };
 		3F87046029B72C0400CB5D87 /* ZZimDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZZimDelegate.swift; sourceTree = "<group>"; };
+		3F87046629B86A5300CB5D87 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		3F87046829B86A6900CB5D87 /* UnderlineTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnderlineTextField.xib; sourceTree = "<group>"; };
+		3F87046B29B8789B00CB5D87 /* TagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagVC.swift; sourceTree = "<group>"; };
+		3F87046C29B8789B00CB5D87 /* TagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagVC.xib; sourceTree = "<group>"; };
+		3F87046F29B878AE00CB5D87 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		3F87047029B878AE00CB5D87 /* CategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
+		3F87047429B883BC00CB5D87 /* SginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginTextField.swift; sourceTree = "<group>"; };
+		3F87047629B883CF00CB5D87 /* SginTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginTextField.xib; sourceTree = "<group>"; };
 		3FB911F529B59C7400646D8C /* SocialVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialVCCell.swift; sourceTree = "<group>"; };
 		3FB911F629B59C7400646D8C /* SocialVCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialVCCell.xib; sourceTree = "<group>"; };
 		3FB911FA29B5D71600646D8C /* MyOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOneCell.swift; sourceTree = "<group>"; };
@@ -306,8 +338,9 @@
 				3F25A47C29B58FF80072A034 /* SplashVC.xib */,
 				3F25A47F29B590280072A034 /* LoginVC.swift */,
 				3F25A48029B590280072A034 /* LoginVC.xib */,
-				3F25A48329B590380072A034 /* SignVC.swift */,
-				3F25A48429B590380072A034 /* SignVC.xib */,
+				3F25A48329B590380072A034 /* SginVC.swift */,
+				3F25A48429B590380072A034 /* SginVC.xib */,
+				3F87047329B8837400CB5D87 /* UnderTextField */,
 				3FB911F429B59C4C00646D8C /* SocialVC */,
 			);
 			path = "SlpashVC,LoginVC";
@@ -486,6 +519,7 @@
 			children = (
 				3F69EAB129B4C17500440C41 /* RegistVC.swift */,
 				3F69EAB229B4C17500440C41 /* RegistVC.xib */,
+				3F87046A29B8787700CB5D87 /* etcVC */,
 			);
 			path = RegistView;
 			sourceTree = "<group>";
@@ -588,6 +622,34 @@
 			path = MyFeed;
 			sourceTree = "<group>";
 		};
+		3F87046A29B8787700CB5D87 /* etcVC */ = {
+			isa = PBXGroup;
+			children = (
+				3F87046629B86A5300CB5D87 /* UnderlineTextField.swift */,
+				3F87046829B86A6900CB5D87 /* UnderlineTextField.xib */,
+				3F87046B29B8789B00CB5D87 /* TagVC.swift */,
+				3F87046C29B8789B00CB5D87 /* TagVC.xib */,
+				3F87046F29B878AE00CB5D87 /* CategoryVC.swift */,
+				3F87047029B878AE00CB5D87 /* CategoryVC.xib */,
+			);
+			path = etcVC;
+			sourceTree = "<group>";
+		};
+		3F87047329B8837400CB5D87 /* UnderTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3F87047429B883BC00CB5D87 /* SginTextField.swift */,
+				3F87047629B883CF00CB5D87 /* SginTextField.xib */,
+				3F55874429B891D600E5127E /* BirthTextField.swift */,
+				3F55874629B891E400E5127E /* BirthTextField.xib */,
+				3F55874829B891FA00E5127E /* LGTextField.swift */,
+				3F55874A29B8920400E5127E /* LGTextField.xib */,
+				3F55874C29B8921200E5127E /* NumberTextField.swift */,
+				3F55874E29B8921B00E5127E /* NumberTextField.xib */,
+			);
+			path = UnderTextField;
+			sourceTree = "<group>";
+		};
 		3FB911F429B59C4C00646D8C /* SocialVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +657,8 @@
 				3F25A48829B592BC0072A034 /* SocialVc.xib */,
 				3FB911F529B59C7400646D8C /* SocialVCCell.swift */,
 				3FB911F629B59C7400646D8C /* SocialVCCell.xib */,
+				3F55875029B8DC4F00E5127E /* SelectedLogin.swift */,
+				3F55875129B8DC4F00E5127E /* SelectedLogin.xib */,
 			);
 			path = SocialVC;
 			sourceTree = "<group>";
@@ -702,10 +766,13 @@
 				3F1FE6E429B36001002153C6 /* SixthColCell.xib in Resources */,
 				3F1FE6D429B344AB002153C6 /* FourthColCell.xib in Resources */,
 				3F87044F29B7107800CB5D87 /* ZZimVC.xib in Resources */,
+				3F55875329B8DC4F00E5127E /* SelectedLogin.xib in Resources */,
 				3F69EA9E29B47A1E00440C41 /* TalkFirst.xib in Resources */,
 				3FB911F829B59C7400646D8C /* SocialVCCell.xib in Resources */,
 				3F69EABC29B4DEF600440C41 /* TabIconView.xib in Resources */,
 				3F69EA9A29B476C100440C41 /* TalkHeaderView.xib in Resources */,
+				3F87047729B883D000CB5D87 /* SginTextField.xib in Resources */,
+				3F55874F29B8921B00E5127E /* NumberTextField.xib in Resources */,
 				3F7EB60129B333CC002F03E8 /* TalkVC.xib in Resources */,
 				3F1FE6D929B359ED002153C6 /* FifthCell.xib in Resources */,
 				3F7EB5FB29B3275D002F03E8 /* SecondCell.xib in Resources */,
@@ -720,6 +787,7 @@
 				3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */,
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
+				3F55874B29B8920400E5127E /* LGTextField.xib in Resources */,
 				3F756EBB29B7081B00C82827 /* MyFourCell.xib in Resources */,
 				3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */,
 				3F1FE6E029B35FE5002153C6 /* SixthCell.xib in Resources */,
@@ -729,11 +797,14 @@
 				3F69EAB629B4C20500440C41 /* TabIconViewController.xib in Resources */,
 				3F7EB61C29B2ECBB0090A87B /* Assets.xcassets in Resources */,
 				3F3A234529B38E0400ED756A /* TalkFirstCell.xib in Resources */,
-				3F25A48629B590380072A034 /* SignVC.xib in Resources */,
+				3F87046929B86A6900CB5D87 /* UnderlineTextField.xib in Resources */,
+				3F25A48629B590380072A034 /* SginVC.xib in Resources */,
+				3F55874729B891E400E5127E /* BirthTextField.xib in Resources */,
 				3FB9120829B603DE00646D8C /* MyTwoCell.xib in Resources */,
 				3F57B75A29B461EC0009D190 /* SearchThreeCell.xib in Resources */,
 				3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */,
 				3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */,
+				3F87047229B878AE00CB5D87 /* CategoryVC.xib in Resources */,
 				3F57B75129B45C340009D190 /* SearchTwo.xib in Resources */,
 				3F3A233D29B38BF700ED756A /* EighthColCell.xib in Resources */,
 				3F7EB5F529B31D0D002F03E8 /* FirstColCell.xib in Resources */,
@@ -742,6 +813,7 @@
 				3FB9121329B607BE00646D8C /* MyThreeCell.xib in Resources */,
 				3F1FE6EB29B36901002153C6 /* SevenCell.xib in Resources */,
 				3F87045429B71A3400CB5D87 /* MyFiveCell.xib in Resources */,
+				3F87046E29B8789B00CB5D87 /* TagVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +829,9 @@
 				3F1FE6D829B359ED002153C6 /* FifthCell.swift in Sources */,
 				3F7EB61329B2ECBA0090A87B /* AppDelegate.swift in Sources */,
 				3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */,
+				3F55874529B891D600E5127E /* BirthTextField.swift in Sources */,
 				3F25A48929B592BC0072A034 /* SocialVc.swift in Sources */,
+				3F87046729B86A5300CB5D87 /* UnderlineTextField.swift in Sources */,
 				3F69EAA029B47A2E00440C41 /* TalkOnePresenter.swift in Sources */,
 				3F3A233F29B38C0800ED756A /* EighthCellPresenter.swift in Sources */,
 				3FB911FC29B5D71600646D8C /* MyOneCell.swift in Sources */,
@@ -767,11 +841,12 @@
 				3F1FE6ED29B3690E002153C6 /* SevenCellPresenter.swift in Sources */,
 				3F7EB5FD29B32ACF002F03E8 /* SecondCellPresenter.swift in Sources */,
 				3F69EA9829B476B500440C41 /* TalkHeaderView.swift in Sources */,
+				3F87047529B883BC00CB5D87 /* SginTextField.swift in Sources */,
 				3F57B75929B461EC0009D190 /* SearchThreeCell.swift in Sources */,
 				3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */,
 				3F1FE6D329B344AB002153C6 /* FourthColCell.swift in Sources */,
 				3F1FE6D029B34439002153C6 /* FourthCellPresenter.swift in Sources */,
-				3F25A48529B590380072A034 /* SignVC.swift in Sources */,
+				3F25A48529B590380072A034 /* SginVC.swift in Sources */,
 				3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */,
 				3FB9121529B607CA00646D8C /* MyThreeCellPresenter.swift in Sources */,
 				3F7EB60A29B33D4A002F03E8 /* UIView + Border.swift in Sources */,
@@ -779,10 +854,12 @@
 				3F3A234D29B38EA400ED756A /* SearchFirstCell.swift in Sources */,
 				3F3A234929B38E8C00ED756A /* SearchVC.swift in Sources */,
 				3F25A47D29B58FF80072A034 /* SplashVC.swift in Sources */,
+				3F55874D29B8921200E5127E /* NumberTextField.swift in Sources */,
 				3F7EB60C29B33D67002F03E8 /* UIView + Radius.swift in Sources */,
 				3FB9120D29B6041300646D8C /* MyTwoColCell.swift in Sources */,
 				3F87045D29B71B4800CB5D87 /* MySixCellPresenter.swift in Sources */,
 				3F57B74B29B453C10009D190 /* CommonFooterView.swift in Sources */,
+				3F55874929B891FA00E5127E /* LGTextField.swift in Sources */,
 				3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */,
 				3F57B75C29B461F80009D190 /* SearchThreePresenter.swift in Sources */,
 				3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */,
@@ -793,6 +870,7 @@
 				3F87046129B72C0400CB5D87 /* ZZimDelegate.swift in Sources */,
 				3F3A234429B38E0400ED756A /* TalkFirstCell.swift in Sources */,
 				3F69EA9D29B47A1E00440C41 /* TalkFirst.swift in Sources */,
+				3F87046D29B8789B00CB5D87 /* TagVC.swift in Sources */,
 				3F87045A29B71B3600CB5D87 /* MySixCell.swift in Sources */,
 				3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */,
 				3FB911F729B59C7400646D8C /* SocialVCCell.swift in Sources */,
@@ -814,8 +892,10 @@
 				3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */,
 				3F7EB5FA29B3275D002F03E8 /* SecondCell.swift in Sources */,
 				3FB9120329B5DAD500646D8C /* MyOneCellPresenter.swift in Sources */,
+				3F55875229B8DC4F00E5127E /* SelectedLogin.swift in Sources */,
 				3F69EAA229B4BF5E00440C41 /* RootViewController.swift in Sources */,
 				3FB9120729B603DE00646D8C /* MyTwoCell.swift in Sources */,
+				3F87047129B878AE00CB5D87 /* CategoryVC.swift in Sources */,
 				3F57B74629B451D80009D190 /* SearchTwoCell.swift in Sources */,
 				3F87045329B71A3400CB5D87 /* MyFiveCell.swift in Sources */,
 				3F57B75529B461BF0009D190 /* SearchThree.swift in Sources */,

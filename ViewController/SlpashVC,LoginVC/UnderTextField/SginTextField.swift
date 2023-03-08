@@ -1,46 +1,37 @@
 //
-//  MyHeaderView.swift
+//  SginTextField.swift
 //  RC Test
 //
-//  Created by 박준성 on 2023/03/06.
+//  Created by 박준성 on 2023/03/08.
 //
 
+import Foundation
 import UIKit
-
-class MyHeaderView: UIView {
-    private var nibName: String {
-        "\(MyHeaderView.self)"
-    }
-     
-    weak var zzimDelegate : ZZimDelegate?
-    @IBOutlet weak var control1: UIControl!
-    
-    @IBOutlet weak var control2: UIControl!
+class SginTextField : UIView{
     
     
-    @IBOutlet weak var control3: UIControl!
- 
+    @IBOutlet weak var underlineView: UIView!
     
-    @IBAction func btnAction3(_ sender: Any) {
-         
-        zzimDelegate?.zzimAction()
-     
-    }
+    @IBOutlet weak var titleLabel: UILabel!
     
     
-    @IBOutlet weak var headerLabel1 : UILabel!
     
-    @IBOutlet weak var headerLabel2: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var headerLabel3: UILabel!
+    
+    
     private var containerView = UIView()
     
-     
+    private var nibName: String {
+        "\(SginTextField.self)"
+    }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
-    
    
     required init?  (coder: NSCoder) {
         super.init(coder: coder)
@@ -59,6 +50,18 @@ class MyHeaderView: UIView {
     }
     
     private func customViewDidLoad() {
+        textField.delegate = self
     }
 }
- 
+
+extension SginTextField: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        underlineView.backgroundColor = .black
+        textField.textColor = .black
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        underlineView.backgroundColor = .black
+        textField.textColor = .black
+    }
+}

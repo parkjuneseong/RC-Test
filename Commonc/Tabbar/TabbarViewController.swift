@@ -124,9 +124,12 @@ extension TabbarViewController: TabIconViewControllerDelegate {
            navigationController.pushViewController(searchVc, animated: true)
            return
        } else if index == 2 {
-           let registVc = RegistVC(nibName: "RegistVC", bundle: nil)
-           registVc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-           self.present(registVc, animated: true)
+//           let registVc = RegistVC(nibName: "RegistVC", bundle: nil)
+            
+//           self.present(registVc, animated: true)
+           let vc = UINavigationController(rootViewController: RegistVC())
+           vc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+           self.present(vc, animated: true)
 //           navigationController?.pushViewController(registVc, animated: true)
        }else{
            self.selectedIndex = index

@@ -1,46 +1,36 @@
 //
-//  MyHeaderView.swift
+//  NumberTextField.swift
 //  RC Test
 //
-//  Created by 박준성 on 2023/03/06.
+//  Created by 박준성 on 2023/03/08.
 //
 
+import Foundation
 import UIKit
-
-class MyHeaderView: UIView {
-    private var nibName: String {
-        "\(MyHeaderView.self)"
-    }
-     
-    weak var zzimDelegate : ZZimDelegate?
-    @IBOutlet weak var control1: UIControl!
+class NumberTextField : UIView{
     
-    @IBOutlet weak var control2: UIControl!
+    @IBOutlet weak var underlineView: UIView!
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     
-    @IBOutlet weak var control3: UIControl!
- 
-    
-    @IBAction func btnAction3(_ sender: Any) {
-         
-        zzimDelegate?.zzimAction()
-     
-    }
     
     
-    @IBOutlet weak var headerLabel1 : UILabel!
     
-    @IBOutlet weak var headerLabel2: UILabel!
-    
-    @IBOutlet weak var headerLabel3: UILabel!
     private var containerView = UIView()
     
-     
+    private var nibName: String {
+        "\(NumberTextField.self)"
+    }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
-    
    
     required init?  (coder: NSCoder) {
         super.init(coder: coder)
@@ -59,6 +49,19 @@ class MyHeaderView: UIView {
     }
     
     private func customViewDidLoad() {
+        textField.delegate = self
     }
 }
- 
+
+extension NumberTextField: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        underlineView.backgroundColor = .black
+        textField.textColor = .black
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        underlineView.backgroundColor = .black
+        textField.textColor = .black
+    }
+}
+

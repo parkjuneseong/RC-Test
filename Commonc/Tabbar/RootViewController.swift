@@ -14,16 +14,8 @@ struct TabComponent {
    let iconComponent: TabIconComponent
 }
 
-class RootViewController: UIViewController , ZZimDelegate{
-//    let headerView = storyboard?.instantiateViewController(withIdentifier: "MyHeaderView") as!
-//    MyHeaderView
-//    headerView.zzimDelegate = self
-    func zzimAction() {
-        print("click")
-        let vc = ZZimVC()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
+class RootViewController: UIViewController {
+ 
    static let shared = RootViewController(nibName: nil, bundle: nil)
    var tabbarController = TabbarViewController(nibName: nil, bundle: nil)
    static let tab = RootViewController.shared.tabbarController
@@ -31,10 +23,7 @@ class RootViewController: UIViewController , ZZimDelegate{
    var tabBar: TabbarViewController {
        RVC.shared.tabbarController
    }
-    func buttonAc(control : UIControl){
-        
-        self.navigationController?.pushViewController(ZZimVC(), animated: true)
-    }
+     
    override func viewDidLoad() {
        super.viewDidLoad()
        self.navigationController?.isNavigationBarHidden = true

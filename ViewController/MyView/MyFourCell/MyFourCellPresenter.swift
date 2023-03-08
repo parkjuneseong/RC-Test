@@ -10,7 +10,7 @@ import Foundation
 class MyFourCellPresenter {
     private let cellId = "MyFourCell"
     private var model: [[String: String]]?
-    
+    weak var zzimDelegate: ZZimDelegate?
     func set(model: [[String: String]]?) {
         self.model = model
     }
@@ -20,25 +20,49 @@ class MyFourCellPresenter {
 extension MyFourCellPresenter: CommonTablePresenter
 {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MyFourCell else {
+        switch indexPath.row {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyFourCell", for: indexPath) as? MyFourCell else {
+                return UITableViewCell()
+            }
+            return cell
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyFiveCell", for: indexPath) as? MyFiveCell else {
+                return UITableViewCell()
+            }
+            return cell
+        case 2:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MySixCell", for: indexPath) as? MySixCell else {
+                return UITableViewCell()
+            }
+           
+            return cell
+        default:
             return UITableViewCell()
         }
-        
-        return cell
     }
     
     func registerCell(to tableView: UITableView) {
-        tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
+        tableView.register(UINib(nibName: "MyFourCell", bundle: nil), forCellReuseIdentifier: "MyFourCell")
+        tableView.register(UINib(nibName: "MyFiveCell", bundle: nil), forCellReuseIdentifier: "MyFiveCell")
+        tableView.register(UINib(nibName: "MySixCell", bundle: nil), forCellReuseIdentifier: "MySixCell")
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 160
-        
-        
+        switch indexPath.row {
+        case 0:
+            return 160
+        case 1:
+            return 300
+        case 2:
+            return 400
+        default:
+            return 0
+        }
     }
-    
+
     func numberOfRows(in section: Int) -> Int {
-        return 1
+        return 3
     }
     
     var headerView: UIView? {
@@ -47,7 +71,7 @@ extension MyFourCellPresenter: CommonTablePresenter
             view.headerLabel1.text = "판매상품"
             view.headerLabel2.text = "상점후기"
             view.headerLabel3.text = "찜목록"
-            
+            view.zzimDelegate = zzimDelegate
             
             
             return view

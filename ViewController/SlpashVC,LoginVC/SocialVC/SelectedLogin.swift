@@ -14,14 +14,13 @@ class SelectedLogin: UIViewController {
     
     @IBAction func moveSginVC(_ sender: Any) {
         print("click")
-        guard let pvc = self.presentingViewController else { return }
-
+          
         self.dismiss(animated: true) {
-            let vc = UINavigationController(rootViewController: SginVC())
-            vc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-          pvc.present(vc, animated: true, completion: nil)
+        let vc = UINavigationController(rootViewController: SginVC())
              
+            self.navigationController?.pushViewController(vc, animated: true)
         }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

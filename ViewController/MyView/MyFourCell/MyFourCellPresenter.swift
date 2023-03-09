@@ -11,6 +11,7 @@ class MyFourCellPresenter {
     private let cellId = "MyFourCell"
     private var model: [[String: String]]?
     weak var zzimDelegate: ZZimDelegate?
+     
     func set(model: [[String: String]]?) {
         self.model = model
     }

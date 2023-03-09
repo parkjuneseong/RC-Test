@@ -11,8 +11,10 @@ import UIKit
 class SecondCellPresenter {
    private let cellId = "SecondCell"
    private var model: [[String: String]]?
+    weak var myFeedDelegate : MyFeedDelegate?
+    weak var zzimDelegate : ZZimDelegate?
    
-   func set(model: [[String: String]]?) {
+    func set(model: [[String: String]]?) {
        self.model = model
    }
 }
@@ -22,9 +24,11 @@ extension SecondCellPresenter: CommonTablePresenter
 {
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SecondCell else {
+           
            return UITableViewCell()
        }
-       
+       cell.myFeedDelegate = myFeedDelegate
+       cell.zzimDelegate = zzimDelegate
        return cell
    }
    

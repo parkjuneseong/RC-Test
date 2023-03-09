@@ -9,8 +9,10 @@ import UIKit
 
 class MyFiveCellPresneter {
   private let cellId = "MyFiveCell"
-  
- 
+  private var model: [[String: String]]?
+    func set(model: [[String : String]]?){
+        self.model = model
+    }
 }
   
 

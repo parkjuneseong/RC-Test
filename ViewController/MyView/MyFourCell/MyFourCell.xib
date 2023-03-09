@@ -24,7 +24,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bk5-1j-VRu">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxV-rg-dnO">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxV-rg-dnO" customClass="UIControl">
                                         <rect key="frame" x="0.0" y="10" width="55" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOH-Be-cn9">
@@ -52,6 +52,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selected1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qkY-yN-YjH"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpQ-u9-KtW">
                                         <rect key="frame" x="65" y="10" width="65" height="30"/>
@@ -241,12 +244,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-9G-qGa">
-                                <rect key="frame" x="333.33333333333331" y="11" width="41.666666666666686" height="13.333333333333336"/>
+                                <rect key="frame" x="333.33333333333331" y="10.333333333333343" width="41.666666666666686" height="14.333333333333336"/>
                                 <attributedString key="attributedText">
                                     <fragment content="일과편집">
                                         <attributes>
                                             <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="12" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <font key="NSOriginalFont" metaFont="system" size="10"/>
                                             <integer key="NSUnderline" value="1"/>
                                         </attributes>
@@ -338,6 +341,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="selected1" destination="LxV-rg-dnO" id="Fp9-QY-cgx"/>
+                <outlet property="selected1Label" destination="FOH-Be-cn9" id="sjM-x3-1Sb"/>
+                <outlet property="stackView" destination="bk5-1j-VRu" id="TlQ-fg-QbI"/>
                 <outlet property="textField" destination="zHg-pr-vga" id="Yeq-BD-TGO"/>
             </connections>
             <point key="canvasLocation" x="-139" y="-20"/>

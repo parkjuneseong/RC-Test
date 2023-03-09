@@ -30,7 +30,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4m-cd-iz6">
                     <rect key="frame" x="0.0" y="59" width="393" height="40"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTX-Ec-9Kt">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTX-Ec-9Kt" customClass="UIControl">
                             <rect key="frame" x="10" y="5" width="30" height="30"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBuger" translatesAutoresizingMaskIntoConstraints="NO" id="MVQ-3I-fTN">
@@ -46,8 +46,11 @@
                                 <constraint firstAttribute="height" constant="30" id="w8e-2c-lCP"/>
                                 <constraint firstAttribute="trailing" secondItem="MVQ-3I-fTN" secondAttribute="trailing" id="ymz-nS-9gE"/>
                             </constraints>
+                            <connections>
+                                <action selector="menuMove:" destination="-1" eventType="touchUpInside" id="fWx-gU-hrx"/>
+                            </connections>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFt-Vt-ekV">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFt-Vt-ekV" customClass="UIControl">
                             <rect key="frame" x="353" y="5" width="30" height="30"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitebell" translatesAutoresizingMaskIntoConstraints="NO" id="ZHR-9I-0Vd">
@@ -64,7 +67,7 @@
                                 <constraint firstAttribute="trailing" secondItem="ZHR-9I-0Vd" secondAttribute="trailing" id="Wsk-Ks-xdf"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-HR-6Dp">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-HR-6Dp" customClass="UIControl">
                             <rect key="frame" x="313" y="5" width="30" height="30"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteSearch" translatesAutoresizingMaskIntoConstraints="NO" id="KCQ-IG-daL">
@@ -80,6 +83,9 @@
                                 <constraint firstItem="KCQ-IG-daL" firstAttribute="leading" secondItem="TDK-HR-6Dp" secondAttribute="leading" id="sLr-97-D1S"/>
                                 <constraint firstAttribute="bottom" secondItem="KCQ-IG-daL" secondAttribute="bottom" id="xpW-Ph-9iw"/>
                             </constraints>
+                            <connections>
+                                <action selector="searchMove:" destination="-1" eventType="touchUpInside" id="938-MR-cKw"/>
+                            </connections>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

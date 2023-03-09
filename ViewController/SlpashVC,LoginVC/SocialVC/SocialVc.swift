@@ -20,19 +20,12 @@ class SocialVc: UIViewController {
 //    self.present(yourVC, animated: true, completion: nil)
     
     @IBAction func moveSgin(_ sender: Any) {
-//        let vc = SelcetedLogin()
-        
-//        if let sheet = vc.sheetPresentationController {
-//            sheet.detents = [.medium()]
-//        }
-//        self.present(vc, animated: true, completion: nil)
-////        vc.modalPresentationStyle = UIModalPresentationStyle.
         
         let vc = UINavigationController(rootViewController: SelectedLogin())
         if let sheet = vc.sheetPresentationController {
-                   sheet.detents = [.medium()]
-               }
-        self.present(vc, animated: true, completion: nil)
+            sheet.detents = [.medium()]
+        }
+        self.present(vc, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

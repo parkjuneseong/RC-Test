@@ -127,6 +127,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="jRE-b0-idZ" secondAttribute="trailing" id="sjU-gU-ckK"/>
                                                     <constraint firstAttribute="height" constant="90" id="uuY-In-gCq"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="zzimMove:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Zu2-Ri-Jbx"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coA-3h-dMA" customClass="UIControl">
                                                 <rect key="frame" x="0.0" y="90" width="85" height="90"/>
@@ -275,6 +278,9 @@
                                                     <constraint firstItem="6n8-Wa-EDO" firstAttribute="top" secondItem="ifR-U3-fZZ" secondAttribute="top" constant="20" id="iT0-0v-pJi"/>
                                                     <constraint firstAttribute="width" constant="85" id="ug7-QM-ATI"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="moveMyFeed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H1K-gV-52k"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4h-3J-q6u" customClass="UIControl">
                                                 <rect key="frame" x="0.0" y="90" width="85" height="90"/>

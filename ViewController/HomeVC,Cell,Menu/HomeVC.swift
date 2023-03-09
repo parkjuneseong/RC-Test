@@ -13,6 +13,16 @@ class HomeVC: UIViewController {
     weak var delegate : TabBarButtonDelegate?
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func menuMove(_ sender: Any) {
+        let vc = MenuVC()
+        vc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+       
+        self.present(vc, animated: true)
+    }
+    @IBAction func searchMove(_ sender: Any) {
+        let vc = SearchVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     private var tablePresenters: [CommonTablePresenter?] = []
     private var firstCellPresenter =  FirstCellPresenter()
@@ -74,7 +84,8 @@ class HomeVC: UIViewController {
         fourthCellPresenter.set(model: fourthList)
         sixthCellPresenter.set(model: sixthList)
         eighthCellPresenter.set(model: eighthList)
-        
+        secondCellPresenter.myFeedDelegate = self
+        secondCellPresenter.zzimDelegate = self
         
     }
     
@@ -163,4 +174,18 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
         
         return presenter.footerHeight
     }
+}
+extension HomeVC : MyFeedDelegate,ZZimDelegate{
+    func zzimAction() {
+        let vc1 = ZZimVC()
+        self.navigationController?.pushViewController(vc1, animated: true)
+    }
+    
+    func moveMyFeed() {
+        print("ee")
+        let vc = MyFeedVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

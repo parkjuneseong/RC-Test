@@ -20,6 +20,7 @@ class MyVC: UIViewController {
     private var myFourCellPresenter = MyFourCellPresenter()
     private var myFiveCellPresenter = MyFiveCellPresneter()
     private var mySixCellPresenter = MySixCellPresenter()
+
     let twoList = [
         ["label1": "택배", "label2" : "신청/관리"],
         ["label1": "평점", "label2" : "0"],
@@ -30,6 +31,13 @@ class MyVC: UIViewController {
         ["label1": "오픈일", "label2" : "+3"],
         ["label1": "본인인증", "label2" : "OK"]
     ]
+    let fiveList = [
+        ["image" : "sadImage" ,"label" : "판매중인 상품이 없습니다"],
+        ["image" : "sadImage" ,"label" : "판매중인 상품이 없습니다"],
+        ["image" : "sadImage" ,"label" : "판매중인 상품이 없습니다"],
+        ["image" : "sadImage" ,"label" : "판매중인 상품이 없습니다"]
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
  
@@ -45,6 +53,7 @@ class MyVC: UIViewController {
     private func setPresenterModel() {
         myTwoCellPresenter.set(model: twoList)
         myFourCellPresenter.zzimDelegate = self
+        
     }
     
     
@@ -54,6 +63,7 @@ class MyVC: UIViewController {
         tablePresenters.append(myTwoCellPresenter)
         tablePresenters.append(myThreeCellPresenter)
         tablePresenters.append(myFourCellPresenter)
+    
         
         registerCells()
         tableView.reloadData()

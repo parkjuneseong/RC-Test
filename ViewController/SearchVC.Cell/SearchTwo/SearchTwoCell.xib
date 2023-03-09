@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,21 +43,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="018-DK-v7E">
-                        <rect key="frame" x="255" y="12" width="50" height="25"/>
+                        <rect key="frame" x="245" y="12" width="60" height="25"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팔로우" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-Cf-EKA">
-                                <rect key="frame" x="5.6666666666666856" y="3.6666666666666661" width="39" height="18"/>
+                                <rect key="frame" x="10.666666666666657" y="3.6666666666666661" width="39" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.032865371490000003" blue="0.0210049494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.70466624149659862" blue="0.83894026360544216" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="follow"/>
                         <constraints>
                             <constraint firstItem="sCk-Cf-EKA" firstAttribute="centerY" secondItem="018-DK-v7E" secondAttribute="centerY" id="CW8-q5-TRQ"/>
                             <constraint firstAttribute="height" constant="25" id="a0e-e6-BwI"/>
                             <constraint firstItem="sCk-Cf-EKA" firstAttribute="centerX" secondItem="018-DK-v7E" secondAttribute="centerX" id="keh-f5-X4k"/>
-                            <constraint firstAttribute="width" constant="50" id="yr3-Ju-qhh"/>
+                            <constraint firstAttribute="width" constant="60" id="yr3-Ju-qhh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -86,4 +87,9 @@
             <point key="canvasLocation" x="99" y="-34"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="follow">
+            <color red="1" green="0.93725490196078431" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

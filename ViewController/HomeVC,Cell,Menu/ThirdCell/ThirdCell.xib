@@ -35,7 +35,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msw-Fq-at1">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msw-Fq-at1" customClass="UIControl">
                                         <rect key="frame" x="89.333333333333329" y="5" width="20" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="dvz-OK-Ew5">
@@ -51,6 +51,9 @@
                                             <constraint firstAttribute="width" constant="20" id="lGa-yZ-14R"/>
                                             <constraint firstItem="dvz-OK-Ew5" firstAttribute="leading" secondItem="Msw-Fq-at1" secondAttribute="leading" id="qjg-iB-y9V"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="zzim1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iWB-r8-MP0"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n77-eH-NrC">
                                         <rect key="frame" x="0.0" y="130" width="114.33333333333333" height="70"/>
@@ -107,7 +110,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-er-fiP">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-er-fiP" customClass="UIControl">
                                         <rect key="frame" x="89.333333333333314" y="5" width="20" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="cqU-eh-Bex">
@@ -123,6 +126,9 @@
                                             <constraint firstAttribute="height" constant="20" id="hyw-JK-KTL"/>
                                             <constraint firstAttribute="width" constant="20" id="qY7-qf-ope"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="zzim2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m3M-1j-gLR"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTa-iB-Xcu">
                                         <rect key="frame" x="0.0" y="130" width="114.33333333333333" height="70"/>
@@ -178,7 +184,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-6r-jEF">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-6r-jEF" customClass="UIControl">
                                         <rect key="frame" x="89.333333333333314" y="5" width="20" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-jQ-JaO">
@@ -194,6 +200,9 @@
                                             <constraint firstAttribute="bottom" secondItem="bXZ-jQ-JaO" secondAttribute="bottom" id="yyq-Sr-MJV"/>
                                             <constraint firstAttribute="width" constant="20" id="zBm-aj-7FS"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="zzim3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QDY-bO-ax6"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-St-d64">
                                         <rect key="frame" x="0.0" y="130" width="114.33333333333333" height="70"/>
@@ -725,6 +734,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="image1" destination="dvz-OK-Ew5" id="44q-UX-Dne"/>
+                <outlet property="image2" destination="cqU-eh-Bex" id="DCY-59-nf8"/>
+                <outlet property="image3" destination="bXZ-jQ-JaO" id="3OV-AN-rDR"/>
+            </connections>
             <point key="canvasLocation" x="103" y="15"/>
         </tableViewCell>
     </objects>

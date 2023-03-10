@@ -33,3 +33,6 @@ My VC 와 RegistVC를 만들었고 Cell들을 세부적으로 수정하였다
  뷰들을 서로 연결시키고 navigationController 가 없는 뷰에 만들어주고 
  cell들의 frame 와 UI를 조정했다
  
+3/10
+ 상품을눌렀을때의 뷰를 만들고 좋아요 버튼 을 만들었다 아직 UserDefualt는 만들지않고 
+ fill heart와 빈 heart 뷰를 만들었다 

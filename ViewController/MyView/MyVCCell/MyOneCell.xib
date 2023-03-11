@@ -235,6 +235,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="9Gv-x2-Tnh" id="AGH-1q-geO"/>
+            </connections>
             <point key="canvasLocation" x="212" y="10"/>
         </tableViewCell>
     </objects>

@@ -20,7 +20,7 @@ class MyVC: UIViewController {
     private var myFourCellPresenter = MyFourCellPresenter()
     private var myFiveCellPresenter = MyFiveCellPresneter()
     private var mySixCellPresenter = MySixCellPresenter()
-
+    var mymodel: MyPageModel?
     let twoList = [
         ["label1": "택배", "label2" : "신청/관리"],
         ["label1": "평점", "label2" : "0"],
@@ -48,10 +48,17 @@ class MyVC: UIViewController {
         setPresenterModel()
         setTablePresenters()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        APIService.shared.getMyPage(userId: "17") { [weak self] model in
+            self?.mymodel = model
+            self?.setPresenterModel()
+            self?.tableView.reloadData()
+        }
+    }
     
 //    let firstCell = firstCellModel or listArray
     private func setPresenterModel() {
+//        myOneCellPresenter.set(model: mymodel)
         myTwoCellPresenter.set(model: twoList)
         myFourCellPresenter.zzimDelegate = self
         

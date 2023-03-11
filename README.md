@@ -36,3 +36,8 @@ My VC 와 RegistVC를 만들었고 Cell들을 세부적으로 수정하였다
 3/10
  상품을눌렀을때의 뷰를 만들고 좋아요 버튼 을 만들었다 아직 UserDefualt는 만들지않고 
  fill heart와 빈 heart 뷰를 만들었다 
+3/11
+Alamofire 로 서버 통신하였다 JSONEncoding 으로 받아와야되는걸 UrlEncoding으로 하루종일 통신하고있었다 ..
+번개장터앱에는 회원가입이 따로 없는것 같아 임의로 만들어서 api연결 해줄거고 
+imagePicker로 RegistVC에서 사진을 collectionView처럼 나오게 해줬다.
+특정 control클릭시 셀의 index가 변경되게 바꿔 주었으며 nil값일땐 dummyCell이 나오게 바꿧다

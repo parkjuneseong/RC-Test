@@ -9,6 +9,9 @@ import UIKit
 
 class MyOneCell: UITableViewCell {
     
-    
+    @IBOutlet weak var nameLabel: UILabel!
+    func bind(model: MyPageModel) {
+        nameLabel.text = model.result?.userNickName
+    }
     
 }

@@ -106,7 +106,21 @@ class HomeVC: UIViewController {
         
         setPresenterModel()
         setTablePresenters()
+        
+        APIService.shared.postSign(param: ["name": "aaa",
+                                           "userNickName": "aaa",
+                                           "email": "aaa@aaa.com",
+                                           "password": "aaa",
+                                           "phoneNum": "aaa"]) { model in
+            UserDefaults.standard.set(model.result?.userId, forKey: "userId")
+        }
+        APIService.shared.getMyPage(userId: UserDefaults.standard.object(forKey: "userId") as? String ?? "") { model in
+            print(model.result?.openDay)
+            print(model.result?.scoreAvg)
+        }
+        
     }
+    
     
 //    let firstCell = firstCellModel or listArray
     private func setPresenterModel() {

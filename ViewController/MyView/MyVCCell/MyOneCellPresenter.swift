@@ -8,9 +8,9 @@ import UIKit
 import Foundation
 class MyOneCellPresenter {
     private let cellId = "MyOneCell"
-    private var model: [[String: String]]?
+    private var model: MyPageModel?
     
-    func set(model: [[String: String]]?) {
+    func set(model: MyPageModel?) {
         self.model = model
     }
 }
@@ -21,8 +21,11 @@ extension MyOneCellPresenter: CommonTablePresenter
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MyOneCell else {
             return UITableViewCell()
+            
         }
-        
+        if let model = model {
+            cell.bind(model: model)
+        }
         return cell
     }
     

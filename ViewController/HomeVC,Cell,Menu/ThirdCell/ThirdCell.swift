@@ -17,35 +17,25 @@ class ThirdCell: UITableViewCell {
     @IBOutlet weak var image3: UIImageView!
     
     let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
-    var currentImageIndex1 = 0
-    var currentImageIndex2 = 0
-    var currentImageIndex3 = 0
+    var currentImageIndex = false
+    
      
     @IBAction func zzim1(_ sender: Any) {
-        currentImageIndex1 += 1
-         if currentImageIndex1 >= imageArray.count {
-             currentImageIndex1 = 0
-         }
-        image1.image = imageArray[currentImageIndex1]
+        currentImageIndex.toggle()
+        image1.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
      
         
     }
     @IBAction func zzim2(_ sender: Any) {
-        currentImageIndex2 += 1
-         if currentImageIndex2 >= imageArray.count {
-             currentImageIndex2 = 0
-         }
-        image2.image = imageArray[currentImageIndex2]
+        currentImageIndex.toggle()
+        image2.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
+         
      
         
     }
     @IBAction func zzim3(_ sender: Any) {
-        currentImageIndex3 += 1
-         if currentImageIndex3 >= imageArray.count {
-             currentImageIndex3 = 0
-         }
-        image3.image = imageArray[currentImageIndex3]
-     
+        currentImageIndex.toggle()
+        image3.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
         
     }
 }

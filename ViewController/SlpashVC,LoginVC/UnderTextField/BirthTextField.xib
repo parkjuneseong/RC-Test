@@ -105,7 +105,7 @@
                 <constraint firstItem="e7I-GC-xMS" firstAttribute="leading" secondItem="m32-LL-X7x" secondAttribute="trailing" constant="5" id="zdd-Xb-Aht"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-158" y="-51"/>
+            <point key="canvasLocation" x="-158.01526717557252" y="-51.408450704225352"/>
         </view>
     </objects>
     <resources>

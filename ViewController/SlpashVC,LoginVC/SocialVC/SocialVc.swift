@@ -6,8 +6,12 @@
 //
 
 import UIKit
+protocol SginDelegate : AnyObject {
+    func moveSgin()
+}
 
-class SocialVc: UIViewController {
+
+class SocialVc: UIViewController, UINavigationControllerDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     let list = [
@@ -20,10 +24,15 @@ class SocialVc: UIViewController {
 //    self.present(yourVC, animated: true, completion: nil)
     
     @IBAction func moveSgin(_ sender: Any) {
-        
-        let vc = UINavigationController(rootViewController: SelectedLogin())
+        let selectedVC = SelectedLogin()
+        let vc = UINavigationController(rootViewController: selectedVC)
+        selectedVC.delegate = self
         if let sheet = vc.sheetPresentationController {
-            sheet.detents = [.medium()]
+            sheet.detents = [
+                .custom { _ in
+                    return 350
+                }
+            ]
         }
         self.present(vc, animated: true)
     }
@@ -55,5 +64,12 @@ extension SocialVc: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
         let height: CGFloat = 400 // collectionViewCell 높이
 
         return CGSize(width: width, height: height)
+    }
+}
+
+extension SocialVc: SelectedLoginDelegate {
+    func moveSignVCAction() {
+        let vc = SginVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

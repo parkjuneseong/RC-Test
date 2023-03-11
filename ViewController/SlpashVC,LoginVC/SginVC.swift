@@ -55,7 +55,7 @@ class SginVC: UIViewController {
         birthTextField?.textField2.placeholder = ""
         birthTextField?.titleLabel.text = "생년월일"
         birthTextField?.backLabel.text = "000000"
-        birthTextField?.textField.addTarget(self, action: #selector(bitrhContainerDidChange(_:)), for: .editingChanged)
+        birthTextField?.textField2.addTarget(self, action: #selector(bitrhContainerDidChange(_:)), for: .editingChanged)
         lgTextField = LGTextField(frame:  .zero)
         lgTextField?.textField.placeholder = "통신사"
         lgTextField?.textField.addTarget(self, action: #selector(lgContainerDidChange(_:)), for: .editingChanged)
@@ -123,7 +123,7 @@ class SginVC: UIViewController {
     }
     
     @objc func bitrhContainerDidChange(_ sender: Any?) {
-        if birthTextField?.textField.text?.count ?? 0 > 5 {
+        if birthTextField?.textField2.text?.count ?? 0 > 0 && birthTextField?.textField.text?.count ?? 0 > 5 {
             titleLabel.text = "통신사를\n선택해주세요"
             UIView.animate(withDuration: 1, delay: 0, animations: {
                 self.lgTopConstraint.constant = 20

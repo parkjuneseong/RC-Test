@@ -10,15 +10,18 @@ import UIKit
 //vc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
 //self.present(vc, animated: true)
 
+protocol SelectedLoginDelegate: AnyObject {
+    func moveSignVCAction()
+}
+
 class SelectedLogin: UIViewController {
+    weak var delegate: SelectedLoginDelegate?
     
     @IBAction func moveSginVC(_ sender: Any) {
         print("click")
           
         self.dismiss(animated: true) {
-        let vc = UINavigationController(rootViewController: SginVC())
-             
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.delegate?.moveSignVCAction()
         }
         
     }

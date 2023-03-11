@@ -13,6 +13,7 @@
                 <outlet property="label1" destination="Rf9-pU-jAB" id="AP8-LZ-kvD"/>
                 <outlet property="label2" destination="jxe-J9-oKE" id="95Z-Pg-HRZ"/>
                 <outlet property="label3" destination="ErN-n4-YDG" id="XHX-UW-nnb"/>
+                <outlet property="tableView" destination="6vo-qB-IuT" id="Qry-QW-jAX"/>
                 <outlet property="underLine1" destination="CjD-P5-6zb" id="rbQ-n1-Cmx"/>
                 <outlet property="underLine2" destination="X7T-DV-kBF" id="xEd-0S-9cT"/>
                 <outlet property="underLine3" destination="pRd-KS-5yc" id="KD2-D4-oMD"/>
@@ -180,16 +181,28 @@
                         <constraint firstAttribute="height" constant="50" id="FvI-PG-jZx"/>
                     </constraints>
                 </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6vo-qB-IuT">
+                    <rect key="frame" x="0.0" y="159" width="393" height="659"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="x3G-5L-Ni0"/>
+                        <outlet property="delegate" destination="-1" id="3yV-iW-ufh"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="VYH-7H-zXQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Kh-SE-jQr"/>
+                <constraint firstItem="6vo-qB-IuT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fij-ar-ucg"/>
                 <constraint firstItem="uLy-E4-8iI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fqt-P5-lFh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6vo-qB-IuT" secondAttribute="trailing" id="Uxu-rZ-NSC"/>
                 <constraint firstItem="VYH-7H-zXQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cPu-qK-moM"/>
                 <constraint firstItem="uLy-E4-8iI" firstAttribute="top" secondItem="VYH-7H-zXQ" secondAttribute="bottom" id="fEz-Wy-pvO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6vo-qB-IuT" secondAttribute="bottom" id="qGh-UX-pob"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uLy-E4-8iI" secondAttribute="trailing" id="s4T-o2-Fqe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VYH-7H-zXQ" secondAttribute="trailing" id="twD-PR-JfQ"/>
+                <constraint firstItem="6vo-qB-IuT" firstAttribute="top" secondItem="uLy-E4-8iI" secondAttribute="bottom" id="xYT-5j-cvB"/>
             </constraints>
             <point key="canvasLocation" x="59" y="-403"/>
         </view>

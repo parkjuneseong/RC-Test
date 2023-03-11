@@ -12,6 +12,10 @@
 		3F1894A629BB989500786B73 /* DetailOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894A429BB989500786B73 /* DetailOneCell.swift */; };
 		3F1894A729BB989500786B73 /* DetailOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894A529BB989500786B73 /* DetailOneCell.xib */; };
 		3F1894A929BB98B800786B73 /* DetailOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894A829BB98B800786B73 /* DetailOnePresenter.swift */; };
+		3F1894AC29BC13E600786B73 /* XXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894AA29BC13E600786B73 /* XXTableViewCell.swift */; };
+		3F1894AD29BC13E600786B73 /* XXTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894AB29BC13E600786B73 /* XXTableViewCell.xib */; };
+		3F1894B029BC156100786B73 /* XXEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894AE29BC156100786B73 /* XXEmptyTableViewCell.swift */; };
+		3F1894B129BC156100786B73 /* XXEmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894AF29BC156100786B73 /* XXEmptyTableViewCell.xib */; };
 		3F1FE6C729B3422C002153C6 /* CommonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6C629B3422C002153C6 /* CommonHeaderView.swift */; };
 		3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FE6C829B34239002153C6 /* CommonHeaderView.xib */; };
 		3F1FE6CD29B34422002153C6 /* FourthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6CB29B34422002153C6 /* FourthCell.swift */; };
@@ -163,6 +167,10 @@
 		3F1894A429BB989500786B73 /* DetailOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOneCell.swift; sourceTree = "<group>"; };
 		3F1894A529BB989500786B73 /* DetailOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOneCell.xib; sourceTree = "<group>"; };
 		3F1894A829BB98B800786B73 /* DetailOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOnePresenter.swift; sourceTree = "<group>"; };
+		3F1894AA29BC13E600786B73 /* XXTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXTableViewCell.swift; sourceTree = "<group>"; };
+		3F1894AB29BC13E600786B73 /* XXTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXTableViewCell.xib; sourceTree = "<group>"; };
+		3F1894AE29BC156100786B73 /* XXEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXEmptyTableViewCell.swift; sourceTree = "<group>"; };
+		3F1894AF29BC156100786B73 /* XXEmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXEmptyTableViewCell.xib; sourceTree = "<group>"; };
 		3F1FE6C629B3422C002153C6 /* CommonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHeaderView.swift; sourceTree = "<group>"; };
 		3F1FE6C829B34239002153C6 /* CommonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonHeaderView.xib; sourceTree = "<group>"; };
 		3F1FE6CB29B34422002153C6 /* FourthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCell.swift; sourceTree = "<group>"; };
@@ -673,6 +681,10 @@
 			children = (
 				3FAD85AF29B9DAD90042B227 /* MyFeedVC.swift */,
 				3FAD85B029B9DAD90042B227 /* MyFeedVC.xib */,
+				3F1894AA29BC13E600786B73 /* XXTableViewCell.swift */,
+				3F1894AB29BC13E600786B73 /* XXTableViewCell.xib */,
+				3F1894AE29BC156100786B73 /* XXEmptyTableViewCell.swift */,
+				3F1894AF29BC156100786B73 /* XXEmptyTableViewCell.xib */,
 			);
 			path = MyFeed;
 			sourceTree = "<group>";
@@ -857,6 +869,7 @@
 				3F3A234A29B38E8C00ED756A /* SearchVC.xib in Resources */,
 				3F87045B29B71B3600CB5D87 /* MySixCell.xib in Resources */,
 				3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */,
+				3F1894B129BC156100786B73 /* XXEmptyTableViewCell.xib in Resources */,
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
 				3F55874B29B8920400E5127E /* LGTextField.xib in Resources */,
@@ -877,6 +890,7 @@
 				3F57B75A29B461EC0009D190 /* SearchThreeCell.xib in Resources */,
 				3F1894A329BB96EA00786B73 /* Detail.xib in Resources */,
 				3FAD85BE29BB8B340042B227 /* ZZimCell.xib in Resources */,
+				3F1894AD29BC13E600786B73 /* XXTableViewCell.xib in Resources */,
 				3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */,
 				3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */,
 				3F87047229B878AE00CB5D87 /* CategoryVC.xib in Resources */,
@@ -902,6 +916,7 @@
 				3F1FE6C729B3422C002153C6 /* CommonHeaderView.swift in Sources */,
 				3F69EAA729B4BFED00440C41 /* TabIconViewController.swift in Sources */,
 				3F1FE6D829B359ED002153C6 /* FifthCell.swift in Sources */,
+				3F1894AC29BC13E600786B73 /* XXTableViewCell.swift in Sources */,
 				3F7EB61329B2ECBA0090A87B /* AppDelegate.swift in Sources */,
 				3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */,
 				3F55874529B891D600E5127E /* BirthTextField.swift in Sources */,
@@ -913,6 +928,7 @@
 				3F7EB5F429B31D0D002F03E8 /* FirstColCell.swift in Sources */,
 				3F87044E29B7107800CB5D87 /* ZZimVC.swift in Sources */,
 				3F57B74929B451E30009D190 /* SearchTwoPresenter.swift in Sources */,
+				3F1894B029BC156100786B73 /* XXEmptyTableViewCell.swift in Sources */,
 				3F1894A629BB989500786B73 /* DetailOneCell.swift in Sources */,
 				3F1FE6ED29B3690E002153C6 /* SevenCellPresenter.swift in Sources */,
 				3F7EB5FD29B32ACF002F03E8 /* SecondCellPresenter.swift in Sources */,

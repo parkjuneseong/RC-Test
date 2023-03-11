@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SevenCelCell" customModule="RC_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-MP-Its">
+                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="Fga-qG-Tms">
+                                <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="oCn-ca-tps"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-ek-HsZ" customClass="UIControl">
+                                <rect key="frame" x="89.333333333333329" y="5" width="20" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="6PU-Mb-y7j">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6PU-Mb-y7j" firstAttribute="leading" secondItem="R8c-ek-HsZ" secondAttribute="leading" id="1xs-bb-the"/>
+                                    <constraint firstAttribute="trailing" secondItem="6PU-Mb-y7j" secondAttribute="trailing" id="3bI-r9-4qK"/>
+                                    <constraint firstAttribute="height" constant="20" id="APh-D5-Qzo"/>
+                                    <constraint firstAttribute="bottom" secondItem="6PU-Mb-y7j" secondAttribute="bottom" id="Jtz-VE-Hdg"/>
+                                    <constraint firstItem="6PU-Mb-y7j" firstAttribute="top" secondItem="R8c-ek-HsZ" secondAttribute="top" id="KAU-D2-23D"/>
+                                    <constraint firstAttribute="width" constant="20" id="pLf-g9-ldE"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="controlAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9f2-kc-LYQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGD-RK-WDI">
+                                <rect key="frame" x="0.0" y="130" width="114.33333333333333" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="305.000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWz-3j-hIU">
+                                        <rect key="frame" x="0.0" y="5" width="85.333333333333329" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이패드 8세대 32 기가" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMa-Cd-ZGz">
+                                        <rect key="frame" x="0.0" y="27.333333333333339" width="114.33333333333333" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="IMa-Cd-ZGz" firstAttribute="leading" secondItem="LGD-RK-WDI" secondAttribute="leading" id="0SV-Qm-hhe"/>
+                                    <constraint firstAttribute="trailing" secondItem="IMa-Cd-ZGz" secondAttribute="trailing" id="BeL-iQ-e8Y"/>
+                                    <constraint firstItem="QWz-3j-hIU" firstAttribute="leading" secondItem="LGD-RK-WDI" secondAttribute="leading" id="Pb5-45-z1v"/>
+                                    <constraint firstItem="IMa-Cd-ZGz" firstAttribute="top" secondItem="QWz-3j-hIU" secondAttribute="bottom" constant="2" id="QGO-FQ-LLt"/>
+                                    <constraint firstItem="QWz-3j-hIU" firstAttribute="top" secondItem="LGD-RK-WDI" secondAttribute="top" constant="5" id="n8h-c6-juH"/>
+                                    <constraint firstItem="IMa-Cd-ZGz" firstAttribute="leading" secondItem="LGD-RK-WDI" secondAttribute="leading" id="tWe-Mc-0H5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LGD-RK-WDI" firstAttribute="leading" secondItem="tAL-MP-Its" secondAttribute="leading" id="Cdc-9C-rg0"/>
+                            <constraint firstItem="Fga-qG-Tms" firstAttribute="top" secondItem="tAL-MP-Its" secondAttribute="top" id="Hgc-I3-Cbb"/>
+                            <constraint firstAttribute="trailing" secondItem="R8c-ek-HsZ" secondAttribute="trailing" constant="5" id="S8g-P5-ZTw"/>
+                            <constraint firstItem="R8c-ek-HsZ" firstAttribute="top" secondItem="tAL-MP-Its" secondAttribute="top" constant="5" id="bju-fj-jxW"/>
+                            <constraint firstItem="LGD-RK-WDI" firstAttribute="top" secondItem="Fga-qG-Tms" secondAttribute="bottom" id="efC-BK-rUO"/>
+                            <constraint firstItem="Fga-qG-Tms" firstAttribute="leading" secondItem="tAL-MP-Its" secondAttribute="leading" id="fcT-ha-zGl"/>
+                            <constraint firstAttribute="trailing" secondItem="Fga-qG-Tms" secondAttribute="trailing" id="hTM-43-52D"/>
+                            <constraint firstAttribute="trailing" secondItem="LGD-RK-WDI" secondAttribute="trailing" id="k4e-jo-BFG"/>
+                            <constraint firstAttribute="bottom" secondItem="LGD-RK-WDI" secondAttribute="bottom" id="pel-Oa-tXI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tAL-MP-Its" secondAttribute="bottom" id="Tvt-kz-LIw"/>
+                <constraint firstItem="tAL-MP-Its" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zy0-tN-PBi"/>
+                <constraint firstAttribute="trailing" secondItem="tAL-MP-Its" secondAttribute="trailing" id="tF4-az-CPa"/>
+                <constraint firstItem="tAL-MP-Its" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x9K-mT-Bhd"/>
+            </constraints>
+            <connections>
+                <outlet property="cellImage" destination="Fga-qG-Tms" id="77Y-ci-OQd"/>
+                <outlet property="cellPrice" destination="QWz-3j-hIU" id="2lQ-3I-v6z"/>
+                <outlet property="cellTitle" destination="IMa-Cd-ZGz" id="rqi-89-fsk"/>
+                <outlet property="heartImage" destination="6PU-Mb-y7j" id="205-wd-hR0"/>
+            </connections>
+            <point key="canvasLocation" x="16.030534351145036" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heartImage" width="10.666666984558105" height="10.666666984558105"/>
+        <image name="test" width="165.33332824707031" height="159.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

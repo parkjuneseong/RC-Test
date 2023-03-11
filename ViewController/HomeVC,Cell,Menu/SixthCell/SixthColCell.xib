@@ -32,7 +32,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFs-BG-GbB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFs-BG-GbB" customClass="UIControl">
                                 <rect key="frame" x="115" y="5" width="20" height="20"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="FYi-uZ-1b9">
@@ -48,6 +48,9 @@
                                     <constraint firstAttribute="width" constant="20" id="n15-vA-AkP"/>
                                     <constraint firstItem="FYi-uZ-1b9" firstAttribute="top" secondItem="tFs-BG-GbB" secondAttribute="top" id="vIm-CA-wlO"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="controlAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="b4D-FF-IET"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xD2-kO-Pz9">
                                 <rect key="frame" x="0.0" y="150" width="140" height="80"/>
@@ -99,6 +102,7 @@
                 <constraint firstItem="9ga-kV-Rvb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sd6-sZ-O2T"/>
             </constraints>
             <connections>
+                <outlet property="heartImage" destination="FYi-uZ-1b9" id="WGg-k5-gkh"/>
                 <outlet property="sixthImage" destination="WMo-cW-uh6" id="R2b-CL-qH4"/>
                 <outlet property="sixthPrice" destination="ZiD-kI-1r0" id="Ubh-Hn-oTf"/>
                 <outlet property="sixthTitle" destination="fjo-ym-8n8" id="91a-i7-OqZ"/>
@@ -108,7 +112,7 @@
     </objects>
     <resources>
         <image name="heartImage" width="10.666666984558105" height="10.666666984558105"/>
-        <image name="test" width="58.666667938232422" height="60"/>
+        <image name="test" width="165.33332824707031" height="159.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

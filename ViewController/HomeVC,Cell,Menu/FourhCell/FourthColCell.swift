@@ -10,6 +10,7 @@ import UIKit
 class FourthColCell: UICollectionViewCell {
 
     
+    @IBOutlet weak var heartImage: UIImageView!
     @IBOutlet weak var fourthColImage: UIImageView!
     
     
@@ -19,6 +20,13 @@ class FourthColCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
+    var currentImageIndex = false
+
+    @IBAction func controlAction(_ sender: Any) {
+        currentImageIndex.toggle()
+        heartImage.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
     }
     func bind(image : UIImage,price : String, title : String){
         fourthTitle.text = title

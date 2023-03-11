@@ -58,7 +58,7 @@
                                     <constraint firstItem="AwM-Hp-bM9" firstAttribute="leading" secondItem="mjP-Zh-SDa" secondAttribute="leading" id="u70-VI-vdW"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hO-x5-CYi">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hO-x5-CYi" customClass="UIControl">
                                 <rect key="frame" x="95" y="5" width="20" height="20"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="ena-03-rKv">
@@ -74,6 +74,9 @@
                                     <constraint firstAttribute="trailing" secondItem="ena-03-rKv" secondAttribute="trailing" id="mY7-3s-xyI"/>
                                     <constraint firstItem="ena-03-rKv" firstAttribute="leading" secondItem="6hO-x5-CYi" secondAttribute="leading" id="sKx-NY-m8C"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="controlAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hQY-ee-QFm"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -102,13 +105,14 @@
                 <outlet property="fourthColImage" destination="tWi-iV-1wV" id="y9C-9Y-ajm"/>
                 <outlet property="fourthPrice" destination="nTv-gE-2ZI" id="ErI-QY-JdA"/>
                 <outlet property="fourthTitle" destination="AwM-Hp-bM9" id="ibc-hs-nKX"/>
+                <outlet property="heartImage" destination="ena-03-rKv" id="VdX-EL-4IE"/>
             </connections>
             <point key="canvasLocation" x="287.02290076335879" y="24.647887323943664"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="heartImage" width="10.666666984558105" height="10.666666984558105"/>
-        <image name="test" width="58.666667938232422" height="60"/>
+        <image name="test" width="165.33332824707031" height="159.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -16,6 +16,8 @@
 		3F1894AD29BC13E600786B73 /* XXTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894AB29BC13E600786B73 /* XXTableViewCell.xib */; };
 		3F1894B029BC156100786B73 /* XXEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894AE29BC156100786B73 /* XXEmptyTableViewCell.swift */; };
 		3F1894B129BC156100786B73 /* XXEmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894AF29BC156100786B73 /* XXEmptyTableViewCell.xib */; };
+		3F1894B429BC1E2E00786B73 /* ThirdColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894B229BC1E2E00786B73 /* ThirdColCell.swift */; };
+		3F1894B529BC1E2E00786B73 /* ThirdColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894B329BC1E2E00786B73 /* ThirdColCell.xib */; };
 		3F1FE6C729B3422C002153C6 /* CommonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6C629B3422C002153C6 /* CommonHeaderView.swift */; };
 		3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FE6C829B34239002153C6 /* CommonHeaderView.xib */; };
 		3F1FE6CD29B34422002153C6 /* FourthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FE6CB29B34422002153C6 /* FourthCell.swift */; };
@@ -42,6 +44,15 @@
 		3F25A48629B590380072A034 /* SginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A48429B590380072A034 /* SginVC.xib */; };
 		3F25A48929B592BC0072A034 /* SocialVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A48729B592BC0072A034 /* SocialVc.swift */; };
 		3F25A48A29B592BC0072A034 /* SocialVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A48829B592BC0072A034 /* SocialVc.xib */; };
+		3F2BBB5129BC27CC00325749 /* FifthColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BBB4F29BC27CB00325749 /* FifthColCell.swift */; };
+		3F2BBB5229BC27CC00325749 /* FifthColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BBB5029BC27CC00325749 /* FifthColCell.xib */; };
+		3F2BBB5529BC2A3B00325749 /* SevenCelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BBB5329BC2A3B00325749 /* SevenCelCell.swift */; };
+		3F2BBB5629BC2A3B00325749 /* SevenCelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BBB5429BC2A3B00325749 /* SevenCelCell.xib */; };
+		3F2BBB5A29BC2F0D00325749 /* ShowMoreFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BBB5929BC2F0D00325749 /* ShowMoreFooter.swift */; };
+		3F2BBB5C29BC2F1800325749 /* ShowMoreFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BBB5B29BC2F1800325749 /* ShowMoreFooter.xib */; };
+		3F2BBB5E29BC36D200325749 /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BBB5D29BC36D200325749 /* ImagePickerDelegate.swift */; };
+		3F2BBB6529BC3D2F00325749 /* PickerColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BBB6329BC3D2F00325749 /* PickerColCell.swift */; };
+		3F2BBB6629BC3D2F00325749 /* PickerColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BBB6429BC3D2F00325749 /* PickerColCell.xib */; };
 		3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233629B38BDC00ED756A /* EighthCell.swift */; };
 		3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A233729B38BDC00ED756A /* EighthCell.xib */; };
 		3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233A29B38BF700ED756A /* EighthColCell.swift */; };
@@ -171,6 +182,8 @@
 		3F1894AB29BC13E600786B73 /* XXTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXTableViewCell.xib; sourceTree = "<group>"; };
 		3F1894AE29BC156100786B73 /* XXEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXEmptyTableViewCell.swift; sourceTree = "<group>"; };
 		3F1894AF29BC156100786B73 /* XXEmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXEmptyTableViewCell.xib; sourceTree = "<group>"; };
+		3F1894B229BC1E2E00786B73 /* ThirdColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdColCell.swift; sourceTree = "<group>"; };
+		3F1894B329BC1E2E00786B73 /* ThirdColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdColCell.xib; sourceTree = "<group>"; };
 		3F1FE6C629B3422C002153C6 /* CommonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHeaderView.swift; sourceTree = "<group>"; };
 		3F1FE6C829B34239002153C6 /* CommonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonHeaderView.xib; sourceTree = "<group>"; };
 		3F1FE6CB29B34422002153C6 /* FourthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCell.swift; sourceTree = "<group>"; };
@@ -197,6 +210,15 @@
 		3F25A48429B590380072A034 /* SginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginVC.xib; sourceTree = "<group>"; };
 		3F25A48729B592BC0072A034 /* SocialVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialVc.swift; sourceTree = "<group>"; };
 		3F25A48829B592BC0072A034 /* SocialVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SocialVc.xib; path = "ViewController/SlpashVC,LoginVC/SocialVC/SocialVc.xib"; sourceTree = SOURCE_ROOT; };
+		3F2BBB4F29BC27CB00325749 /* FifthColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthColCell.swift; sourceTree = "<group>"; };
+		3F2BBB5029BC27CC00325749 /* FifthColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthColCell.xib; sourceTree = "<group>"; };
+		3F2BBB5329BC2A3B00325749 /* SevenCelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenCelCell.swift; sourceTree = "<group>"; };
+		3F2BBB5429BC2A3B00325749 /* SevenCelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SevenCelCell.xib; sourceTree = "<group>"; };
+		3F2BBB5929BC2F0D00325749 /* ShowMoreFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreFooter.swift; sourceTree = "<group>"; };
+		3F2BBB5B29BC2F1800325749 /* ShowMoreFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMoreFooter.xib; sourceTree = "<group>"; };
+		3F2BBB5D29BC36D200325749 /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
+		3F2BBB6329BC3D2F00325749 /* PickerColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerColCell.swift; sourceTree = "<group>"; };
+		3F2BBB6429BC3D2F00325749 /* PickerColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerColCell.xib; sourceTree = "<group>"; };
 		3F3A233629B38BDC00ED756A /* EighthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCell.swift; sourceTree = "<group>"; };
 		3F3A233729B38BDC00ED756A /* EighthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EighthCell.xib; sourceTree = "<group>"; };
 		3F3A233A29B38BF700ED756A /* EighthColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthColCell.swift; sourceTree = "<group>"; };
@@ -261,7 +283,7 @@
 		3F7EB5FC29B32ACF002F03E8 /* SecondCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCellPresenter.swift; sourceTree = "<group>"; };
 		3F7EB5FE29B333CB002F03E8 /* TalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkVC.swift; sourceTree = "<group>"; };
 		3F7EB5FF29B333CB002F03E8 /* TalkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkVC.xib; sourceTree = "<group>"; };
-		3F7EB60329B33926002F03E8 /* ThirdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCell.swift; sourceTree = "<group>"; };
+		3F7EB60329B33926002F03E8 /* ThirdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCell.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3F7EB60429B33926002F03E8 /* ThirdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCell.xib; sourceTree = "<group>"; };
 		3F7EB60729B33938002F03E8 /* ThirdCellPresneter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCellPresneter.swift; sourceTree = "<group>"; };
 		3F7EB60929B33D4A002F03E8 /* UIView + Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Border.swift"; sourceTree = "<group>"; };
@@ -359,6 +381,8 @@
 			children = (
 				3F1FE6D629B359ED002153C6 /* FifthCell.swift */,
 				3F1FE6D729B359ED002153C6 /* FifthCell.xib */,
+				3F2BBB4F29BC27CB00325749 /* FifthColCell.swift */,
+				3F2BBB5029BC27CC00325749 /* FifthColCell.xib */,
 				3F1FE6DA29B35AE2002153C6 /* FifthCellPresenter.swift */,
 			);
 			path = FifthCell;
@@ -381,6 +405,8 @@
 			children = (
 				3F1FE6E829B36901002153C6 /* SevenCell.swift */,
 				3F1FE6E929B36901002153C6 /* SevenCell.xib */,
+				3F2BBB5329BC2A3B00325749 /* SevenCelCell.swift */,
+				3F2BBB5429BC2A3B00325749 /* SevenCelCell.xib */,
 				3F1FE6EC29B3690E002153C6 /* SevenCellPresenter.swift */,
 			);
 			path = SeventhCell;
@@ -509,6 +535,8 @@
 			children = (
 				3F7EB5E629B318CA002F03E8 /* HomeVC.swift */,
 				3F7EB5E729B318CA002F03E8 /* HomeVC.xib */,
+				3F2BBB5929BC2F0D00325749 /* ShowMoreFooter.swift */,
+				3F2BBB5B29BC2F1800325749 /* ShowMoreFooter.xib */,
 				3FAD85B329B9F3730042B227 /* MenuVC.swift */,
 				3FAD85B429B9F3730042B227 /* MenuVC.xib */,
 				3F7EB5F629B32708002F03E8 /* FirstCell */,
@@ -576,6 +604,9 @@
 			children = (
 				3F69EAB129B4C17500440C41 /* RegistVC.swift */,
 				3F69EAB229B4C17500440C41 /* RegistVC.xib */,
+				3F2BBB5D29BC36D200325749 /* ImagePickerDelegate.swift */,
+				3F2BBB6329BC3D2F00325749 /* PickerColCell.swift */,
+				3F2BBB6429BC3D2F00325749 /* PickerColCell.xib */,
 				3F87046A29B8787700CB5D87 /* etcVC */,
 			);
 			path = RegistView;
@@ -618,6 +649,8 @@
 			children = (
 				3F7EB60329B33926002F03E8 /* ThirdCell.swift */,
 				3F7EB60429B33926002F03E8 /* ThirdCell.xib */,
+				3F1894B229BC1E2E00786B73 /* ThirdColCell.swift */,
+				3F1894B329BC1E2E00786B73 /* ThirdColCell.xib */,
 				3F7EB60729B33938002F03E8 /* ThirdCellPresneter.swift */,
 			);
 			path = ThirdCell;
@@ -863,13 +896,17 @@
 				3F57B75629B461BF0009D190 /* SearchThree.xib in Resources */,
 				3FB9120129B5D75100646D8C /* MyHeaderView.xib in Resources */,
 				3FAD85AE29B9C2280042B227 /* MyFiveColCell.xib in Resources */,
+				3F2BBB5229BC27CC00325749 /* FifthColCell.xib in Resources */,
 				3F25A48229B590280072A034 /* LoginVC.xib in Resources */,
 				3FB911FD29B5D71600646D8C /* MyOneCell.xib in Resources */,
 				3F57B74D29B453CE0009D190 /* CommonFooterView.xib in Resources */,
+				3F1894B529BC1E2E00786B73 /* ThirdColCell.xib in Resources */,
 				3F3A234A29B38E8C00ED756A /* SearchVC.xib in Resources */,
 				3F87045B29B71B3600CB5D87 /* MySixCell.xib in Resources */,
+				3F2BBB5629BC2A3B00325749 /* SevenCelCell.xib in Resources */,
 				3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */,
 				3F1894B129BC156100786B73 /* XXEmptyTableViewCell.xib in Resources */,
+				3F2BBB6629BC3D2F00325749 /* PickerColCell.xib in Resources */,
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
 				3F55874B29B8920400E5127E /* LGTextField.xib in Resources */,
@@ -893,6 +930,7 @@
 				3F1894AD29BC13E600786B73 /* XXTableViewCell.xib in Resources */,
 				3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */,
 				3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */,
+				3F2BBB5C29BC2F1800325749 /* ShowMoreFooter.xib in Resources */,
 				3F87047229B878AE00CB5D87 /* CategoryVC.xib in Resources */,
 				3F57B75129B45C340009D190 /* SearchTwo.xib in Resources */,
 				3F3A233D29B38BF700ED756A /* EighthColCell.xib in Resources */,
@@ -917,8 +955,10 @@
 				3F69EAA729B4BFED00440C41 /* TabIconViewController.swift in Sources */,
 				3F1FE6D829B359ED002153C6 /* FifthCell.swift in Sources */,
 				3F1894AC29BC13E600786B73 /* XXTableViewCell.swift in Sources */,
+				3F2BBB5129BC27CC00325749 /* FifthColCell.swift in Sources */,
 				3F7EB61329B2ECBA0090A87B /* AppDelegate.swift in Sources */,
 				3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */,
+				3F1894B429BC1E2E00786B73 /* ThirdColCell.swift in Sources */,
 				3F55874529B891D600E5127E /* BirthTextField.swift in Sources */,
 				3F25A48929B592BC0072A034 /* SocialVc.swift in Sources */,
 				3F87046729B86A5300CB5D87 /* UnderlineTextField.swift in Sources */,
@@ -941,6 +981,7 @@
 				3F1FE6D029B34439002153C6 /* FourthCellPresenter.swift in Sources */,
 				3F25A48529B590380072A034 /* SginVC.swift in Sources */,
 				3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */,
+				3F2BBB5A29BC2F0D00325749 /* ShowMoreFooter.swift in Sources */,
 				3FB9121529B607CA00646D8C /* MyThreeCellPresenter.swift in Sources */,
 				3F7EB60A29B33D4A002F03E8 /* UIView + Border.swift in Sources */,
 				3F756EBD29B7083A00C82827 /* MyFourCellPresenter.swift in Sources */,
@@ -963,10 +1004,12 @@
 				3FAD85B129B9DAD90042B227 /* MyFeedVC.swift in Sources */,
 				3F756EBA29B7081B00C82827 /* MyFourCell.swift in Sources */,
 				3F7EB60029B333CC002F03E8 /* TalkVC.swift in Sources */,
+				3F2BBB6529BC3D2F00325749 /* PickerColCell.swift in Sources */,
 				3F87046129B72C0400CB5D87 /* ZZimDelegate.swift in Sources */,
 				3F3A234429B38E0400ED756A /* TalkFirstCell.swift in Sources */,
 				3F69EA9D29B47A1E00440C41 /* TalkFirst.swift in Sources */,
 				3F1894A229BB96EA00786B73 /* Detail.swift in Sources */,
+				3F2BBB5E29BC36D200325749 /* ImagePickerDelegate.swift in Sources */,
 				3F87046D29B8789B00CB5D87 /* TagVC.swift in Sources */,
 				3F87045A29B71B3600CB5D87 /* MySixCell.swift in Sources */,
 				3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */,
@@ -977,6 +1020,7 @@
 				3F87045629B71A4000CB5D87 /* MyFiveCellPresneter.swift in Sources */,
 				3F25A48129B590280072A034 /* LoginVC.swift in Sources */,
 				3F1FE6CD29B34422002153C6 /* FourthCell.swift in Sources */,
+				3F2BBB5529BC2A3B00325749 /* SevenCelCell.swift in Sources */,
 				3F1894A929BB98B800786B73 /* DetailOnePresenter.swift in Sources */,
 				3F7EB60529B33926002F03E8 /* ThirdCell.swift in Sources */,
 				3F57B75029B45C340009D190 /* SearchTwo.swift in Sources */,

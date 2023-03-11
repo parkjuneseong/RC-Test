@@ -13,6 +13,7 @@ class HomeVC: UIViewController {
     weak var delegate : TabBarButtonDelegate?
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var navigationBar: UIView!
     @IBAction func menuMove(_ sender: Any) {
         let vc = MenuVC()
         vc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
@@ -38,6 +39,17 @@ class HomeVC: UIViewController {
     ["image" : "testImage2"],
     ["image" : "IMG", "label":"10/10 모두보기"]
     ]
+    let threeList = [
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"]
+        ]
     let fourthList = [
         ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
         ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
@@ -45,6 +57,17 @@ class HomeVC: UIViewController {
         ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
         ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
         ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"]
+    ]
+    let fifthList = [
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"]
     ]
     let sixthList = [
         ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
@@ -54,6 +77,17 @@ class HomeVC: UIViewController {
         ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
         ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
         
+    ]
+    let sevenList = [
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"],
+        ["image" : "test", "price" : "100원","title" : "팝니다"]
     ]
     let eighthList = [
         ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
@@ -67,11 +101,8 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        
-        
-        
-        
+        let window = UIApplication.shared.windows.first
+        self.tableView.contentInset.top = -(window?.safeAreaInsets.top ?? 0)
         
         setPresenterModel()
         setTablePresenters()
@@ -81,8 +112,11 @@ class HomeVC: UIViewController {
     private func setPresenterModel() {
         
         firstCellPresenter.set(model: topList)
+        thirdCellPresenter.set(model: threeList)
         fourthCellPresenter.set(model: fourthList)
+        fifthCellPrsenter.set(model: fifthList)
         sixthCellPresenter.set(model: sixthList)
+        sevenCellPresnter.set(model:sevenList)
         eighthCellPresenter.set(model: eighthList)
         secondCellPresenter.myFeedDelegate = self
         secondCellPresenter.zzimDelegate = self
@@ -108,6 +142,19 @@ class HomeVC: UIViewController {
         
         tablePresenters.forEach {
             $0?.registerCell(to: tableView)
+        }
+    }
+    
+    private func setNavigationBarAlpha(offSet: CGFloat) {
+        let startPoint: CGFloat = 20
+        let endPoint: CGFloat = 50
+        
+        if offSet < startPoint {
+            self.navigationBar.alpha = 0
+        } else if offSet > endPoint {
+            self.navigationBar.alpha = 1
+        } else {
+            self.navigationBar.alpha = (offSet - startPoint) / (endPoint - startPoint)
         }
     }
 }
@@ -175,6 +222,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
         return presenter.footerHeight
     }
 }
+
+
 extension HomeVC : MyFeedDelegate,ZZimDelegate{
     func zzimAction() {
         let vc1 = ZZimVC()
@@ -188,4 +237,11 @@ extension HomeVC : MyFeedDelegate,ZZimDelegate{
     }
     
     
+}
+
+extension HomeVC: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offSet = scrollView.contentOffset.y
+        self.setNavigationBarAlpha(offSet: offSet)
+    }
 }

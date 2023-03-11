@@ -24,6 +24,8 @@ extension ThirdCellPresenter: CommonTablePresenter
            return UITableViewCell()
        }
        
+       cell.bind(list: model)
+       
        return cell
    }
    
@@ -32,7 +34,7 @@ extension ThirdCellPresenter: CommonTablePresenter
    }
    
    func height(at indexPath: IndexPath) -> CGFloat {
-       return 660
+       return 600
        
    }
    
@@ -58,6 +60,25 @@ extension ThirdCellPresenter: CommonTablePresenter
             _ = newValue
         }
     }
+    var footerView: UIView? {
+        get {
+            let view = ShowMoreFooter(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 35))
+            view.footerLabel.text = "더보기"
+            
+           
+            
+            return view
+        } set {
+            _ = newValue
+        }
+    }
     
+    var footerHeight: CGFloat {
+        get {
+            return 35
+        } set {
+            _ = newValue
+        }
+    }
 }
 

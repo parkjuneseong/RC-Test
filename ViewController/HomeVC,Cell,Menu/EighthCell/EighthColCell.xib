@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="120" height="210"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xan-vE-Xpi">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xan-vE-Xpi" customClass="UIControl">
                         <rect key="frame" x="0.0" y="10" width="120" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="AMq-8j-r3Y">
@@ -58,7 +58,7 @@
                                     <constraint firstItem="UCD-dB-awB" firstAttribute="leading" secondItem="4tZ-Ut-997" secondAttribute="leading" id="yeI-As-uoo"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-3W-05c">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-3W-05c" customClass="UIControl">
                                 <rect key="frame" x="95" y="5" width="20" height="20"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartImage" translatesAutoresizingMaskIntoConstraints="NO" id="dxF-Yy-f3P">
@@ -74,6 +74,9 @@
                                     <constraint firstAttribute="width" constant="20" id="ceq-Tv-DsX"/>
                                     <constraint firstAttribute="trailing" secondItem="dxF-Yy-f3P" secondAttribute="trailing" id="wnG-nB-9Ke"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="controlAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mCF-zd-czL"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -102,13 +105,14 @@
                 <outlet property="eighthColImage" destination="AMq-8j-r3Y" id="0yE-o3-i5Q"/>
                 <outlet property="eighthPrice" destination="LNg-iH-ECc" id="XIw-7K-IXX"/>
                 <outlet property="eighthTitle" destination="UCD-dB-awB" id="FX3-V3-wUM"/>
+                <outlet property="heartImage" destination="dxF-Yy-f3P" id="gIy-Rp-4Zo"/>
             </connections>
             <point key="canvasLocation" x="138.93129770992365" y="20.422535211267608"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="heartImage" width="10.666666984558105" height="10.666666984558105"/>
-        <image name="test" width="58.666667938232422" height="60"/>
+        <image name="test" width="165.33332824707031" height="159.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

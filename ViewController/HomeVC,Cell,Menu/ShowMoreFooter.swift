@@ -1,38 +1,33 @@
 //
-//  SginTextField.swift
+//  ShowMoreFooter.swift
 //  RC Test
 //
-//  Created by 박준성 on 2023/03/08.
+//  Created by 박준성 on 2023/03/11.
 //
 
 import Foundation
+
 import UIKit
-class SginTextField : UIView{
-    
-    
-    @IBOutlet weak var underlineView: UIView!
-    
-    @IBOutlet weak var titleLabel: UILabel!
-    
-    
-    
-    @IBOutlet weak var textField: UITextField!
-    
-    
-    
+
+class ShowMoreFooter: UIView {
+    private var nibName: String {
+        "\(ShowMoreFooter.self)"
+    }
     private var containerView = UIView()
     
-    private var nibName: String {
-        "\(SginTextField.self)"
+    var touchAction: (() -> Void)?
+  
+    @IBAction func touchBtn(_ sender: Any) {
+        touchAction?()
     }
-
     
+    @IBOutlet weak var footerLabel: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
-   
+    
     required init?  (coder: NSCoder) {
         super.init(coder: coder)
         loadNib()
@@ -50,18 +45,5 @@ class SginTextField : UIView{
     }
     
     private func customViewDidLoad() {
-        textField.delegate = self
-    }
-}
-
-extension SginTextField: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        underlineView.backgroundColor = .black
-        textField.textColor = .black
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        underlineView.backgroundColor = .black
-        textField.textColor = .black
     }
 }

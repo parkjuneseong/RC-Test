@@ -7,35 +7,51 @@
 
 import UIKit
 
+
+
 class ThirdCell: UITableViewCell {
     
-    @IBOutlet weak var image1: UIImageView!
-    
-    @IBOutlet weak var image2: UIImageView!
-    
-    
-    @IBOutlet weak var image3: UIImageView!
-    
-    let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
-    var currentImageIndex = false
+    @IBOutlet weak var collectionView: UICollectionView!
+    var list: [[String: String]]?
     
      
-    @IBAction func zzim1(_ sender: Any) {
-        currentImageIndex.toggle()
-        image1.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
-     
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
+        collectionView.register(UINib(nibName: "ThirdColCell", bundle: nil), forCellWithReuseIdentifier: "ThirdColCell")
     }
-    @IBAction func zzim2(_ sender: Any) {
-        currentImageIndex.toggle()
-        image2.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
-         
-     
-        
-    }
-    @IBAction func zzim3(_ sender: Any) {
-        currentImageIndex.toggle()
-        image3.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
-        
+    func bind(list: [[String: String]]?) {
+        self.list = list
     }
 }
+
+
+extension ThirdCell: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return list?.count ?? 0
+    }
+   
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdColCell", for: indexPath as IndexPath) as? ThirdColCell,
+              let list = self.list else {
+            return UICollectionViewCell()
+        }
+        cell.bind(title: list[indexPath.row]["title"] ?? "", image:(UIImage(named: list[indexPath.row]["image"] ?? "" ) ?? UIImage()), price: list[indexPath.row]["price"] ?? "")
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width: CGFloat = (UIScreen.main.bounds.size.width - 50) / 3
+        let height: CGFloat = 200 // collectionViewCell 높이
+        
+        return CGSize(width: width, height: height)
+    }
+}
+
+
+
+
+
+ 

@@ -1,20 +1,21 @@
 //
-//  SixthColCell.swift
+//  FifthColCell.swift
 //  RC Test
 //
-//  Created by 박준성 on 2023/03/04.
+//  Created by 박준성 on 2023/03/11.
 //
 
 import UIKit
 
-class SixthColCell: UICollectionViewCell {
+class FifthColCell: UICollectionViewCell {
 
+    @IBOutlet weak var fifthImage: UIImageView!
+    
     @IBOutlet weak var heartImage: UIImageView!
-    @IBOutlet weak var sixthImage: UIImageView!
+    @IBOutlet weak var cellPrice: UILabel!
     
-    @IBOutlet weak var sixthPrice: UILabel!
+    @IBOutlet weak var cellTitle: UILabel!
     
-    @IBOutlet weak var sixthTitle: UILabel!
     let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
     var currentImageIndex = false
 
@@ -26,10 +27,10 @@ class SixthColCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func bind(image : UIImage , price : String, title : String){
-        sixthTitle.text = title
-        sixthPrice.text = price
-        sixthImage.image = image
+    func bind(title : String,image:UIImage,price:String){
+        fifthImage.image = image
+        cellPrice.text = price
+        cellTitle.text = title
     }
 
 }

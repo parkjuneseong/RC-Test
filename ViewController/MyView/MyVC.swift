@@ -11,8 +11,6 @@ class MyVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    
-    
     private var tablePresenters: [CommonTablePresenter?] = []
     private var myOneCellPresenter = MyOneCellPresenter()
     private var myTwoCellPresenter = MyTwoCellPresenter()
@@ -21,16 +19,16 @@ class MyVC: UIViewController {
     private var myFiveCellPresenter = MyFiveCellPresneter()
     private var mySixCellPresenter = MySixCellPresenter()
     var mymodel: MyPageModel?
-    let twoList = [
-        ["label1": "택배", "label2" : "신청/관리"],
-        ["label1": "평점", "label2" : "0"],
-        ["label1": "거래내역", "label2" : "0"],
-        ["label1": "팔로워", "label2" : "0"],
-        ["label1": "팔로잉", "label2" : "0"],
-        ["label1": "안전결제", "label2" : "0"],
-        ["label1": "오픈일", "label2" : "+3"],
-        ["label1": "본인인증", "label2" : "OK"]
-    ]
+//    let twoList = [
+//        ["label1": "택배", "label2" : "신청/관리"],
+//        ["label1": "평점", "label2" : "0"],
+//        ["label1": "거래내역", "label2" : "0"],
+//        ["label1": "팔로워", "label2" : "0"],
+//        ["label1": "팔로잉", "label2" : "0"],
+//        ["label1": "안전결제", "label2" : "0"],
+//        ["label1": "오픈일", "label2" : "+3"],
+//        ["label1": "본인인증", "label2" : "OK"]
+//    ]
     let fiveList = [
         ["image" : "sadImage" ,"label" : "판매중인 상품이 없습니다"],
         ["image" : "sadImage" ,"label" : "판매중인 상품이 없습니다"],
@@ -40,26 +38,25 @@ class MyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        
-        
-       
-        
-        setPresenterModel()
-        setTablePresenters()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
-        APIService.shared.getMyPage(userId: "17") { [weak self] model in
+        loadData()
+    }
+    
+    private func loadData() {
+        APIService.shared.getMyPage(userId: UserDefaults.standard.string(forKey: "userIdx") ?? "") { [weak self] model in
             self?.mymodel = model
             self?.setPresenterModel()
+            self?.setTablePresenters()
             self?.tableView.reloadData()
         }
     }
     
-//    let firstCell = firstCellModel or listArray
     private func setPresenterModel() {
-//        myOneCellPresenter.set(model: mymodel)
-        myTwoCellPresenter.set(model: twoList)
+        myOneCellPresenter.set(model: mymodel)
+        
+        myTwoCellPresenter.set(model: mymodel)
         myFourCellPresenter.zzimDelegate = self
         
     }
@@ -151,6 +148,7 @@ extension MyVC: UITableViewDelegate, UITableViewDataSource{
 
 extension MyVC: ZZimDelegate {
     func zzimAction() {
+        print("d")
         let vc = ZZimVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }

@@ -1,12 +1,13 @@
 //
-//  HomeBabberModel.swift
+//  DetailInfor.swift
 //  RC Test
 //
-//  Created by 박준성 on 2023/03/11.
+//  Created by 박준성 on 2023/03/12.
+//
 
 import Foundation
 
-struct DetailModel: Codable {
+struct DetailInforModel: Codable {
     let isSuccess: Bool?
     let code: Int?
     let message: String?

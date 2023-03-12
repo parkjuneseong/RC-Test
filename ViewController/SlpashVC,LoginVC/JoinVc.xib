@@ -11,6 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinVc" customModule="RC_Test" customModuleProvider="target">
             <connections>
+                <outlet property="emailtextField" destination="fKz-g7-NrN" id="xX6-01-qTA"/>
+                <outlet property="nametextField" destination="b2L-hJ-KeA" id="buf-RT-wly"/>
+                <outlet property="nicknametextField" destination="oB8-1C-5tV" id="kjQ-bU-RJw"/>
+                <outlet property="passwordtextField" destination="zPk-Eh-D1A" id="Rk8-tb-IGU"/>
+                <outlet property="phonetextField" destination="rWO-J9-4tp" id="2cJ-8E-nea"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

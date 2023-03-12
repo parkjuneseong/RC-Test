@@ -10,6 +10,7 @@ protocol TabBarButtonDelegate: AnyObject {
     func areaViewAction()
 }
 class HomeVC: UIViewController {
+    @IBOutlet weak var testLabel: UILabel!
     weak var delegate : TabBarButtonDelegate?
     @IBOutlet weak var tableView: UITableView!
     
@@ -34,6 +35,7 @@ class HomeVC: UIViewController {
     private var sixthCellPresenter = SixthCellPresenter()
     private var sevenCellPresnter = SevenCellPresenter()
     private var eighthCellPresenter = EighthCellPresenter()
+    var bannerModel : HomeBannerModel?
     let topList = [
     ["image" : "testImage1", "label":"10/10 모두보기"],
     ["image" : "testImage2"],
@@ -98,6 +100,8 @@ class HomeVC: UIViewController {
         
     ]
     
+    private var modelList: [HomeProductsResultModel] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,25 +111,42 @@ class HomeVC: UIViewController {
         setPresenterModel()
         setTablePresenters()
         
-        APIService.shared.postSign(param: ["name": "aaa",
-                                           "userNickName": "aaa",
-                                           "email": "aaa@aaa.com",
-                                           "password": "aaa",
-                                           "phoneNum": "aaa"]) { model in
+        APIService.shared.postSign(param: ["name": "차재윤",
+                                           "userNickName": "연일",
+                                           "email": "test@test.com",
+                                           "password": "test1234",
+                                           "phoneNum": "010-0000-0000"]) {[weak self] model in
             UserDefaults.standard.set(model.result?.userId, forKey: "userId")
+            self?.testLabel.text = "\(model.result?.userId ?? 0)"
+            
         }
-        APIService.shared.getMyPage(userId: UserDefaults.standard.object(forKey: "userId") as? String ?? "") { model in
-            print(model.result?.openDay)
-            print(model.result?.scoreAvg)
-        }
-        
-    }
+     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        APIService.shared.getHomeProducts(param: [:]) { [weak self] model in
+            if model.code == 1000 {
+                print("\(model.message ?? "")")
+                self?.modelList = model.result ?? []
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    private func loadData() {
+        APIService.shared.getHomeBanner(param:[:])
+        { [weak self] model in
+            self?.bannerModel = model
+            self?.setPresenterModel()
+            self?.setTablePresenters()
+            self?.tableView.reloadData()
+        }
+    }
     
 //    let firstCell = firstCellModel or listArray
     private func setPresenterModel() {
         
-        firstCellPresenter.set(model: topList)
+        firstCellPresenter.set(model: bannerModel)
         thirdCellPresenter.set(model: threeList)
         fourthCellPresenter.set(model: fourthList)
         fifthCellPrsenter.set(model: fifthList)
@@ -170,6 +191,14 @@ class HomeVC: UIViewController {
         } else {
             self.navigationBar.alpha = (offSet - startPoint) / (endPoint - startPoint)
         }
+    }
+    
+    func cellClick(indexPath: IndexPath) {
+        guard let productId = modelList[indexPath.row].productId else {
+            return
+        }
+        let vc = Detail(productId: productId)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -240,6 +269,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
 
 extension HomeVC : MyFeedDelegate,ZZimDelegate{
     func zzimAction() {
+        print("d")
         let vc1 = ZZimVC()
         self.navigationController?.pushViewController(vc1, animated: true)
     }

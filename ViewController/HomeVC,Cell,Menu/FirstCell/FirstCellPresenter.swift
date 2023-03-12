@@ -9,9 +9,9 @@ import UIKit
 
 class FirstCellPresenter {
    private let cellId = "HomeFirstCell"
-   private var model: [[String: String]]?
+   private var model: HomeBannerModel?
    
-   func set(model: [[String: String]]?) {
+   func set(model: HomeBannerModel?) {
        self.model = model
    }
 }
@@ -23,7 +23,9 @@ extension FirstCellPresenter: CommonTablePresenter
        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? HomeFirstCell else {
            return UITableViewCell()
        }
-       cell.bind(list: model)
+       if let model = model{
+           cell.bind(model:model)
+       }
        return cell
    }
    

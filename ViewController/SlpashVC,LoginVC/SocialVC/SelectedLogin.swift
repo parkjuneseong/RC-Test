@@ -14,14 +14,36 @@ protocol SelectedLoginDelegate: AnyObject {
     func moveSignVCAction()
 }
 
+protocol JoinDelegate: AnyObject {
+    func moveJoin()
+}
+protocol LoginDelegate : AnyObject {
+    func moveLogin()
+}
 class SelectedLogin: UIViewController {
     weak var delegate: SelectedLoginDelegate?
+    weak var loginDelegate : LoginDelegate?
+    weak var joinDelegate : JoinDelegate?
+    
+    @IBAction func moveJoin(_ sender: Any) {
+        self.dismiss(animated: true){
+            self.joinDelegate?.moveJoin()
+        }
+    }
+    @IBAction func moveLogin(_ sender: Any) {
+        print("click")
+        self.dismiss(animated: true) {
+            self.loginDelegate?.moveLogin()
+           
+        }
+    }
     
     @IBAction func moveSginVC(_ sender: Any) {
         print("click")
           
         self.dismiss(animated: true) {
             self.delegate?.moveSignVCAction()
+           
         }
         
     }
@@ -32,9 +54,4 @@ class SelectedLogin: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
-    
-    @objc
-    func dismissTimeOut(sender : Timer) {
-        //            UIApplication.shared.windows.first?.rootViewController = vc
-    }
 }

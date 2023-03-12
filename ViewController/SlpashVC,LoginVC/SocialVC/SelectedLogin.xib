@@ -15,7 +15,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다른 방법으로 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaD-Yx-LbR">
@@ -105,16 +105,80 @@
                         <action selector="moveSginVC:" destination="-1" eventType="touchUpInside" id="3dm-l1-OSK"/>
                     </connections>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dq5-Ck-Yiq" customClass="UIControl">
+                    <rect key="frame" x="15" y="281" width="363" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneLogin" translatesAutoresizingMaskIntoConstraints="NO" id="yTF-iA-BGV">
+                            <rect key="frame" x="0.0" y="5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="BpL-bu-14Q"/>
+                                <constraint firstAttribute="height" constant="50" id="yPb-U0-sVB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일로 시작하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-kw-zGq">
+                            <rect key="frame" x="55" y="18" width="143" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7nD-kw-zGq" firstAttribute="centerY" secondItem="dq5-Ck-Yiq" secondAttribute="centerY" id="Np4-0F-jtp"/>
+                        <constraint firstItem="yTF-iA-BGV" firstAttribute="centerY" secondItem="dq5-Ck-Yiq" secondAttribute="centerY" id="T37-CY-2m6"/>
+                        <constraint firstItem="yTF-iA-BGV" firstAttribute="leading" secondItem="dq5-Ck-Yiq" secondAttribute="leading" id="bj1-sq-e2o"/>
+                        <constraint firstItem="7nD-kw-zGq" firstAttribute="leading" secondItem="yTF-iA-BGV" secondAttribute="trailing" constant="5" id="k5x-1Z-ZEx"/>
+                        <constraint firstAttribute="height" constant="60" id="kj5-MR-eYj"/>
+                    </constraints>
+                    <connections>
+                        <action selector="moveLogin:" destination="-1" eventType="touchUpInside" id="w3h-p7-KDT"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-8b-eI9" customClass="UIControl">
+                    <rect key="frame" x="15" y="346" width="363" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneLogin" translatesAutoresizingMaskIntoConstraints="NO" id="sIY-Fb-lWU">
+                            <rect key="frame" x="0.0" y="5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="0VF-UU-Qfu"/>
+                                <constraint firstAttribute="width" constant="50" id="uId-NO-1X1"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLQ-be-Liq">
+                            <rect key="frame" x="54.999999999999993" y="18" width="69.333333333333314" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="BLQ-be-Liq" firstAttribute="centerY" secondItem="2hx-8b-eI9" secondAttribute="centerY" id="LQo-B8-MYH"/>
+                        <constraint firstItem="sIY-Fb-lWU" firstAttribute="centerY" secondItem="2hx-8b-eI9" secondAttribute="centerY" id="TbJ-Sz-WyJ"/>
+                        <constraint firstItem="BLQ-be-Liq" firstAttribute="leading" secondItem="sIY-Fb-lWU" secondAttribute="trailing" constant="5" id="Y6E-ed-kDo"/>
+                        <constraint firstAttribute="height" constant="60" id="aaw-aX-gqp"/>
+                        <constraint firstItem="sIY-Fb-lWU" firstAttribute="leading" secondItem="2hx-8b-eI9" secondAttribute="leading" id="zfH-Vz-xA6"/>
+                    </constraints>
+                    <connections>
+                        <action selector="moveJoin:" destination="-1" eventType="touchUpInside" id="NGA-uN-zTj"/>
+                    </connections>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="2hx-8b-eI9" secondAttribute="trailing" constant="15" id="0ns-e0-mjz"/>
                 <constraint firstItem="gJx-H0-lLS" firstAttribute="top" secondItem="0aN-Fy-9XG" secondAttribute="bottom" constant="5" id="9w9-0i-iqA"/>
+                <constraint firstItem="dq5-Ck-Yiq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="JW3-bA-fhy"/>
                 <constraint firstItem="EHG-6H-u5X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="KOt-me-xbt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dq5-Ck-Yiq" secondAttribute="trailing" constant="15" id="Pe0-Vi-W2f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gJx-H0-lLS" secondAttribute="trailing" constant="8" id="TqQ-W6-mEy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EHG-6H-u5X" secondAttribute="trailing" id="U5t-UA-mqL"/>
+                <constraint firstItem="2hx-8b-eI9" firstAttribute="top" secondItem="dq5-Ck-Yiq" secondAttribute="bottom" constant="5" id="U82-AA-RG0"/>
+                <constraint firstItem="dq5-Ck-Yiq" firstAttribute="top" secondItem="EHG-6H-u5X" secondAttribute="bottom" constant="5" id="alr-s8-JqC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0aN-Fy-9XG" secondAttribute="trailing" id="eKo-Yk-AnZ"/>
                 <constraint firstItem="EHG-6H-u5X" firstAttribute="top" secondItem="gJx-H0-lLS" secondAttribute="bottom" constant="5" id="eLO-5K-a09"/>
+                <constraint firstItem="2hx-8b-eI9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="fa3-DD-W3U"/>
                 <constraint firstItem="kaD-Yx-LbR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="lHm-nE-FGM"/>
                 <constraint firstItem="gJx-H0-lLS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="nHe-rt-S7V"/>
                 <constraint firstItem="gJx-H0-lLS" firstAttribute="top" secondItem="0aN-Fy-9XG" secondAttribute="bottom" constant="5" id="nJX-3U-lfI"/>
@@ -123,7 +187,7 @@
                 <constraint firstItem="0aN-Fy-9XG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="viN-fy-btZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="138" y="21"/>
+            <point key="canvasLocation" x="-63" y="-325"/>
         </view>
     </objects>
     <resources>

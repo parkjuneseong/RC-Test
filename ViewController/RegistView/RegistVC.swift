@@ -25,8 +25,8 @@ class RegistVC: UIViewController {
     
     
     @IBAction func registBtn(_ sender: Any) {
-        let vc1 = Detail()
-        self.navigationController?.pushViewController(vc1, animated: true)
+//        let vc1 = Detail(productId: <#Int#>)
+//        self.navigationController?.pushViewController(vc1, animated: true)
     }
     @IBOutlet weak var myLabel: UILabel!
     
@@ -45,7 +45,7 @@ class RegistVC: UIViewController {
     
     
     @IBAction func backBtnAction(_ sender: Any) {
-         let vc = RootViewController()
+         
         self.dismiss(animated: true, completion: nil)
         
     }

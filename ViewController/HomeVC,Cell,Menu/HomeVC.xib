@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="navigationBar" destination="u4m-cd-iz6" id="0wf-U2-9gV"/>
                 <outlet property="tableView" destination="fym-GJ-d3G" id="c4a-Q9-vu3"/>
+                <outlet property="testLabel" destination="7fX-7W-t2N" id="JnB-ho-4yz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -88,6 +89,13 @@
                                 <action selector="searchMove:" destination="-1" eventType="touchUpInside" id="938-MR-cKw"/>
                             </connections>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fX-7W-t2N">
+                            <rect key="frame" x="133" y="70" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>

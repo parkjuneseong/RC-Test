@@ -37,7 +37,7 @@ struct MyPageResultModel: Codable {
     let profileImageUrl: String?
     let userNickName: String?
     let content : String?
-    let scoreAvg : Int?
+    let scoreAvg : Float?
     let openDay : String?
     let userStatusCheck : String?
     
@@ -57,7 +57,7 @@ struct MyPageResultModel: Codable {
         profileImageUrl = try values.decodeIfPresent(String.self, forKey: .profileImageUrl)
         userNickName = try values.decodeIfPresent(String.self, forKey: .userNickName)
         content = try values.decodeIfPresent(String.self, forKey: .content)
-        scoreAvg = try values.decodeIfPresent(Int.self, forKey: .scoreAvg)
+        scoreAvg = try values.decodeIfPresent(Float.self, forKey: .scoreAvg)
         openDay = try values.decodeIfPresent(String.self, forKey: .openDay)
         userStatusCheck = try values.decodeIfPresent(String.self, forKey: .userStatusCheck)
     }

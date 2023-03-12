@@ -35,7 +35,7 @@ class SginVC: UIViewController {
     
     @IBAction func backBtn(_ sender: Any) {
         
-        self.dismiss(animated: false)
+        self.navigationController?.popViewController(animated: true)
     }
     
     private var nameTextField: SginTextField?

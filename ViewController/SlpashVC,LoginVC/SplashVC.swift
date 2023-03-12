@@ -14,15 +14,15 @@ class SplashVC: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
-//            let user = UserDefaultsManager.shared.getUser()
-            
-//            if user != nil {
-                vc = UINavigationController(rootViewController: SocialVc())
+            let userIdx = UserDefaults.standard.string(forKey: "userIdx")
+            let jwt = UserDefaults.standard.string(forKey: "jwt")
+            //자동로그인
+//            if userIdx != nil && jwt != nil {
+//                vc = UINavigationController(rootViewController: RootViewController())
 //            } else {
-//                vc = UINavigationController(rootViewController: LoginVC(isShowAlert: true))
+//                vc = UINavigationController(rootViewController: SocialVc())
 //            }
-
-            
+            vc = UINavigationController(rootViewController: SocialVc())
             Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
             
         }

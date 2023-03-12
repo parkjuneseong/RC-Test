@@ -16,6 +16,10 @@ class HomeFirstCell: UITableViewCell {
     // 데이터 배열
     let dataArray: Array<UIImage> = [UIImage(named: "test")!, UIImage(named: "testImage1")!, UIImage(named: "heartImage")!,UIImage(named: "Home")!]
     var list: [[String: String]]?
+    private var model : HomeBannerModel?
+//    func set(model: HomeBannerModel?) {
+//        self.model = model
+//    }
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -24,8 +28,9 @@ class HomeFirstCell: UITableViewCell {
         
         collectionView.register(UINib(nibName: "FirstColCell", bundle: nil), forCellWithReuseIdentifier: "FirstColCell")
     }
-    func bind(list: [[String: String]]?) {
-        self.list = list
+    func bind(model:HomeBannerModel?) {
+        self.model = model
+        
     }
 }
 
@@ -39,13 +44,7 @@ extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstColCell", for: indexPath as IndexPath) as? FirstColCell,
-        //              let list = self.list else {
-        //            return UICollectionViewCell()
-        //        }
-        //        cell.bind(image: (UIImage(named: list[indexPath.row]["image"] ?? "" ) ?? UIImage()), label: list[indexPath.row]["label"] ?? "")
-        //        return cell
-        
+     
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstColCell", for: indexPath) as? FirstColCell
         cell?.topImage.image = dataArray[indexPath.row]
         cell?.topLabel.text = "\(number)/10 모두보기"

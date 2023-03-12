@@ -16,8 +16,8 @@ class FirstColCell: UICollectionViewCell {
   
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var topImage: UIImageView!
-    func bind(image : UIImage,label : String){
-        topImage.image = image
-        topLabel.text = label
+    func bind(model : HomeBannerModel){
+//        topImage.image = model.result?.bannerImageUrl
+//        topLabel.text =  model.result?.
     }
 }

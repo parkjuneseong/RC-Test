@@ -41,3 +41,9 @@ Alamofire 로 서버 통신하였다 JSONEncoding 으로 받아와야되는걸 U
 번개장터앱에는 회원가입이 따로 없는것 같아 임의로 만들어서 api연결 해줄거고 
 imagePicker로 RegistVC에서 사진을 collectionView처럼 나오게 해줬다.
 특정 control클릭시 셀의 index가 변경되게 바꿔 주었으며 nil값일땐 dummyCell이 나오게 바꿧다
+3/12 
+api 통신연결했고 
+사용가능한 api 모델리스트들 전부 만들고
+Alamofire로 사용가능한 함수도 전부 만들어줬다
+UserDefaults 로 userId와 jwt 저장해서 로그인 , 회원가입 만들었고 userId와 jwt가 존재하면 자동로그인 되게 만들었다
+mypage에 지금 까지명세서에 나온 내용 호출완료 하였다,

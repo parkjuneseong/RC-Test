@@ -1,17 +1,16 @@
 //
-//  LoginModel.swift
+//  RegistProductDeleteModel.swift
 //  RC Test
 //
 //  Created by 박준성 on 2023/03/12.
 //
 
 import Foundation
-
-struct LoginModel: Codable {
+struct RegistProductDeleteModel: Codable {
     let isSuccess: Bool?
     let code: Int?
     let message: String?
-    let result: LoginResultModel?
+    let result: RegistProductDeleteResultModel?
     
     enum CodingKeys: String, CodingKey {
         case isSuccess
@@ -25,22 +24,20 @@ struct LoginModel: Codable {
         isSuccess = try values.decodeIfPresent(Bool.self, forKey: .isSuccess)
         code = try values.decodeIfPresent(Int.self, forKey: .code)
         message = try values.decodeIfPresent(String.self, forKey: .message)
-        result = try values.decodeIfPresent(LoginResultModel.self, forKey: .result)
+        result = try values.decodeIfPresent(RegistProductDeleteResultModel.self, forKey: .result)
     }
 }
 
-struct LoginResultModel: Codable {
-    let userIdx: Int?
-    let jwt: String?
+struct RegistProductDeleteResultModel: Codable {
+    let productId : Int?
     
     enum CodingKeys: String, CodingKey {
-        case userIdx
-        case jwt
+        case productId
     }
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        jwt = try values.decodeIfPresent(String.self, forKey: .jwt)
-        userIdx = try values.decodeIfPresent(Int.self, forKey: .userIdx)
+        productId = try values.decodeIfPresent(Int.self, forKey: .productId)
+        
     }
 }

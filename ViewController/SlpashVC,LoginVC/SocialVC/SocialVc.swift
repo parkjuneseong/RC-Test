@@ -9,6 +9,7 @@ import UIKit
 protocol SginDelegate : AnyObject {
     func moveSgin()
 }
+ 
 
 
 class SocialVc: UIViewController, UINavigationControllerDelegate {
@@ -27,10 +28,12 @@ class SocialVc: UIViewController, UINavigationControllerDelegate {
         let selectedVC = SelectedLogin()
         let vc = UINavigationController(rootViewController: selectedVC)
         selectedVC.delegate = self
+        selectedVC.loginDelegate = self
+        selectedVC.joinDelegate = self
         if let sheet = vc.sheetPresentationController {
             sheet.detents = [
                 .custom { _ in
-                    return 350
+                    return 420
                 }
             ]
         }
@@ -67,9 +70,18 @@ extension SocialVc: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     }
 }
 
-extension SocialVc: SelectedLoginDelegate {
+extension SocialVc: SelectedLoginDelegate,LoginDelegate,JoinDelegate {
     func moveSignVCAction() {
         let vc = SginVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    func moveLogin() {
+        let vc1 = LoginVC()
+        self.navigationController?.pushViewController(vc1, animated: true)
+    }
+    func moveJoin(){
+        let vc2 = JoinVc()
+        self.navigationController?.pushViewController(vc2, animated: true)
+    }
 }
+ 

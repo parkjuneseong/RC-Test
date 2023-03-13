@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 
 class APIService {
     static let shared = APIService()
@@ -21,7 +22,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러sign \(error)")
             }
         }
     }
@@ -33,7 +34,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러Login \(error)")
             }
         }
     }
@@ -44,9 +45,10 @@ class APIService {
         AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: MyPageModel.self) { response in
             switch response.result {
             case .success(let model):
+                print("banner성공")
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러myPage\(error)")
             }
         }
     }
@@ -58,7 +60,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러sell\(error)")
             }
         }
     }
@@ -70,18 +72,19 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러banner \(error)")
             }
         }
     }
-    func getHomeProducts(param: [String: String], handler: ((HomeProductsModel) -> Void)?) {
-        let url = baseUrl + "/home/banner"
-        AF.request(url, method: .get, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: HomeProductsModel.self) { response in
+    func getHomeProducts(handler: ((HomeProductsModel) -> Void)?) {
+        let url = baseUrl + "/home/products"
+        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: HomeProductsModel.self) { response in
             switch response.result {
             case .success(let model):
+                print("products 성공")
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러products \(error)")
             }
         }
     }
@@ -92,7 +95,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러datail \(error)")
             }
         }
     }
@@ -104,7 +107,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러detailInfor \(error)")
             }
         }
     }
@@ -118,7 +121,7 @@ class APIService {
                 handler?(model)
         
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러regis \(error)")
             }
         }
     }
@@ -132,7 +135,7 @@ class APIService {
                 handler?(model)
                 print("okay")
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러editProducts \(error)")
             }
         }
     }
@@ -145,7 +148,7 @@ class APIService {
                 handler?(model)
                 print("okay")
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러 DeleteRegist\(error)")
             }
         }
     }
@@ -156,7 +159,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러 Search\(error)")
             }
         }
     }
@@ -167,7 +170,7 @@ class APIService {
             case .success(let model):
                 handler?(model)
             case .failure(let error):
-                print("에러 \(error)")
+                print("에러 category \(error)")
             }
         }
     }

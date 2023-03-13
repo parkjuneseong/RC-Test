@@ -57,8 +57,8 @@ extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width: CGFloat = 390
-        let height: CGFloat = 200 // collectionViewCell 높이
+        let width: CGFloat = 393
+        let height: CGFloat = 320 // collectionViewCell 높이
         
         return CGSize(width: width, height: height)
     }

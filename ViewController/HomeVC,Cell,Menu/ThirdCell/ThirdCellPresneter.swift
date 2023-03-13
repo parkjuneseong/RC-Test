@@ -6,13 +6,15 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireImage
 class ThirdCellPresenter {
    private let cellId = "ThirdCell"
-   private var model: [[String: String]]?
-   
-   func set(model: [[String: String]]?) {
+   private var model: HomeProductsModel?
+    private var list : [[String:String]] = []
+   func set(model:HomeProductsModel?) {
        self.model = model
+    
    }
 }
 
@@ -24,7 +26,7 @@ extension ThirdCellPresenter: CommonTablePresenter
            return UITableViewCell()
        }
        
-       cell.bind(list: model)
+       cell.bind(model: model?.result)
        
        return cell
    }

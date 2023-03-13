@@ -36,11 +36,7 @@ struct HomeProductsResultModel: Codable {
     let tradeStatus : String?
     let status : String?
     let productImgs : [ProductImgsModel]?
-    
-    struct ProductImgsModel : Codable {
-        let productImgUrlId : Int?
-        let imageUrl : String?
-    }
+  
     enum CodingKeys: String, CodingKey {
         case productId
         case price
@@ -60,7 +56,25 @@ struct HomeProductsResultModel: Codable {
         tradeStatus = try values.decodeIfPresent(String.self, forKey: .tradeStatus)
         status = try values.decodeIfPresent(String.self, forKey: .status)
         productImgs = try values.decodeIfPresent(
-           [ProductImgsModel].self, forKey: .productImgs)
+            [ProductImgsModel].self, forKey: .productImgs)
+    }
+}
+struct ProductImgsModel : Codable {
+    let productImgUrlId : Int?
+    let imageUrl : String?
+    
+    
+    enum CodingKeys: String, CodingKey {
+        case productImgUrlId
+        case imageUrl
+    }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        productImgUrlId = try values.decodeIfPresent(
+            Int.self, forKey: .productImgUrlId)
+        imageUrl = try values.decodeIfPresent(
+           String.self, forKey: .imageUrl)
         
     }
 }

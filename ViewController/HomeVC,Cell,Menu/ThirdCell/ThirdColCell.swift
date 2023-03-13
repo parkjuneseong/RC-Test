@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireImage
 class ThirdColCell: UICollectionViewCell {
     
     @IBOutlet weak var control: UIControl!
@@ -21,7 +22,7 @@ class ThirdColCell: UICollectionViewCell {
     
     let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
     var currentImageIndex = false
-
+    
     @IBAction func controlAction(_ sender: Any) {
         currentImageIndex.toggle()
         heartImage.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
@@ -32,12 +33,8 @@ class ThirdColCell: UICollectionViewCell {
         
         
     }
-    func bind(title : String,image:UIImage,price:String){
-        cellImage.image = image
-        cellPrice.text = price
-        cellTitle.text = title
+    func bind(model: HomeProductsResultModel?){
+//        cellPrice.text = model.result?.price // 아직 서버가 빈배열
     }
 }
-
- 
  

@@ -6,23 +6,21 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireImage
 
 
 class ThirdCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var list: [[String: String]]?
-    
-     
-
+    var model: [HomeProductsResultModel]?
     override func awakeFromNib() {
         super.awakeFromNib()
         
         collectionView.register(UINib(nibName: "ThirdColCell", bundle: nil), forCellWithReuseIdentifier: "ThirdColCell")
     }
-    func bind(list: [[String: String]]?) {
-        self.list = list
+    func bind(model: [HomeProductsResultModel]?){
+        
     }
 }
 
@@ -34,11 +32,11 @@ extension ThirdCell: UICollectionViewDelegate, UICollectionViewDataSource,UIColl
    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdColCell", for: indexPath as IndexPath) as? ThirdColCell,
-              let list = self.list else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdColCell", for: indexPath as IndexPath) as? ThirdColCell
+              else {
             return UICollectionViewCell()
         }
-        cell.bind(title: list[indexPath.row]["title"] ?? "", image:(UIImage(named: list[indexPath.row]["image"] ?? "" ) ?? UIImage()), price: list[indexPath.row]["price"] ?? "")
+        cell.bind(model: model?[indexPath.row])
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

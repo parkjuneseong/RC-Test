@@ -23,7 +23,7 @@ class MyFeedVC: UIViewController {
         }
     }
     
-    var list = ["1", "2", "3", "4", "5"]
+    var list = ["ㅁ", "ㅇ"]
     var list2 = ["가", "나", "다", "라"]
     var list3: [String] = []
     
@@ -121,7 +121,7 @@ extension MyFeedVC: UITableViewDelegate, UITableViewDataSource {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "XXTableViewCell", for: indexPath) as? XXTableViewCell else {
                     return UITableViewCell()
                 }
-                cell.bind(text: list[indexPath.row])
+                cell.bind(text: list[indexPath.row] )
                 return cell
             }
         case 1:

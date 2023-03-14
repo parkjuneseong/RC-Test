@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class RegistVC: UIViewController {
 
     @IBOutlet weak var registBtn: UIControl!
@@ -18,6 +18,14 @@ class RegistVC: UIViewController {
     
     @IBOutlet weak var textField2Container: UIView!
    
+    @IBOutlet weak var quantityLabel: UILabel!
+    
+    @IBOutlet weak var productStatusLabel: UILabel!
+    
+    @IBOutlet weak var isChangableLabel: UILabel!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var contentsLabel: UILabel!
     @IBOutlet weak var category: UIControl!
     let picker = UIImagePickerController()
     var list: [UIImage] = []
@@ -27,6 +35,7 @@ class RegistVC: UIViewController {
     @IBAction func registBtn(_ sender: Any) {
 //        let vc1 = Detail(productId: <#Int#>)
 //        self.navigationController?.pushViewController(vc1, animated: true)
+        postRegist()
     }
     @IBOutlet weak var myLabel: UILabel!
     
@@ -49,7 +58,7 @@ class RegistVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
     }
-    
+    var registModel : RegistProductModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.picker.sourceType = .photoLibrary // 앨범에서 가져옴
@@ -89,7 +98,29 @@ class RegistVC: UIViewController {
             underlineTextField2.bottomAnchor.constraint(equalTo: textField2Container.bottomAnchor)
         ])
     }
-   
+    @IBAction func optionSelected(_ sender: Any) {
+        let vc = OptionSelectedVC()
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [
+                .custom { _ in
+                    return 500
+                }
+            ]
+        }
+        self.present(vc, animated: true)
+    }
+    //성공하려면 jwt를 입력하시오 ?
+    func postRegist(){         APIService.shared.postRegistProduct(param: ["contents" : "\(contentsLabel.text ?? "")"]) {[weak self] model in
+            self?.registModel = model
+//            if model.code == 1000{
+        
+                print("\(model.message ?? "")")
+                let vc = ZZimVC()//Detail로 가야댐
+                self?.navigationController?.pushViewController(vc, animated:true)
+//            }
+            
+        }
+    }
     @objc
     func imageControlAction(_ sender: UIControl) {
         let buttonPosition: CGPoint = sender.convert(.zero, to: self.collectionView)

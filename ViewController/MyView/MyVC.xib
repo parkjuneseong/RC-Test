@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyVC" customModule="RC_Test" customModuleProvider="target">
             <connections>
+                <outlet property="settingBtn" destination="Omg-kF-bV7" id="5SE-SD-6GT"/>
                 <outlet property="tableView" destination="xf5-a7-RID" id="9fd-lD-hnC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -38,6 +39,9 @@
                                 <constraint firstAttribute="bottom" secondItem="zKD-ys-61s" secondAttribute="bottom" id="ZnN-F0-GoL"/>
                                 <constraint firstAttribute="height" constant="30" id="fJZ-KM-TCe"/>
                             </constraints>
+                            <connections>
+                                <action selector="setBtn:" destination="-1" eventType="touchUpInside" id="KBz-e6-Wzl"/>
+                            </connections>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-rS-6ZA" customClass="UIControl">
                             <rect key="frame" x="303" y="2.6666666666666643" width="30" height="30"/>

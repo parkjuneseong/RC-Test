@@ -16,12 +16,14 @@ class SplashVC: UIViewController {
             
             let userIdx = UserDefaults.standard.string(forKey: "userIdx")
             let jwt = UserDefaults.standard.string(forKey: "jwt")
+            
             //자동로그인
-//            if userIdx != nil && jwt != nil {
-//                vc = UINavigationController(rootViewController: RootViewController())
-//            } else {
-//                vc = UINavigationController(rootViewController: SocialVc())
-//            }
+            if userIdx != nil && jwt != nil {
+                vc = UINavigationController(rootViewController: RootViewController())
+//                print("\(jwt ?? "")")
+            } else {
+                vc = UINavigationController(rootViewController: SocialVc())
+            }
             vc = UINavigationController(rootViewController: SocialVc())
             Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
             

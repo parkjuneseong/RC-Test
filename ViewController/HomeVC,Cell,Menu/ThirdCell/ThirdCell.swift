@@ -19,6 +19,7 @@ class ThirdCell: UITableViewCell {
         
         collectionView.register(UINib(nibName: "ThirdColCell", bundle: nil), forCellWithReuseIdentifier: "ThirdColCell")
     }
+    
     func bind(model: [HomeProductsResultModel]?){
         
     }

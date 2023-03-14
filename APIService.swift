@@ -114,10 +114,12 @@ class APIService {
     
     func postRegistProduct(param: [String: String], handler: ((RegistProductModel) -> Void)?) {
         let url = baseUrl + "/products"
-        
+        let jwt = UserDefaults.standard.string(forKey: "jwt")
         AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: RegistProductModel.self) { response in
             switch response.result {
             case .success(let model):
+                
+                print("regist 성공")
                 handler?(model)
         
             case .failure(let error):

@@ -11,6 +11,20 @@ class MyVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    @IBAction func setBtn(_ sender: Any) {
+        let setVC = SettingVC()
+        let vc = UINavigationController(rootViewController: setVC)
+        setVC.setDelegate = self
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [
+                .custom { _ in
+                    return 260
+                }
+            ]
+        }
+        self.present(vc, animated: true)
+    }
+    @IBOutlet weak var settingBtn: UIControl!
     private var tablePresenters: [CommonTablePresenter?] = []
     private var myOneCellPresenter = MyOneCellPresenter()
     private var myTwoCellPresenter = MyTwoCellPresenter()
@@ -152,4 +166,12 @@ extension MyVC: ZZimDelegate {
         let vc = ZZimVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+}
+extension MyVC: SetDelegate {
+    func moveSetDetail() {
+        let vc = SetDetailVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

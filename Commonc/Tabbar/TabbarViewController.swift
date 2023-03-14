@@ -127,12 +127,23 @@ extension TabbarViewController: TabIconViewControllerDelegate {
 //           let registVc = RegistVC(nibName: "RegistVC", bundle: nil)
             
 //           self.present(registVc, animated: true)
-           let vc = UINavigationController(rootViewController: RegistVC())
+           let detailVC = RegistVC()
+           let vc = UINavigationController(rootViewController: detailVC)
+           detailVC.moveRegistDelegate = self
            vc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
            self.present(vc, animated: true)
+            
 //           navigationController?.pushViewController(registVc, animated: true)
        }else{
            self.selectedIndex = index
        }
    }
+}
+extension TabbarViewController : MoveRegistDelegate {
+    func moveRegist() {
+        let vc = Detail()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

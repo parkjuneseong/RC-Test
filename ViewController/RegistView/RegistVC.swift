@@ -10,8 +10,11 @@ import Alamofire
 import FirebaseStorage
 import Firebase
 
+protocol MoveRegistDelegate : AnyObject {
+    func moveRegist()
+}
 class RegistVC: UIViewController {
-
+    weak var moveRegistDelegate  : MoveRegistDelegate?
     @IBOutlet weak var registBtn: UIControl!
     @IBOutlet weak var backButton: UIControl!
      
@@ -42,6 +45,9 @@ class RegistVC: UIViewController {
     private let placeHolder = "-구매 시기\n\n-브랜드/모델명\n\n제품의 상태(사용감,하자 유무 등)\n\n* 서로가 믿고 거래할 수 있도록,자세한 정보와 다양한\n\n각도의 상품 사진을 올려주세요."
     
     @IBAction func registBtn(_ sender: Any) {
+        self.dismiss(animated: true){
+            self.moveRegistDelegate?.moveRegist()
+        }
         postRegist()
     }
     
@@ -124,6 +130,7 @@ class RegistVC: UIViewController {
     }
     //성공하려면 jwt를 입력하시오 ?
     func postRegist() {
+        
         var param = [
             "title": underlineTextField?.textField.text ?? "",
             "location": locationLabel.text ?? "",

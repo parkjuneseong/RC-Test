@@ -10,16 +10,16 @@ import UIKit
 class Detail: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    private let productId: Int
+//    private let productId: Int
     
-    init(productId: Int) {
-        self.productId = productId
-        super.init(nibName: "Detail", bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    init(productId: Int) {
+//        self.productId = productId
+//        super.init(nibName: "Detail", bundle: nil)
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     var detailModel : DetailModel?
     private var tablePresenters: [CommonTablePresenter?] = []
     override func viewDidLoad() {
@@ -36,9 +36,9 @@ class Detail: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        APIService.shared.getDetail(productId: self.productId) { [weak self] model in
-            
-        }
+//        APIService.shared.getDetail(productId: self.productId) { [weak self] model in
+//            
+//        }
     }
     
  

@@ -83,7 +83,6 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="Koc-C1-ond" firstAttribute="leading" secondItem="xOC-oJ-sWx" secondAttribute="leading" constant="15" id="9yl-cg-Tkd"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="BZc-B2-k6Z"/>
                         <constraint firstItem="OP9-S6-22O" firstAttribute="centerY" secondItem="xOC-oJ-sWx" secondAttribute="centerY" id="KGT-02-ufd"/>
                         <constraint firstItem="Koc-C1-ond" firstAttribute="centerY" secondItem="xOC-oJ-sWx" secondAttribute="centerY" id="LAv-5X-igw"/>
                         <constraint firstItem="wMW-Co-4Ym" firstAttribute="centerY" secondItem="xOC-oJ-sWx" secondAttribute="centerY" id="S7m-XC-wIq"/>

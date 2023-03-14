@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3249CC3129C0C6580047AEB2 /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249CC3029C0C6580047AEB2 /* FirebaseStorageManager.swift */; };
 		3F1894A229BB96EA00786B73 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894A029BB96EA00786B73 /* Detail.swift */; };
 		3F1894A329BB96EA00786B73 /* Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894A129BB96EA00786B73 /* Detail.xib */; };
 		3F1894A629BB989500786B73 /* DetailOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894A429BB989500786B73 /* DetailOneCell.swift */; };
@@ -209,6 +210,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3249CC3029C0C6580047AEB2 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
 		3F1894A029BB96EA00786B73 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		3F1894A129BB96EA00786B73 /* Detail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Detail.xib; sourceTree = "<group>"; };
 		3F1894A429BB989500786B73 /* DetailOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOneCell.swift; sourceTree = "<group>"; };
@@ -723,6 +725,7 @@
 				3F2BBB6329BC3D2F00325749 /* PickerColCell.swift */,
 				3F2BBB6429BC3D2F00325749 /* PickerColCell.xib */,
 				3F87046A29B8787700CB5D87 /* etcVC */,
+				3249CC3029C0C6580047AEB2 /* FirebaseStorageManager.swift */,
 			);
 			path = RegistView;
 			sourceTree = "<group>";
@@ -1116,6 +1119,7 @@
 				3F2BBB7E29BCE5B600325749 /* LoginModel.swift in Sources */,
 				3F69EA9829B476B500440C41 /* TalkHeaderView.swift in Sources */,
 				3F87047529B883BC00CB5D87 /* SginTextField.swift in Sources */,
+				3249CC3129C0C6580047AEB2 /* FirebaseStorageManager.swift in Sources */,
 				3F57B75929B461EC0009D190 /* SearchThreeCell.swift in Sources */,
 				3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */,
 				3F2BBB7B29BCE1DF00325749 /* JoinVc.swift in Sources */,

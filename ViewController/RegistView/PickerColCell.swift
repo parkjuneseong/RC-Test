@@ -24,7 +24,7 @@ class PickerColCell: UICollectionViewCell {
             pickerImage.image = image
             control.isHidden = false
         } else {
-            pickerImage.image = UIImage(named: "registCAM")
+            pickerImage.image = UIImage(systemName: "camera.fill")
             control.isHidden = true
         }
     }

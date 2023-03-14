@@ -11,6 +11,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionSelectedVC" customModule="RC_Test" customModuleProvider="target">
             <connections>
+                <outlet property="isChangableControl" destination="eiJ-gC-BBr" id="372-PX-rLl"/>
+                <outlet property="isChangableLabel" destination="fAv-bt-XJN" id="MXj-vi-7u4"/>
+                <outlet property="isNotChangableControl" destination="H7c-Lj-2jH" id="5aV-KK-nxj"/>
+                <outlet property="isNotChangeableLabel" destination="u8y-e2-i6m" id="RDx-uC-xzX"/>
+                <outlet property="locationTextField" destination="W1n-BE-jFn" id="qS1-ir-4dk"/>
+                <outlet property="newGoodsButton" destination="Cwr-M3-aJv" id="hQZ-Ez-UO8"/>
+                <outlet property="newGoodsLabel" destination="hgl-Mg-JfS" id="q36-8g-RaF"/>
+                <outlet property="quantityTextField" destination="yl5-Lc-0mP" id="BqE-DX-27w"/>
+                <outlet property="usedGoodsButton" destination="N5Y-gR-DQA" id="FoD-0J-Axq"/>
+                <outlet property="usedGoodsLabel" destination="5RR-Sm-MIJ" id="yD5-VW-A4h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,7 +78,7 @@
                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5Y-gR-DQA">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5Y-gR-DQA" customClass="UIControl">
                             <rect key="frame" x="100" y="5" width="122" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중고상품" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RR-Sm-MIJ">
@@ -91,8 +101,11 @@
                                     <real key="value" value="4"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="usedGoodsButtonAction:" destination="-1" eventType="touchUpInside" id="vQy-eP-EPX"/>
+                            </connections>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwr-M3-aJv">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwr-M3-aJv" customClass="UIControl">
                             <rect key="frame" x="232" y="5" width="122" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새상품" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgl-Mg-JfS">
@@ -121,6 +134,9 @@
                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="newGoodsButtonAction:" destination="-1" eventType="touchUpInside" id="bkx-q4-0sR"/>
+                            </connections>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -144,7 +160,7 @@
                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7c-Lj-2jH">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7c-Lj-2jH" customClass="UIControl">
                             <rect key="frame" x="100" y="5" width="122" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="불가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8y-e2-i6m">
@@ -167,8 +183,11 @@
                                     <real key="value" value="4"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="isNotChanableButtonAction:" destination="-1" eventType="touchUpInside" id="BLq-H4-gzy"/>
+                            </connections>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiJ-gC-BBr">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiJ-gC-BBr" customClass="UIControl">
                             <rect key="frame" x="232" y="5" width="122" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가능" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAv-bt-XJN">
@@ -197,6 +216,9 @@
                                     <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="isChangableButtonAction:" destination="-1" eventType="touchUpInside" id="ilb-oM-aLT"/>
+                            </connections>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -274,6 +296,9 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="okButtonAction:" destination="-1" eventType="touchUpInside" id="Fav-eN-yJo"/>
+                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

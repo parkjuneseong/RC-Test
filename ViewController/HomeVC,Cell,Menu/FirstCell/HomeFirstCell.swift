@@ -14,7 +14,7 @@ class HomeFirstCell: UITableViewCell {
     var nowPage: Int = 0
     //
     // 데이터 배열
-    let dataArray: Array<UIImage> = [UIImage(named: "test")!, UIImage(named: "testImage1")!, UIImage(named: "heartImage")!,UIImage(named: "Home")!]
+    let dataArray: Array<UIImage> = [UIImage(named: "test") ?? UIImage(), UIImage(named: "testImage1") ?? UIImage(), UIImage(named: "heartImage") ?? UIImage(), UIImage(named: "Home") ?? UIImage()]
     var list: [[String: String]]?
     private var model : HomeBannerModel?
 //    func set(model: HomeBannerModel?) {

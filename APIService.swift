@@ -112,10 +112,10 @@ class APIService {
         }
     }
     
-    func postRegistProduct(param: [String: String], handler: ((RegistProductModel) -> Void)?) {
+    func postRegistProduct(param: [String: Any], handler: ((RegistProductModel) -> Void)?) {
         let url = baseUrl + "/products"
-        let jwt = UserDefaults.standard.string(forKey: "jwt")
-        AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: RegistProductModel.self) { response in
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: RegistProductModel.self) { response in
             switch response.result {
             case .success(let model):
                 

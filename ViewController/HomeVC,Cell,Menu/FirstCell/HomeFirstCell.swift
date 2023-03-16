@@ -12,42 +12,37 @@ class HomeFirstCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     var number : Int = 1
     var nowPage: Int = 0
-    //
-    // 데이터 배열
-    let dataArray: Array<UIImage> = [UIImage(named: "test") ?? UIImage(), UIImage(named: "testImage1") ?? UIImage(), UIImage(named: "heartImage") ?? UIImage(), UIImage(named: "Home") ?? UIImage()]
-    var list: [[String: String]]?
-    private var model : HomeBannerModel?
-//    func set(model: HomeBannerModel?) {
-//        self.model = model
-//    }
+    
+    private var models: [HomeBannerResultModel] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         bannerTimer()
-        
-        
         collectionView.register(UINib(nibName: "FirstColCell", bundle: nil), forCellWithReuseIdentifier: "FirstColCell")
     }
-    func bind(model:HomeBannerModel?) {
-        self.model = model
-        
+    
+    func bind(models: [HomeBannerResultModel]) {
+        self.models = models
     }
 }
 
 extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return models.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
      
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstColCell", for: indexPath) as? FirstColCell
-        cell?.topImage.image = dataArray[indexPath.row]
-        cell?.topLabel.text = "\(number)/10 모두보기"
+        
+        cell?.bind(model: models[indexPath.row])
+        cell?.topLabel.text = "\(indexPath.row + 1)/\(models.count) 모두보기"
+        
         
         return cell ?? UICollectionViewCell()
     }
@@ -70,7 +65,7 @@ extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
     func bannerMove() {
         // 현재페이지가 마지막 페이지일 경우
         
-        if nowPage == dataArray.count-1 {
+        if nowPage == models.count-1 {
             // 맨 처음 페이지로 돌아감
             collectionView.isPagingEnabled = false
             collectionView.scrollToItem(at: IndexPath(row: 0, section: 0) as IndexPath, at: .right, animated: true)

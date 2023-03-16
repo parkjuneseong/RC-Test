@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import Alamofire
-import AlamofireImage
+import Kingfisher
+
 class ThirdColCell: UICollectionViewCell {
     
     @IBOutlet weak var control: UIControl!
@@ -19,6 +19,7 @@ class ThirdColCell: UICollectionViewCell {
     
     @IBOutlet weak var heartImage: UIImageView!
     
+    @IBOutlet weak var isSagePayImageView: UIImageView!
     
     let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
     var currentImageIndex = false
@@ -27,14 +28,12 @@ class ThirdColCell: UICollectionViewCell {
         currentImageIndex.toggle()
         heartImage.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initializa
-        
-        
-    }
+    
     func bind(model: HomeProductsResultModel?){
-//        cellPrice.text = model.result?.price // 아직 서버가 빈배열
+        cellPrice.text = model?.price
+        cellTitle.text = model?.title
+        isSagePayImageView.isHidden = model?.isSagePay ?? "" == "Y" ? false : true
+        cellImage.kf.setImage(with: URL(string: model?.imageUrl ?? ""))
     }
 }
  

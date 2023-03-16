@@ -65,9 +65,10 @@ class APIService {
         }
     }
     
-    func getHomeBanner(param: [String: String], handler: ((HomeBannerModel) -> Void)?) {
+    func getHomeBanner(handler: ((HomeBannerModel) -> Void)?) {
         let url = baseUrl + "/home/banner"
-        AF.request(url, method: .get, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: HomeBannerModel.self) { response in
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .get, encoding: JSONEncoding.default, headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: HomeBannerModel.self) { response in
             switch response.result {
             case .success(let model):
                 handler?(model)
@@ -76,9 +77,11 @@ class APIService {
             }
         }
     }
+    
     func getHomeProducts(handler: ((HomeProductsModel) -> Void)?) {
         let url = baseUrl + "/home/products"
-        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: HomeProductsModel.self) { response in
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .get, encoding: JSONEncoding.default, headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: HomeProductsModel.self) { response in
             switch response.result {
             case .success(let model):
                 print("products 성공")
@@ -89,8 +92,9 @@ class APIService {
         }
     }
     func getDetail(productId:Int, handler: ((DetailModel) -> Void)?) {
-        let url = baseUrl + "/products/\(productId)/detail?"
-        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: DetailModel.self) { response in
+        let url = baseUrl + "/products/\(productId)/detail"
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .get, encoding: JSONEncoding.default, headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: DetailModel.self) { response in
             switch response.result {
             case .success(let model):
                 handler?(model)

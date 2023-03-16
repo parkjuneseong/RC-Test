@@ -111,40 +111,43 @@ class HomeVC: UIViewController {
         let window = UIApplication.shared.windows.first
         self.tableView.contentInset.top = -(window?.safeAreaInsets.top ?? 0)
         
-        setPresenterModel()
-        setTablePresenters()
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        print(jwt)
         
-       
+        setTablePresenters()
      }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadData()
-    
     }
+    
     private func loadData() {
-//        APIService.shared.getHomeBanner(param:[:])
-//        { [weak self] model in
-//            self?.bannerModel = model
-//            self?.setPresenterModel()
-//            self?.setTablePresenters()
-//            self?.tableView.reloadData()
-//        }
-        APIService.shared.getHomeProducts(handler: ) { [weak self] model in
+        APIService.shared.getHomeBanner() { [weak self] model in
             if model.code == 1000 {
-                print("\(model.message ?? "")")
+                self?.bannerModel = model
+                self?.setBannerModel()
+            } else {
+                showToast(message: model.message ?? "")
+            }
+        }
+        APIService.shared.getHomeProducts() { [weak self] model in
+            if model.code == 1000 {
                 self?.productsModel = model
-                self?.setPresenterModel()
-                self?.setTablePresenters()
-                self?.tableView.reloadData()
+                self?.setProductModel()
+            } else {
+                showToast(message: model.message ?? "")
             }
         }
     }
     
-//    let firstCell = firstCellModel or listArray
-    private func setPresenterModel() {
-        
+    private func setBannerModel() {
         firstCellPresenter.set(model: bannerModel)
+        tableView.reloadData()
+    }
+    
+    private func setProductModel() {
+        thirdCellPresenter.set(model: productsModel)
         thirdCellPresenter.set(model: productsModel)
         fourthCellPresenter.set(model: fourthList)
         fifthCellPrsenter.set(model: fifthList)
@@ -154,6 +157,7 @@ class HomeVC: UIViewController {
         secondCellPresenter.myFeedDelegate = self
         secondCellPresenter.zzimDelegate = self
         
+        tableView.reloadData()
     }
     
     
@@ -168,7 +172,6 @@ class HomeVC: UIViewController {
         tablePresenters.append(sevenCellPresnter)
         tablePresenters.append(eighthCellPresenter)
         registerCells()
-        tableView.reloadData()
     }
     
     func registerCells() {

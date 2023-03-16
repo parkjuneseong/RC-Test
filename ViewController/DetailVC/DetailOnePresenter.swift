@@ -8,11 +8,14 @@
 import UIKit
 
 class DetailOnePresenter {
-  private let cellId = "DetailOneCell"
-  
- 
+    private let cellId = "DetailOneCell"
+    private var model: DetailModel?
+    
+    func set(model: DetailModel?) {
+        self.model = model
+    }
 }
-  
+
 
 // MARK: - CommonTablePresenter
 extension DetailOnePresenter: CommonTablePresenter
@@ -21,6 +24,7 @@ extension DetailOnePresenter: CommonTablePresenter
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DetailOneCell else {
             return UITableViewCell()
         }
+        cell.bind(model: model?.result)
         
         return cell
     }

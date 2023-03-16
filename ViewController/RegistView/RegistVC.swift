@@ -11,7 +11,7 @@ import FirebaseStorage
 import Firebase
 
 protocol MoveRegistDelegate : AnyObject {
-    func moveRegist()
+    func moveRegist(productId: Int)
 }
 class RegistVC: UIViewController {
     weak var moveRegistDelegate  : MoveRegistDelegate?
@@ -45,9 +45,6 @@ class RegistVC: UIViewController {
     private let placeHolder = "-구매 시기\n\n-브랜드/모델명\n\n제품의 상태(사용감,하자 유무 등)\n\n* 서로가 믿고 거래할 수 있도록,자세한 정보와 다양한\n\n각도의 상품 사진을 올려주세요."
     
     @IBAction func registBtn(_ sender: Any) {
-        self.dismiss(animated: true){
-            self.moveRegistDelegate?.moveRegist()
-        }
         postRegist()
     }
     
@@ -149,12 +146,14 @@ class RegistVC: UIViewController {
         param["productImages"] = imageUrls
         
         
-        APIService.shared.postRegistProduct(param: param) {[weak self] model in
+        APIService.shared.postRegistProduct(param: param) { [weak self] model in
             if model.code == 1000 {
                 showToast(message: "상품등록에 성공하였습니다.")
-                self?.dismiss(animated: true)
+                self?.dismiss(animated: true) {
+                    self?.moveRegistDelegate?.moveRegist(productId: model.result?.productId ?? 0)
+                }
             } else {
-//                showToast(message: model.message ?? "")
+                showToast(message: model.message ?? "")
             }
         }
     }

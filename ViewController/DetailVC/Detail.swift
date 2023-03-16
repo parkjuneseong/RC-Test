@@ -8,21 +8,13 @@
 import UIKit
 
 class Detail: UIViewController {
+    private let productId: Int
     
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     @IBOutlet weak var tableView: UITableView!
-//    private let productId: Int
     
-//    init(productId: Int) {
-//        self.productId = productId
-//        super.init(nibName: "Detail", bundle: nil)
-//    }
-//    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
     @IBAction func movePay(_ sender: Any) {
         let payvc = PayVC()
         let vc = UINavigationController(rootViewController: payvc)
@@ -31,7 +23,6 @@ class Detail: UIViewController {
             sheet.detents = [
                 .custom { _ in
                     return 450
-                    
                 }
             ]
         }
@@ -40,13 +31,19 @@ class Detail: UIViewController {
     var detailModel : DetailModel?
     private var tablePresenters: [CommonTablePresenter?] = []
     private var detailOnePresneter = DetailOnePresenter()
+    
+    init(productId: Int) {
+        self.productId = productId
+        super.init(nibName: "Detail", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.productId = 0
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
         setPresenterModel()
         setTablePresenters()
     }
@@ -54,16 +51,23 @@ class Detail: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        APIService.shared.getDetail(productId: self.productId) { [weak self] model in
-//            
-//        }
+        loadData()
     }
     
- 
-    //    let firstCell = firstCellModel or listArray
+    private func loadData() {
+        APIService.shared.getDetail(productId: self.productId) { [weak self] model in
+            if model.code == 1000 {
+                self?.detailModel = model
+                self?.setPresenterModel()
+            } else {
+                showToast(message: model.message ?? "")
+            }
+        }
+    }
+    
     private func setPresenterModel() {
-        
-        
+        detailOnePresneter.set(model: detailModel)
+        tableView.reloadData()
     }
     
     
@@ -75,7 +79,6 @@ class Detail: UIViewController {
     }
     
     func registerCells() {
-        
         tablePresenters.forEach {
             $0?.registerCell(to: tableView)
         }
@@ -83,65 +86,63 @@ class Detail: UIViewController {
 }
 extension Detail : UITableViewDelegate,UITableViewDataSource{
     
-      
-      func numberOfSections(in tableView: UITableView) -> Int {
-          tablePresenters.count
-      }
-      
-      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-          guard let presenter = tablePresenters[section] else {
-              return 0
-          }
-          return presenter.numberOfRows(in: section)
-      }
-      
-      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-          guard let presenter = tablePresenters[indexPath.section],
-                let cell = presenter.tableView(tableView, cellForRowAt: indexPath)
-          else {
-              return UITableViewCell()
-          }
-          cell.selectionStyle = .none
-          return cell
-      }
-      
-      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-          guard let presenter = tablePresenters[indexPath.section] else {
-              // cell의 height는 0이되면 안됨
-              // 그래서 leastNormalMagnitude = 0.00000000.........001이라고 보면댐
-              return .leastNormalMagnitude
-          }
-          return presenter.height(at: indexPath)
-      }
-      
-      func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-          guard let presenter = tablePresenters[section] else {
-              return nil
-          }
-          return presenter.headerView
-      }
-      
-      func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-          guard let presenter = tablePresenters[section] else {
-              return .leastNormalMagnitude
-          }
-          
-          return presenter.headerHeight
-      }
-      func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-          guard let presenter = tablePresenters[section] else {
-              return nil
-          }
-          return presenter.footerView
-      }
-      
-      func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-          guard let presenter = tablePresenters[section] else {
-              return .leastNormalMagnitude
-          }
-          
-          return presenter.footerHeight
-      }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        tablePresenters.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let presenter = tablePresenters[section] else {
+            return 0
+        }
+        return presenter.numberOfRows(in: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let presenter = tablePresenters[indexPath.section],
+              let cell = presenter.tableView(tableView, cellForRowAt: indexPath)
+        else {
+            return UITableViewCell()
+        }
+        cell.selectionStyle = .none
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard let presenter = tablePresenters[indexPath.section] else {
+            return .leastNormalMagnitude
+        }
+        return presenter.height(at: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let presenter = tablePresenters[section] else {
+            return nil
+        }
+        return presenter.headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        guard let presenter = tablePresenters[section] else {
+            return .leastNormalMagnitude
+        }
+        
+        return presenter.headerHeight
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard let presenter = tablePresenters[section] else {
+            return nil
+        }
+        return presenter.footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        guard let presenter = tablePresenters[section] else {
+            return .leastNormalMagnitude
+        }
+        
+        return presenter.footerHeight
+    }
     
     
 }

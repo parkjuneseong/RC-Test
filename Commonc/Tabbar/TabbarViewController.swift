@@ -140,8 +140,8 @@ extension TabbarViewController: TabIconViewControllerDelegate {
    }
 }
 extension TabbarViewController : MoveRegistDelegate {
-    func moveRegist() {
-        let vc = Detail()
+    func moveRegist(productId: Int) {
+        let vc = Detail(productId: productId)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

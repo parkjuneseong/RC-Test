@@ -13,33 +13,36 @@ import AlamofireImage
 class ThirdCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var model: [HomeProductsResultModel]?
+    var model: [HomeProductsResultModel] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         
         collectionView.register(UINib(nibName: "ThirdColCell", bundle: nil), forCellWithReuseIdentifier: "ThirdColCell")
     }
     
-    func bind(model: [HomeProductsResultModel]?){
-        
+    func bind(model: [HomeProductsResultModel]){
+        self.model = model
     }
 }
 
-
 extension ThirdCell: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return list?.count ?? 0
+        return min(9, model.count)
     }
-   
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdColCell", for: indexPath as IndexPath) as? ThirdColCell
               else {
             return UICollectionViewCell()
         }
-        cell.bind(model: model?[indexPath.row])
+        cell.bind(model: model[indexPath.row])
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width: CGFloat = (UIScreen.main.bounds.size.width - 50) / 3

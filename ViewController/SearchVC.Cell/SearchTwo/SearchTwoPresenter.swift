@@ -14,7 +14,6 @@ class SearchTwoPresenter {
         self.model = model
     }
  }
-var list : [[String:String]]?
 
  // MARK: - CommonTablePresenter
 extension SearchTwoPresenter: CommonTablePresenter

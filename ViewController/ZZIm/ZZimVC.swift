@@ -35,7 +35,7 @@ class ZZimVC: UIViewController {
         lookLabel.textColor = .lightGray
         image1.image = UIImage(named:"zzimplus")
         image2.image = UIImage(named:"zzimselected")
-        
+        selectedIndex = 0
     }
     
     
@@ -48,7 +48,7 @@ class ZZimVC: UIViewController {
         control1.isHidden = true
         image2.image = UIImage(named:"zzimwrite")
         lookLabel.textColor = .black
-        
+        selectedIndex = 1
     }
     
     override func viewDidLoad() {

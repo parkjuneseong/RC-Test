@@ -6,18 +6,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FirstColCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
   
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var topImage: UIImageView!
-    func bind(model : HomeBannerModel){
-//        topImage.image = model.result?.bannerImageUrl
-//        topLabel.text =  model.result?.
+    func bind(model : HomeBannerResultModel){
+        let url = URL(string: model.bannerImageUrl ?? "")
+        topImage.kf.setImage(with: url)
     }
 }

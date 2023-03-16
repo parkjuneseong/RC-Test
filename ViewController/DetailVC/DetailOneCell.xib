@@ -18,12 +18,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="393" height="750"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huge_map.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-Mt-6NZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="300" id="Fm5-0C-9zR"/>
-                        </constraints>
-                    </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIp-na-pNh">
                         <rect key="frame" x="0.0" y="310" width="393" height="80"/>
                         <subviews>
@@ -296,48 +290,63 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5fg-nz-l0A">
-                        <rect key="frame" x="20" y="441" width="353" height="253"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="quZ-6H-Aay">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                        <color key="textColor" systemColor="labelColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="Xvt-ja-u3i"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="AZv-24-gL1">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="Yf4-ep-k2A"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="7SM-Mb-tzT"/>
+                        </connections>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w93-oq-emD">
+                        <rect key="frame" x="15" y="441" width="363" height="253"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="U1z-Mt-6NZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0yq-Qw-PJj"/>
                     <constraint firstItem="vV9-vP-rPr" firstAttribute="top" secondItem="WgU-EF-NFk" secondAttribute="bottom" constant="15" id="55H-Ps-Sxa"/>
                     <constraint firstItem="zsR-OH-AbN" firstAttribute="leading" secondItem="vV9-vP-rPr" secondAttribute="trailing" constant="2" id="8W5-iG-U8q"/>
-                    <constraint firstItem="U1z-Mt-6NZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8wz-zf-kO0"/>
                     <constraint firstItem="vyQ-2K-wgB" firstAttribute="leading" secondItem="F7v-Au-xhm" secondAttribute="trailing" constant="2" id="CZN-zQ-kDt"/>
                     <constraint firstItem="F7v-Au-xhm" firstAttribute="leading" secondItem="zsR-OH-AbN" secondAttribute="trailing" constant="2" id="GDc-uJ-aEz"/>
                     <constraint firstItem="Cr7-fe-Yxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ikr-GK-TSt"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Cr7-fe-Yxe" secondAttribute="bottom" constant="15" id="Lml-dI-em5"/>
                     <constraint firstAttribute="trailingMargin" secondItem="WgU-EF-NFk" secondAttribute="trailing" constant="15" id="MDb-ZQ-9JL"/>
-                    <constraint firstItem="5fg-nz-l0A" firstAttribute="top" secondItem="vV9-vP-rPr" secondAttribute="bottom" id="RZZ-Ia-fOi"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="5fg-nz-l0A" secondAttribute="trailing" id="SEk-9x-fvH"/>
-                    <constraint firstItem="nIp-na-pNh" firstAttribute="top" secondItem="U1z-Mt-6NZ" secondAttribute="bottom" constant="10" id="TPr-Gq-Y7a"/>
+                    <constraint firstItem="w93-oq-emD" firstAttribute="top" secondItem="vV9-vP-rPr" secondAttribute="bottom" id="N2f-Jb-7ae"/>
+                    <constraint firstItem="quZ-6H-Aay" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qhl-7i-MfA"/>
+                    <constraint firstItem="Cr7-fe-Yxe" firstAttribute="top" secondItem="w93-oq-emD" secondAttribute="bottom" id="RKF-kv-2lJ"/>
                     <constraint firstItem="nIp-na-pNh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VeR-sT-dx0"/>
+                    <constraint firstItem="w93-oq-emD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="W7A-Dj-pCD"/>
+                    <constraint firstItem="nIp-na-pNh" firstAttribute="top" secondItem="quZ-6H-Aay" secondAttribute="bottom" constant="10" id="Wtq-GL-8Vk"/>
                     <constraint firstItem="zsR-OH-AbN" firstAttribute="top" secondItem="WgU-EF-NFk" secondAttribute="bottom" constant="15" id="Yb7-dQ-9we"/>
+                    <constraint firstAttribute="trailing" secondItem="quZ-6H-Aay" secondAttribute="trailing" id="bfd-JQ-gZJ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Cr7-fe-Yxe" secondAttribute="trailing" id="bgY-2H-vlY"/>
                     <constraint firstItem="WgU-EF-NFk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="fI8-Z1-UPc"/>
                     <constraint firstItem="F7v-Au-xhm" firstAttribute="top" secondItem="WgU-EF-NFk" secondAttribute="bottom" constant="15" id="gDM-hR-jbG"/>
                     <constraint firstItem="vV9-vP-rPr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="inb-zD-9AF"/>
                     <constraint firstItem="vyQ-2K-wgB" firstAttribute="top" secondItem="WgU-EF-NFk" secondAttribute="bottom" constant="15" id="jSL-Ac-zCl"/>
+                    <constraint firstAttribute="trailing" secondItem="w93-oq-emD" secondAttribute="trailing" constant="15" id="k7U-cu-OXI"/>
                     <constraint firstAttribute="trailing" secondItem="nIp-na-pNh" secondAttribute="trailing" id="m62-u6-iiH"/>
-                    <constraint firstItem="5fg-nz-l0A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="msx-Ba-D7f"/>
                     <constraint firstItem="WgU-EF-NFk" firstAttribute="top" secondItem="nIp-na-pNh" secondAttribute="bottom" constant="15" id="pSe-5c-0dv"/>
-                    <constraint firstAttribute="trailing" secondItem="U1z-Mt-6NZ" secondAttribute="trailing" id="wKt-Tm-2LO"/>
-                    <constraint firstItem="Cr7-fe-Yxe" firstAttribute="top" secondItem="5fg-nz-l0A" secondAttribute="bottom" id="y85-21-JFX"/>
+                    <constraint firstItem="quZ-6H-Aay" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tac-O5-4UV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="detailContent" destination="5fg-nz-l0A" id="c80-dr-Jyb"/>
-                <outlet property="detailImage" destination="U1z-Mt-6NZ" id="Cd1-sD-dwP"/>
+                <outlet property="collectionView" destination="quZ-6H-Aay" id="Ff5-HE-NjR"/>
+                <outlet property="contentsLabel" destination="w93-oq-emD" id="A3y-yV-8Aq"/>
                 <outlet property="detailLocation" destination="NYw-9g-S3W" id="NQN-dT-Hhm"/>
-                <outlet property="detailPrice" destination="c3k-KU-l4A" id="rnr-lM-2p6"/>
+                <outlet property="detailPrice" destination="c3k-KU-l4A" id="ehm-Wp-oZH"/>
                 <outlet property="detailProductUpdatedAtTime" destination="Zqq-cq-WUa" id="Tyv-jp-jao"/>
                 <outlet property="detailTitle" destination="bgK-RJ-xOL" id="EAk-C0-Exd"/>
             </connections>
@@ -346,14 +355,10 @@
     </objects>
     <resources>
         <image name="heartImage" width="10.666666984558105" height="10.666666984558105"/>
-        <image name="huge_map.jpg" width="2304" height="1152"/>
         <image name="rightArrow" width="17.333333969116211" height="24"/>
         <namedColor name="showMore">
             <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

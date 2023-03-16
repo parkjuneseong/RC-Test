@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323AC71B29C369A600936777 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 323AC71A29C369A600936777 /* Kingfisher */; };
+		323AC71E29C3789700936777 /* DetailOneColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323AC71C29C3789700936777 /* DetailOneColCell.swift */; };
+		323AC71F29C3789700936777 /* DetailOneColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323AC71D29C3789700936777 /* DetailOneColCell.xib */; };
 		3249CC3129C0C6580047AEB2 /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249CC3029C0C6580047AEB2 /* FirebaseStorageManager.swift */; };
 		3F1894A229BB96EA00786B73 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1894A029BB96EA00786B73 /* Detail.swift */; };
 		3F1894A329BB96EA00786B73 /* Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1894A129BB96EA00786B73 /* Detail.xib */; };
@@ -234,6 +237,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323AC71C29C3789700936777 /* DetailOneColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOneColCell.swift; sourceTree = "<group>"; };
+		323AC71D29C3789700936777 /* DetailOneColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOneColCell.xib; sourceTree = "<group>"; };
 		3249CC3029C0C6580047AEB2 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
 		3F1894A029BB96EA00786B73 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		3F1894A129BB96EA00786B73 /* Detail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Detail.xib; sourceTree = "<group>"; };
@@ -464,6 +469,7 @@
 				3F2BBB9429BF2CAF00325749 /* AlamofireImage in Frameworks */,
 				3F2BBB9B29BF6C6600325749 /* FirebaseAnalytics in Frameworks */,
 				3F2BBB9F29BF6C6600325749 /* FirebaseFirestore in Frameworks */,
+				323AC71B29C369A600936777 /* Kingfisher in Frameworks */,
 				3F2BBBA329BF6C6600325749 /* FirebaseStorage in Frameworks */,
 				3F2BBB9D29BF6C6600325749 /* FirebaseAuth in Frameworks */,
 				3F2BBBA129BF6C6600325749 /* FirebaseFirestoreSwift in Frameworks */,
@@ -983,6 +989,8 @@
 				3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */,
 				3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */,
 				3F8D146429C2002900450020 /* DetailSecondPresenter.swift */,
+				323AC71C29C3789700936777 /* DetailOneColCell.swift */,
+				323AC71D29C3789700936777 /* DetailOneColCell.xib */,
 			);
 			path = DetailVC;
 			sourceTree = "<group>";
@@ -1058,6 +1066,7 @@
 				3F2BBB9E29BF6C6600325749 /* FirebaseFirestore */,
 				3F2BBBA029BF6C6600325749 /* FirebaseFirestoreSwift */,
 				3F2BBBA229BF6C6600325749 /* FirebaseStorage */,
+				323AC71A29C369A600936777 /* Kingfisher */,
 			);
 			productName = "RC Test";
 			productReference = 3F7EB60F29B2ECBA0090A87B /* RC Test.app */;
@@ -1091,6 +1100,7 @@
 				3F87046229B73AD100CB5D87 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				3F2BBB9229BF2CAF00325749 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				3F2BBB9929BF6C6600325749 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				323AC71929C369A500936777 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3F7EB61029B2ECBA0090A87B /* Products */;
 			projectDirPath = "";
@@ -1142,6 +1152,7 @@
 				3F8D143C29C18CFB00450020 /* ServiceSetVC.xib in Resources */,
 				3FB911FD29B5D71600646D8C /* MyOneCell.xib in Resources */,
 				3F2BBB9829BF69B500325749 /* GoogleService-Info.plist in Resources */,
+				323AC71F29C3789700936777 /* DetailOneColCell.xib in Resources */,
 				3F4E6AA429C0AA53007EFD0E /* SettingVC.xib in Resources */,
 				3F57B74D29B453CE0009D190 /* CommonFooterView.xib in Resources */,
 				3F1894B529BC1E2E00786B73 /* ThirdColCell.xib in Resources */,
@@ -1330,6 +1341,7 @@
 				3FAD85B929BB83680042B227 /* ZZimDummyCell.swift in Sources */,
 				3F4E6AAB29C0B084007EFD0E /* UserSetCell.swift in Sources */,
 				3F87045329B71A3400CB5D87 /* MyFiveCell.swift in Sources */,
+				323AC71E29C3789700936777 /* DetailOneColCell.swift in Sources */,
 				3F57B75529B461BF0009D190 /* SearchThree.swift in Sources */,
 				3FB9121229B607BE00646D8C /* MyThreeCell.swift in Sources */,
 				3F1FE6E629B3600D002153C6 /* SixthCellPresenter.swift in Sources */,
@@ -1542,6 +1554,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		323AC71929C369A500936777 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		3F2BBB9229BF2CAF00325749 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
@@ -1569,6 +1589,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		323AC71A29C369A600936777 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 323AC71929C369A500936777 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		3F2BBB9329BF2CAF00325749 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3F2BBB9229BF2CAF00325749 /* XCRemoteSwiftPackageReference "AlamofireImage" */;

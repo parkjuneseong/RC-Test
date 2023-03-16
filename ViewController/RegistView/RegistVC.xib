@@ -430,7 +430,7 @@
                                     </constraints>
                                 </view>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="whs-VZ-mzk">
-                                    <rect key="frame" x="0.0" y="418" width="393" height="220"/>
+                                    <rect key="frame" x="15" y="418" width="363" height="220"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="220" id="r0I-Bz-hFo"/>
@@ -443,11 +443,11 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="a8c-xI-xIw" firstAttribute="leading" secondItem="dss-sE-5to" secondAttribute="leading" constant="20" id="1v0-PS-Frd"/>
-                                <constraint firstAttribute="trailing" secondItem="whs-VZ-mzk" secondAttribute="trailing" id="4ax-fS-RLC"/>
+                                <constraint firstAttribute="trailing" secondItem="whs-VZ-mzk" secondAttribute="trailing" constant="15" id="4ax-fS-RLC"/>
                                 <constraint firstItem="cCl-LP-8Fn" firstAttribute="leading" secondItem="dss-sE-5to" secondAttribute="leading" constant="20" id="8WB-Oe-F1j"/>
                                 <constraint firstItem="D1T-Bc-Lso" firstAttribute="leading" secondItem="dss-sE-5to" secondAttribute="leading" constant="15" id="9hw-Y5-Jt9"/>
                                 <constraint firstItem="2O0-jJ-Hbv" firstAttribute="leading" secondItem="dss-sE-5to" secondAttribute="leading" constant="20" id="AA5-IJ-eLO"/>
-                                <constraint firstItem="whs-VZ-mzk" firstAttribute="leading" secondItem="dss-sE-5to" secondAttribute="leading" id="CWK-xn-bKv"/>
+                                <constraint firstItem="whs-VZ-mzk" firstAttribute="leading" secondItem="dss-sE-5to" secondAttribute="leading" constant="15" id="CWK-xn-bKv"/>
                                 <constraint firstAttribute="trailing" secondItem="oz8-fR-W2P" secondAttribute="trailing" id="GRj-UF-fpO"/>
                                 <constraint firstItem="a8c-xI-xIw" firstAttribute="top" secondItem="cCl-LP-8Fn" secondAttribute="bottom" constant="20" id="J0h-g1-boh"/>
                                 <constraint firstAttribute="trailing" secondItem="a8c-xI-xIw" secondAttribute="trailing" constant="20" id="M0W-hZ-c7e"/>

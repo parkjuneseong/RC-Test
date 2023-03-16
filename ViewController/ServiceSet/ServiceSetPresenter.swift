@@ -1,13 +1,13 @@
 //
-//  UserSetPresenter.swift
+//  ServiceSetPresenter.swift
 //  RC Test
 //
-//  Created by 박준성 on 2023/03/14.
+//  Created by 박준성 on 2023/03/15.
 //
 
 import UIKit
 
-class UserSetPresenter {
+class ServiceSetPresenter {
   private let cellId = "UserSetTable"
     private var model: [[String: String]]?
     func set(model: [[String: String]]?) {
@@ -18,7 +18,7 @@ class UserSetPresenter {
   
 
 // MARK: - CommonTablePresenter
-extension UserSetPresenter: CommonTablePresenter
+extension ServiceSetPresenter: CommonTablePresenter
 {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
       guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? UserSetTable else {
@@ -42,8 +42,8 @@ extension UserSetPresenter: CommonTablePresenter
   }
     var headerView: UIView? {
         get {
-            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
-            view.headerLabel.text = "사용자 설정"
+            let view = SetDetailHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+            view.headerLabel.text = "서비스 정보"
             view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 15.0)
             view.backgroundColor = .lightGray
        

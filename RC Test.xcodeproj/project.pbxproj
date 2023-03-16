@@ -91,6 +91,11 @@
 		3F3A234D29B38EA400ED756A /* SearchFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A234B29B38EA400ED756A /* SearchFirstCell.swift */; };
 		3F3A234E29B38EA400ED756A /* SearchFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */; };
 		3F3B415A29B38F3A003827A2 /* SearchOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */; };
+		3F40A28829C35D2900ED457B /* ProductTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A28629C35D2900ED457B /* ProductTable.swift */; };
+		3F40A28929C35D2900ED457B /* ProductTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F40A28729C35D2900ED457B /* ProductTable.xib */; };
+		3F40A28C29C35D3A00ED457B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A28A29C35D3A00ED457B /* ProductCell.swift */; };
+		3F40A28D29C35D3A00ED457B /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F40A28B29C35D3A00ED457B /* ProductCell.xib */; };
+		3F40A28F29C35D4800ED457B /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A28E29C35D4800ED457B /* ProductPresenter.swift */; };
 		3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F432BE629B315A90017E245 /* CommonTablePresent.swift */; };
 		3F4E6AA329C0AA53007EFD0E /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E6AA129C0AA53007EFD0E /* SettingVC.swift */; };
 		3F4E6AA429C0AA53007EFD0E /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E6AA229C0AA53007EFD0E /* SettingVC.xib */; };
@@ -180,6 +185,25 @@
 		3F87047229B878AE00CB5D87 /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87047029B878AE00CB5D87 /* CategoryVC.xib */; };
 		3F87047529B883BC00CB5D87 /* SginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87047429B883BC00CB5D87 /* SginTextField.swift */; };
 		3F87047729B883D000CB5D87 /* SginTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87047629B883CF00CB5D87 /* SginTextField.xib */; };
+		3F8D143B29C18CFB00450020 /* ServiceSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D143929C18CFB00450020 /* ServiceSetVC.swift */; };
+		3F8D143C29C18CFB00450020 /* ServiceSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D143A29C18CFB00450020 /* ServiceSetVC.xib */; };
+		3F8D143F29C18D0B00450020 /* ServiceSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D143D29C18D0B00450020 /* ServiceSetCell.swift */; };
+		3F8D144029C18D0B00450020 /* ServiceSetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D143E29C18D0B00450020 /* ServiceSetCell.xib */; };
+		3F8D144229C18D1500450020 /* ServiceSetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D144129C18D1500450020 /* ServiceSetPresenter.swift */; };
+		3F8D144629C1AE7D00450020 /* LogOutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D144429C1AE7D00450020 /* LogOutTableView.swift */; };
+		3F8D144729C1AE7D00450020 /* LogOutTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D144529C1AE7D00450020 /* LogOutTableView.xib */; };
+		3F8D144A29C1AE8E00450020 /* LogOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D144829C1AE8E00450020 /* LogOutCell.swift */; };
+		3F8D144B29C1AE8E00450020 /* LogOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D144929C1AE8E00450020 /* LogOutCell.xib */; };
+		3F8D144F29C1AEA600450020 /* LogOutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D144E29C1AEA600450020 /* LogOutPresenter.swift */; };
+		3F8D145229C1F96A00450020 /* PayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D145029C1F96A00450020 /* PayVC.swift */; };
+		3F8D145329C1F96A00450020 /* PayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D145129C1F96A00450020 /* PayVC.xib */; };
+		3F8D145A29C1FFD700450020 /* DetailtwoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D145829C1FFD700450020 /* DetailtwoTable.swift */; };
+		3F8D145B29C1FFD700450020 /* DetailtwoTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D145929C1FFD700450020 /* DetailtwoTable.xib */; };
+		3F8D146229C1FFFE00450020 /* DetailSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */; };
+		3F8D146329C1FFFE00450020 /* DetailSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */; };
+		3F8D146529C2002900450020 /* DetailSecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D146429C2002900450020 /* DetailSecondPresenter.swift */; };
+		3F8D146929C354F700450020 /* PayDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D146729C354F700450020 /* PayDetailVC.swift */; };
+		3F8D146A29C354F700450020 /* PayDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D146829C354F700450020 /* PayDetailVC.xib */; };
 		3FAD85AD29B9C2280042B227 /* MyFiveColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD85AB29B9C2280042B227 /* MyFiveColCell.swift */; };
 		3FAD85AE29B9C2280042B227 /* MyFiveColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD85AC29B9C2280042B227 /* MyFiveColCell.xib */; };
 		3FAD85B129B9DAD90042B227 /* MyFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD85AF29B9DAD90042B227 /* MyFeedVC.swift */; };
@@ -288,6 +312,11 @@
 		3F3A234B29B38EA400ED756A /* SearchFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFirstCell.swift; sourceTree = "<group>"; };
 		3F3A234C29B38EA400ED756A /* SearchFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFirstCell.xib; sourceTree = "<group>"; };
 		3F3B415929B38F3A003827A2 /* SearchOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnePresenter.swift; sourceTree = "<group>"; };
+		3F40A28629C35D2900ED457B /* ProductTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTable.swift; sourceTree = "<group>"; };
+		3F40A28729C35D2900ED457B /* ProductTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTable.xib; sourceTree = "<group>"; };
+		3F40A28A29C35D3A00ED457B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		3F40A28B29C35D3A00ED457B /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		3F40A28E29C35D4800ED457B /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
 		3F432BE629B315A90017E245 /* CommonTablePresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTablePresent.swift; sourceTree = "<group>"; };
 		3F4E6AA129C0AA53007EFD0E /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		3F4E6AA229C0AA53007EFD0E /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
@@ -378,6 +407,25 @@
 		3F87047029B878AE00CB5D87 /* CategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
 		3F87047429B883BC00CB5D87 /* SginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginTextField.swift; sourceTree = "<group>"; };
 		3F87047629B883CF00CB5D87 /* SginTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SginTextField.xib; sourceTree = "<group>"; };
+		3F8D143929C18CFB00450020 /* ServiceSetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSetVC.swift; sourceTree = "<group>"; };
+		3F8D143A29C18CFB00450020 /* ServiceSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceSetVC.xib; sourceTree = "<group>"; };
+		3F8D143D29C18D0B00450020 /* ServiceSetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSetCell.swift; sourceTree = "<group>"; };
+		3F8D143E29C18D0B00450020 /* ServiceSetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceSetCell.xib; sourceTree = "<group>"; };
+		3F8D144129C18D1500450020 /* ServiceSetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSetPresenter.swift; sourceTree = "<group>"; };
+		3F8D144429C1AE7D00450020 /* LogOutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTableView.swift; sourceTree = "<group>"; };
+		3F8D144529C1AE7D00450020 /* LogOutTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutTableView.xib; sourceTree = "<group>"; };
+		3F8D144829C1AE8E00450020 /* LogOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutCell.swift; sourceTree = "<group>"; };
+		3F8D144929C1AE8E00450020 /* LogOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutCell.xib; sourceTree = "<group>"; };
+		3F8D144E29C1AEA600450020 /* LogOutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutPresenter.swift; sourceTree = "<group>"; };
+		3F8D145029C1F96A00450020 /* PayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayVC.swift; sourceTree = "<group>"; };
+		3F8D145129C1F96A00450020 /* PayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayVC.xib; sourceTree = "<group>"; };
+		3F8D145829C1FFD700450020 /* DetailtwoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailtwoTable.swift; sourceTree = "<group>"; };
+		3F8D145929C1FFD700450020 /* DetailtwoTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailtwoTable.xib; sourceTree = "<group>"; };
+		3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSecondCell.swift; sourceTree = "<group>"; };
+		3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSecondCell.xib; sourceTree = "<group>"; };
+		3F8D146429C2002900450020 /* DetailSecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSecondPresenter.swift; sourceTree = "<group>"; };
+		3F8D146729C354F700450020 /* PayDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDetailVC.swift; sourceTree = "<group>"; };
+		3F8D146829C354F700450020 /* PayDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayDetailVC.xib; sourceTree = "<group>"; };
 		3FAD85AB29B9C2280042B227 /* MyFiveColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFiveColCell.swift; sourceTree = "<group>"; };
 		3FAD85AC29B9C2280042B227 /* MyFiveColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFiveColCell.xib; sourceTree = "<group>"; };
 		3FAD85AF29B9DAD90042B227 /* MyFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedVC.swift; sourceTree = "<group>"; };
@@ -608,6 +656,7 @@
 				3F18949F29BB964300786B73 /* ZZIm */,
 				3FAD85C729BB95F50042B227 /* DetailVC */,
 				3F4E6AA029C0AA17007EFD0E /* SettingVc */,
+				3F8D143829C18CDD00450020 /* ServiceSet */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -657,11 +706,7 @@
 				3F4E6AA229C0AA53007EFD0E /* SettingVC.xib */,
 				3F4E6AA529C0AB90007EFD0E /* SetDetailVC.swift */,
 				3F4E6AA629C0AB90007EFD0E /* SetDetailVC.xib */,
-				3F4E6AB329C0B7C2007EFD0E /* UserSetTable.swift */,
-				3F4E6AB429C0B7C2007EFD0E /* UserSetTable.xib */,
-				3F4E6AA929C0B084007EFD0E /* UserSetCell.swift */,
-				3F4E6AAA29C0B084007EFD0E /* UserSetCell.xib */,
-				3F4E6AAD29C0B403007EFD0E /* UserSetPresenter.swift */,
+				3F8D143729C18CAE00450020 /* UserSet */,
 			);
 			path = SettingVc;
 			sourceTree = "<group>";
@@ -781,6 +826,7 @@
 				3F2BBB6C29BC650900325749 /* APIService.swift */,
 				3F432BE529B315850017E245 /* Commonc */,
 				3F432BE829B316020017E245 /* ViewController */,
+				3F8D144329C1AE5700450020 /* LogOut */,
 				3F7EB61129B2ECBA0090A87B /* RC Test */,
 				3F7EB61029B2ECBA0090A87B /* Products */,
 			);
@@ -798,6 +844,7 @@
 			isa = PBXGroup;
 			children = (
 				3F7EB61229B2ECBA0090A87B /* AppDelegate.swift */,
+				3F8D146629C354DD00450020 /* Pay */,
 				3F7EB61B29B2ECBB0090A87B /* Assets.xcassets */,
 				3F7EB61D29B2ECBB0090A87B /* LaunchScreen.storyboard */,
 				3F7EB62029B2ECBB0090A87B /* Info.plist */,
@@ -871,6 +918,58 @@
 			path = UnderTextField;
 			sourceTree = "<group>";
 		};
+		3F8D143729C18CAE00450020 /* UserSet */ = {
+			isa = PBXGroup;
+			children = (
+				3F4E6AB329C0B7C2007EFD0E /* UserSetTable.swift */,
+				3F4E6AB429C0B7C2007EFD0E /* UserSetTable.xib */,
+				3F4E6AA929C0B084007EFD0E /* UserSetCell.swift */,
+				3F4E6AAA29C0B084007EFD0E /* UserSetCell.xib */,
+				3F4E6AAD29C0B403007EFD0E /* UserSetPresenter.swift */,
+			);
+			path = UserSet;
+			sourceTree = "<group>";
+		};
+		3F8D143829C18CDD00450020 /* ServiceSet */ = {
+			isa = PBXGroup;
+			children = (
+				3F8D143929C18CFB00450020 /* ServiceSetVC.swift */,
+				3F8D143A29C18CFB00450020 /* ServiceSetVC.xib */,
+				3F8D143D29C18D0B00450020 /* ServiceSetCell.swift */,
+				3F8D143E29C18D0B00450020 /* ServiceSetCell.xib */,
+				3F8D144129C18D1500450020 /* ServiceSetPresenter.swift */,
+			);
+			path = ServiceSet;
+			sourceTree = "<group>";
+		};
+		3F8D144329C1AE5700450020 /* LogOut */ = {
+			isa = PBXGroup;
+			children = (
+				3F8D144429C1AE7D00450020 /* LogOutTableView.swift */,
+				3F8D144529C1AE7D00450020 /* LogOutTableView.xib */,
+				3F8D144829C1AE8E00450020 /* LogOutCell.swift */,
+				3F8D144929C1AE8E00450020 /* LogOutCell.xib */,
+				3F8D144E29C1AEA600450020 /* LogOutPresenter.swift */,
+			);
+			path = LogOut;
+			sourceTree = "<group>";
+		};
+		3F8D146629C354DD00450020 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				3F8D145029C1F96A00450020 /* PayVC.swift */,
+				3F8D145129C1F96A00450020 /* PayVC.xib */,
+				3F8D146729C354F700450020 /* PayDetailVC.swift */,
+				3F8D146829C354F700450020 /* PayDetailVC.xib */,
+				3F40A28629C35D2900ED457B /* ProductTable.swift */,
+				3F40A28729C35D2900ED457B /* ProductTable.xib */,
+				3F40A28A29C35D3A00ED457B /* ProductCell.swift */,
+				3F40A28B29C35D3A00ED457B /* ProductCell.xib */,
+				3F40A28E29C35D4800ED457B /* ProductPresenter.swift */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
 		3FAD85C729BB95F50042B227 /* DetailVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -879,6 +978,11 @@
 				3F1894A429BB989500786B73 /* DetailOneCell.swift */,
 				3F1894A529BB989500786B73 /* DetailOneCell.xib */,
 				3F1894A829BB98B800786B73 /* DetailOnePresenter.swift */,
+				3F8D145829C1FFD700450020 /* DetailtwoTable.swift */,
+				3F8D145929C1FFD700450020 /* DetailtwoTable.xib */,
+				3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */,
+				3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */,
+				3F8D146429C2002900450020 /* DetailSecondPresenter.swift */,
 			);
 			path = DetailVC;
 			sourceTree = "<group>";
@@ -1004,21 +1108,25 @@
 			files = (
 				3F7EB60629B33926002F03E8 /* ThirdCell.xib in Resources */,
 				3F25A47E29B58FF80072A034 /* SplashVC.xib in Resources */,
+				3F8D145B29C1FFD700450020 /* DetailtwoTable.xib in Resources */,
 				3F1FE6E429B36001002153C6 /* SixthColCell.xib in Resources */,
 				3F1FE6D429B344AB002153C6 /* FourthColCell.xib in Resources */,
 				3F87044F29B7107800CB5D87 /* ZZimVC.xib in Resources */,
 				3FAD85BA29BB83680042B227 /* ZZimDummyCell.xib in Resources */,
 				3FAD85C229BB8D9B0042B227 /* MyFiveSellCell.xib in Resources */,
 				3FAD85B229B9DAD90042B227 /* MyFeedVC.xib in Resources */,
+				3F8D144029C18D0B00450020 /* ServiceSetCell.xib in Resources */,
 				3F55875329B8DC4F00E5127E /* SelectedLogin.xib in Resources */,
 				3F69EA9E29B47A1E00440C41 /* TalkFirst.xib in Resources */,
 				3FB911F829B59C7400646D8C /* SocialVCCell.xib in Resources */,
+				3F8D145329C1F96A00450020 /* PayVC.xib in Resources */,
 				3F2BBBA729BF913700325749 /* OptionSelectedVC.xib in Resources */,
 				3FAD85B629B9F3730042B227 /* MenuVC.xib in Resources */,
 				3F69EABC29B4DEF600440C41 /* TabIconView.xib in Resources */,
 				3F69EA9A29B476C100440C41 /* TalkHeaderView.xib in Resources */,
 				3F87047729B883D000CB5D87 /* SginTextField.xib in Resources */,
 				3F55874F29B8921B00E5127E /* NumberTextField.xib in Resources */,
+				3F40A28929C35D2900ED457B /* ProductTable.xib in Resources */,
 				3F7EB60129B333CC002F03E8 /* TalkVC.xib in Resources */,
 				3F1FE6D929B359ED002153C6 /* FifthCell.xib in Resources */,
 				3F2BBB7C29BCE1DF00325749 /* JoinVc.xib in Resources */,
@@ -1027,8 +1135,11 @@
 				3F57B75629B461BF0009D190 /* SearchThree.xib in Resources */,
 				3FB9120129B5D75100646D8C /* MyHeaderView.xib in Resources */,
 				3FAD85AE29B9C2280042B227 /* MyFiveColCell.xib in Resources */,
+				3F40A28D29C35D3A00ED457B /* ProductCell.xib in Resources */,
+				3F8D144729C1AE7D00450020 /* LogOutTableView.xib in Resources */,
 				3F2BBB5229BC27CC00325749 /* FifthColCell.xib in Resources */,
 				3F25A48229B590280072A034 /* LoginVC.xib in Resources */,
+				3F8D143C29C18CFB00450020 /* ServiceSetVC.xib in Resources */,
 				3FB911FD29B5D71600646D8C /* MyOneCell.xib in Resources */,
 				3F2BBB9829BF69B500325749 /* GoogleService-Info.plist in Resources */,
 				3F4E6AA429C0AA53007EFD0E /* SettingVC.xib in Resources */,
@@ -1040,12 +1151,14 @@
 				3F57B74729B451D80009D190 /* SearchTwoCell.xib in Resources */,
 				3F1894B129BC156100786B73 /* XXEmptyTableViewCell.xib in Resources */,
 				3F2BBB6629BC3D2F00325749 /* PickerColCell.xib in Resources */,
+				3F8D144B29C1AE8E00450020 /* LogOutCell.xib in Resources */,
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
 				3F55874B29B8920400E5127E /* LGTextField.xib in Resources */,
 				3F756EBB29B7081B00C82827 /* MyFourCell.xib in Resources */,
 				3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */,
 				3F1FE6E029B35FE5002153C6 /* SixthCell.xib in Resources */,
+				3F8D146329C1FFFE00450020 /* DetailSecondCell.xib in Resources */,
 				3F4E6AB229C0B4A3007EFD0E /* SetDetailHeaderView.xib in Resources */,
 				3FB9120E29B6041300646D8C /* MyTwoColCell.xib in Resources */,
 				3F4E6AAC29C0B084007EFD0E /* UserSetCell.xib in Resources */,
@@ -1057,6 +1170,7 @@
 				3F87046929B86A6900CB5D87 /* UnderlineTextField.xib in Resources */,
 				3F25A48629B590380072A034 /* SginVC.xib in Resources */,
 				3F4E6AA829C0AB90007EFD0E /* SetDetailVC.xib in Resources */,
+				3F8D146A29C354F700450020 /* PayDetailVC.xib in Resources */,
 				3F55874729B891E400E5127E /* BirthTextField.xib in Resources */,
 				3F1894A729BB989500786B73 /* DetailOneCell.xib in Resources */,
 				3FB9120829B603DE00646D8C /* MyTwoCell.xib in Resources */,
@@ -1090,6 +1204,7 @@
 			files = (
 				3F1FE6C729B3422C002153C6 /* CommonHeaderView.swift in Sources */,
 				3F2BBB6D29BC650900325749 /* APIService.swift in Sources */,
+				3F8D146929C354F700450020 /* PayDetailVC.swift in Sources */,
 				3F69EAA729B4BFED00440C41 /* TabIconViewController.swift in Sources */,
 				3F1FE6D829B359ED002153C6 /* FifthCell.swift in Sources */,
 				3F4E6AA329C0AA53007EFD0E /* SettingVC.swift in Sources */,
@@ -1099,14 +1214,17 @@
 				3F69EAAB29B4C05200440C41 /* TabbarContainerViewController.swift in Sources */,
 				3F1894B429BC1E2E00786B73 /* ThirdColCell.swift in Sources */,
 				3F55874529B891D600E5127E /* BirthTextField.swift in Sources */,
+				3F40A28F29C35D4800ED457B /* ProductPresenter.swift in Sources */,
 				3F25A48929B592BC0072A034 /* SocialVc.swift in Sources */,
 				3F2BBB8429BDA8DC00325749 /* DetailInforModel.swift in Sources */,
 				3F87046729B86A5300CB5D87 /* UnderlineTextField.swift in Sources */,
 				3F2BBB7029BC673D00325749 /* SignModel.swift in Sources */,
 				3F69EAA029B47A2E00440C41 /* TalkOnePresenter.swift in Sources */,
+				3F40A28C29C35D3A00ED457B /* ProductCell.swift in Sources */,
 				3F3A233F29B38C0800ED756A /* EighthCellPresenter.swift in Sources */,
 				3FB911FC29B5D71600646D8C /* MyOneCell.swift in Sources */,
 				3F2BBB7829BCDA2C00325749 /* DetailModel.swift in Sources */,
+				3F8D143B29C18CFB00450020 /* ServiceSetVC.swift in Sources */,
 				3F7EB5F429B31D0D002F03E8 /* FirstColCell.swift in Sources */,
 				3F87044E29B7107800CB5D87 /* ZZimVC.swift in Sources */,
 				3F2BBB8E29BDB19F00325749 /* SearchCategoryModel.swift in Sources */,
@@ -1115,6 +1233,8 @@
 				3F1894A629BB989500786B73 /* DetailOneCell.swift in Sources */,
 				3F1FE6ED29B3690E002153C6 /* SevenCellPresenter.swift in Sources */,
 				3F7EB5FD29B32ACF002F03E8 /* SecondCellPresenter.swift in Sources */,
+				3F8D144F29C1AEA600450020 /* LogOutPresenter.swift in Sources */,
+				3F40A28829C35D2900ED457B /* ProductTable.swift in Sources */,
 				3FAD85AD29B9C2280042B227 /* MyFiveColCell.swift in Sources */,
 				3F2BBB7E29BCE5B600325749 /* LoginModel.swift in Sources */,
 				3F69EA9829B476B500440C41 /* TalkHeaderView.swift in Sources */,
@@ -1122,6 +1242,7 @@
 				3249CC3129C0C6580047AEB2 /* FirebaseStorageManager.swift in Sources */,
 				3F57B75929B461EC0009D190 /* SearchThreeCell.swift in Sources */,
 				3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */,
+				3F8D146229C1FFFE00450020 /* DetailSecondCell.swift in Sources */,
 				3F2BBB7B29BCE1DF00325749 /* JoinVc.swift in Sources */,
 				3F1FE6D329B344AB002153C6 /* FourthColCell.swift in Sources */,
 				3F2BBBA629BF913700325749 /* OptionSelectedVC.swift in Sources */,
@@ -1131,6 +1252,8 @@
 				3F2BBB5A29BC2F0D00325749 /* ShowMoreFooter.swift in Sources */,
 				3F2BBB8829BDAB7E00325749 /* RegistProductEditModel.swift in Sources */,
 				3FB9121529B607CA00646D8C /* MyThreeCellPresenter.swift in Sources */,
+				3F8D143F29C18D0B00450020 /* ServiceSetCell.swift in Sources */,
+				3F8D144A29C1AE8E00450020 /* LogOutCell.swift in Sources */,
 				3F2BBB8C29BDB04400325749 /* SearchModel.swift in Sources */,
 				3F7EB60A29B33D4A002F03E8 /* UIView + Border.swift in Sources */,
 				3F4E6AB529C0B7C2007EFD0E /* UserSetTable.swift in Sources */,
@@ -1165,6 +1288,7 @@
 				3F2BBB5E29BC36D200325749 /* ImagePickerDelegate.swift in Sources */,
 				3F87046D29B8789B00CB5D87 /* TagVC.swift in Sources */,
 				3F87045A29B71B3600CB5D87 /* MySixCell.swift in Sources */,
+				3F8D146529C2002900450020 /* DetailSecondPresenter.swift in Sources */,
 				3F7EB5E829B318CA002F03E8 /* HomeVC.swift in Sources */,
 				3FB911F729B59C7400646D8C /* SocialVCCell.swift in Sources */,
 				3F1FE6DB29B35AE2002153C6 /* FifthCellPresenter.swift in Sources */,
@@ -1183,13 +1307,17 @@
 				3F7EB5F129B31B66002F03E8 /* FirstCellPresenter.swift in Sources */,
 				3F3B415A29B38F3A003827A2 /* SearchOnePresenter.swift in Sources */,
 				3F2BBB7429BCC67400325749 /* HomeBannerModel.swift in Sources */,
+				3F8D144229C18D1500450020 /* ServiceSetPresenter.swift in Sources */,
 				3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */,
 				3F69EABA29B4DEEC00440C41 /* TabIconView.swift in Sources */,
+				3F8D145A29C1FFD700450020 /* DetailtwoTable.swift in Sources */,
 				3FB9120A29B603E900646D8C /* MyTwoCellPresenter.swift in Sources */,
 				3F1FE6EA29B36901002153C6 /* SevenCell.swift in Sources */,
 				3F1FE6DF29B35FE5002153C6 /* SixthCell.swift in Sources */,
+				3F8D145229C1F96A00450020 /* PayVC.swift in Sources */,
 				3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */,
 				3F7EB5FA29B3275D002F03E8 /* SecondCell.swift in Sources */,
+				3F8D144629C1AE7D00450020 /* LogOutTableView.swift in Sources */,
 				3FAD85B529B9F3730042B227 /* MenuVC.swift in Sources */,
 				3F4E6AAE29C0B403007EFD0E /* UserSetPresenter.swift in Sources */,
 				3F4E6AA729C0AB90007EFD0E /* SetDetailVC.swift in Sources */,

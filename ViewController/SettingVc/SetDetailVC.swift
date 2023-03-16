@@ -15,24 +15,43 @@ class SetDetailVC: UIViewController {
     
     private var tablePresenters: [CommonTablePresenter?] = []
     private var userSetPresenter = UserSetPresenter()
+    private var serviceSetPresenter = ServiceSetPresenter()
+    private var logOutPresenter = LogOutPresenter()
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    let list = [
-        ["label" : "계정설정"],["label" : "계정설정"],["label" : "계정설정"],["label" : "계정설정"],["label" : "계정설정"],["label" : "계정설정"],["label" : "계정설정"]
+    let userSetList = [
+        ["label" : "계정설정"],["label" : "알림 설정"],["label" : "우리동네 지역 설정"],["label" : "배송지 설정"],["label" : "계좌 설정"],["label" : "간편결제 설정"],["label" : "차단 상점 관리"]
+    ]
+    let serviceSetList = [
+        ["label" : "이용약관"],["label" : "개인정보 처리방침"],["label" : "위치기반 서비스 이용약관"],["label" : "버전정보 9.6.3"]
+    ]
+    let logOutList = [
+        ["label" : "로그아웃(대로)"]
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
         setPresenterModel()
         setTablePresenters()
     }
-
+    func hideTableViewLastSeparator() {
+        let footerView = UIView()
+        footerView.translatesAutoresizingMaskIntoConstraints = false
+        footerView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+      
+        tableView.tableFooterView = footerView
+    }
     private func setPresenterModel() {
-        userSetPresenter.set(model: list)
+        userSetPresenter.set(model: userSetList)
+        serviceSetPresenter.set(model: serviceSetList)
+        logOutPresenter.set(model: logOutList)
+        
     }
     private func setTablePresenters() {
         tablePresenters.removeAll()
         tablePresenters.append(userSetPresenter)
+        tablePresenters.append(serviceSetPresenter)
+        tablePresenters.append(logOutPresenter)
         registerCells()
         tableView.reloadData()
     }
@@ -57,6 +76,7 @@ extension SetDetailVC: UITableViewDelegate, UITableViewDataSource{
         guard let presenter = tablePresenters[section] else {
             return 0
         }
+        
         return presenter.numberOfRows(in: section)
     }
     
@@ -93,18 +113,5 @@ extension SetDetailVC: UITableViewDelegate, UITableViewDataSource{
         
         return presenter.headerHeight
     }
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        guard let presenter = tablePresenters[section] else {
-            return nil
-        }
-        return presenter.footerView
-    }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        guard let presenter = tablePresenters[section] else {
-            return .leastNormalMagnitude
-        }
-        
-        return presenter.footerHeight
-    }
 }

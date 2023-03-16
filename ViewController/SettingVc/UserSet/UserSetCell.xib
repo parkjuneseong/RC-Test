@@ -17,45 +17,45 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbj-ff-L4y">
-                        <rect key="frame" x="15" y="13" width="56" height="18"/>
+                        <rect key="frame" x="0.0" y="13" width="56" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3i-Qz-rcm" customClass="UIControl">
-                        <rect key="frame" x="286" y="10" width="24" height="24"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="3FB-c5-eC8">
-                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="QfG-jQ-hbl">
+                        <rect key="frame" x="302.66666666666669" y="10" width="17.333333333333314" height="24"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFy-UR-E4E">
+                        <rect key="frame" x="0.0" y="43" width="305" height="1"/>
+                        <color key="backgroundColor" name="showMore"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3FB-c5-eC8" secondAttribute="trailing" id="7Cq-T3-G1U"/>
-                            <constraint firstAttribute="bottom" secondItem="3FB-c5-eC8" secondAttribute="bottom" id="9CO-Bq-8ZG"/>
-                            <constraint firstItem="3FB-c5-eC8" firstAttribute="leading" secondItem="c3i-Qz-rcm" secondAttribute="leading" id="Lm5-ZB-9ir"/>
-                            <constraint firstItem="3FB-c5-eC8" firstAttribute="top" secondItem="c3i-Qz-rcm" secondAttribute="top" id="Pzf-al-fNk"/>
-                            <constraint firstAttribute="width" constant="24" id="jiE-nV-sH0"/>
-                            <constraint firstAttribute="height" constant="24" id="oFF-ig-Vph"/>
+                            <constraint firstAttribute="height" constant="1" id="qaZ-4k-2cZ"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="c3i-Qz-rcm" secondAttribute="trailing" constant="10" id="85d-MG-blY"/>
-                    <constraint firstItem="gbj-ff-L4y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="U1G-HW-DeD"/>
-                    <constraint firstItem="c3i-Qz-rcm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bU2-83-NiM"/>
+                    <constraint firstAttribute="trailing" secondItem="RFy-UR-E4E" secondAttribute="trailing" constant="15" id="6zS-Vi-USC"/>
+                    <constraint firstItem="RFy-UR-E4E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AyY-Xz-kym"/>
+                    <constraint firstItem="QfG-jQ-hbl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HMq-mx-wxO"/>
+                    <constraint firstAttribute="trailing" secondItem="QfG-jQ-hbl" secondAttribute="trailing" id="J4z-74-YSM"/>
+                    <constraint firstItem="gbj-ff-L4y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="U1G-HW-DeD"/>
                     <constraint firstItem="gbj-ff-L4y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kfL-fC-HNv"/>
+                    <constraint firstAttribute="bottom" secondItem="RFy-UR-E4E" secondAttribute="bottom" id="n6G-Se-FfL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="lineView" destination="RFy-UR-E4E" id="VEA-FU-Wg7"/>
                 <outlet property="setLabel" destination="gbj-ff-L4y" id="7U8-fN-M7l"/>
             </connections>
-            <point key="canvasLocation" x="20" y="21"/>
+            <point key="canvasLocation" x="19.847328244274809" y="20.422535211267608"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="rightArrow" width="17.333333969116211" height="24"/>
+        <namedColor name="showMore">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

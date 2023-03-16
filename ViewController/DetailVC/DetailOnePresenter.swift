@@ -30,7 +30,7 @@ extension DetailOnePresenter: CommonTablePresenter
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 800
     }
     
     

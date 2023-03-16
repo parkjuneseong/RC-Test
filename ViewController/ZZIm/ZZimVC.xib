@@ -61,7 +61,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzY-O2-NLK" customClass="UIControl">
                             <rect key="frame" x="348" y="10" width="30" height="30"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteSearch" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-6b-IP1">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zzimselected" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-6b-IP1">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                 </imageView>
                             </subviews>
@@ -78,18 +78,18 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NI8-ek-ceS" customClass="UIControl">
                             <rect key="frame" x="308" y="10" width="30" height="30"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteSearch" translatesAutoresizingMaskIntoConstraints="NO" id="lnL-Ht-k3c">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zzimplus" translatesAutoresizingMaskIntoConstraints="NO" id="lnL-Ht-k3c">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="1bc-wz-y8L"/>
-                                <constraint firstItem="lnL-Ht-k3c" firstAttribute="top" secondItem="NI8-ek-ceS" secondAttribute="top" id="LjM-tY-A4b"/>
-                                <constraint firstAttribute="bottom" secondItem="lnL-Ht-k3c" secondAttribute="bottom" id="Oat-XC-QyQ"/>
+                                <constraint firstItem="lnL-Ht-k3c" firstAttribute="top" secondItem="NI8-ek-ceS" secondAttribute="top" id="50Z-BX-ugU"/>
+                                <constraint firstAttribute="bottom" secondItem="lnL-Ht-k3c" secondAttribute="bottom" id="E7A-bn-y9c"/>
+                                <constraint firstItem="lnL-Ht-k3c" firstAttribute="leading" secondItem="NI8-ek-ceS" secondAttribute="leading" id="Exw-xh-UXW"/>
+                                <constraint firstAttribute="trailing" secondItem="lnL-Ht-k3c" secondAttribute="trailing" id="VuR-Zm-jP3"/>
                                 <constraint firstAttribute="height" constant="30" id="Wma-1j-4XF"/>
-                                <constraint firstItem="lnL-Ht-k3c" firstAttribute="leading" secondItem="NI8-ek-ceS" secondAttribute="leading" id="b8J-p4-ZGb"/>
-                                <constraint firstAttribute="trailing" secondItem="lnL-Ht-k3c" secondAttribute="trailing" id="iVc-ue-2CQ"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -201,12 +201,13 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="201-4I-TrI" secondAttribute="trailing" id="sgr-QH-HIl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qWW-7N-K18" secondAttribute="trailing" id="sjS-v7-Udd"/>
             </constraints>
-            <point key="canvasLocation" x="-33" y="-13"/>
+            <point key="canvasLocation" x="-79" y="-160"/>
         </view>
     </objects>
     <resources>
         <image name="leftArrow" width="8.6666669845581055" height="12.333333015441895"/>
-        <image name="whiteSearch" width="12.333333015441895" height="12.333333015441895"/>
+        <image name="zzimplus" width="7.3333334922790527" height="8.6666669845581055"/>
+        <image name="zzimselected" width="10.333333015441895" height="9"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

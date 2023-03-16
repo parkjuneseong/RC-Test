@@ -9,6 +9,9 @@ import UIKit
 
 class Detail: UIViewController {
     
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     @IBOutlet weak var tableView: UITableView!
 //    private let productId: Int
     
@@ -20,8 +23,23 @@ class Detail: UIViewController {
 //    required init?(coder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented")
 //    }
+    @IBAction func movePay(_ sender: Any) {
+        let payvc = PayVC()
+        let vc = UINavigationController(rootViewController: payvc)
+        payvc.payDelegate = self
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [
+                .custom { _ in
+                    return 450
+                    
+                }
+            ]
+        }
+        self.present(vc, animated: true)
+    }
     var detailModel : DetailModel?
     private var tablePresenters: [CommonTablePresenter?] = []
+    private var detailOnePresneter = DetailOnePresenter()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,8 +69,7 @@ class Detail: UIViewController {
     
     private func setTablePresenters() {
         tablePresenters.removeAll()
-        
-        
+        tablePresenters.append(detailOnePresneter)
         registerCells()
         tableView.reloadData()
     }
@@ -127,4 +144,10 @@ extension Detail : UITableViewDelegate,UITableViewDataSource{
       }
     
     
+}
+extension Detail: PayDelegate {
+    func movePay() {
+        let vc = PayDetailVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

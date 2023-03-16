@@ -19,25 +19,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-cF-H8V">
-                    <rect key="frame" x="5" y="30" width="37.666666666666664" height="17"/>
+                    <rect key="frame" x="14.999999999999996" y="28" width="37.666666666666657" height="17"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" name="kakaoColor"/>
+            <color key="backgroundColor" name="showMore"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cIO-cF-H8V" secondAttribute="bottom" constant="3" id="S1t-c5-Xhu"/>
-                <constraint firstItem="cIO-cF-H8V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ZVQ-We-SxD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cIO-cF-H8V" secondAttribute="bottom" constant="5" id="S1t-c5-Xhu"/>
+                <constraint firstItem="cIO-cF-H8V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="ZVQ-We-SxD"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="1" y="27"/>
         </view>
     </objects>
     <resources>
-        <namedColor name="kakaoColor">
-            <color red="0.95686274509803926" green="0.87058823529411766" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="showMore">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

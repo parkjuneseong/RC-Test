@@ -111,8 +111,8 @@ class HomeVC: UIViewController {
         let window = UIApplication.shared.windows.first
         self.tableView.contentInset.top = -(window?.safeAreaInsets.top ?? 0)
         
-//        setPresenterModel()
-//        setTablePresenters()
+        setPresenterModel()
+        setTablePresenters()
         
        
      }

@@ -62,7 +62,7 @@ class ZZimVC: UIViewController {
         }
     }
     var list : [String] = []
-    var list2 = [["label" : "dd"]]
+    var list2 = [["label" : "최근 본 상품이 없습니다."]]
 }
 extension ZZimVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     

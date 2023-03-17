@@ -181,7 +181,7 @@
                         <constraint firstAttribute="height" constant="50" id="FvI-PG-jZx"/>
                     </constraints>
                 </stackView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6vo-qB-IuT">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6vo-qB-IuT">
                     <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
@@ -209,7 +209,7 @@
     </objects>
     <resources>
         <image name="leftArrow" width="8.6666669845581055" height="12.333333015441895"/>
-        <image name="whiteSearch" width="12.333333015441895" height="12.333333015441895"/>
+        <image name="whiteSearch" width="24.666666030883789" height="25.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

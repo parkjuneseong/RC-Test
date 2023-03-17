@@ -109,6 +109,7 @@ class HomeVC: UIViewController {
         
         let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
         print(jwt)
+    
         setProductModel()
         setTablePresenters()
      }
@@ -135,7 +136,7 @@ class HomeVC: UIViewController {
                 self?.productsModel = model
                 self?.setProductModel()
             } else {
-                showToast(message: model.message ?? "")
+//                showToast(message: model.message ?? "")
             }
         }
     }

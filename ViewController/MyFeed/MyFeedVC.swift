@@ -23,8 +23,8 @@ class MyFeedVC: UIViewController {
         }
     }
     
-    var list = ["ㅁ", "ㅇ"]
-    var list2 = ["가", "나", "다", "라"]
+    var list : [String] = []
+    var list2 =  ["page" , "..."]
     var list3: [String] = []
     
     @IBOutlet weak var label1: UILabel!

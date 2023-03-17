@@ -60,7 +60,7 @@ class Detail: UIViewController {
                 self?.detailModel = model
                 self?.setPresenterModel()
             } else {
-                showToast(message: model.message ?? "")
+//                showToast(message: model.message ?? "")
             }
         }
     }

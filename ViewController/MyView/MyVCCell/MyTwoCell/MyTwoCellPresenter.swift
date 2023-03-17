@@ -14,10 +14,14 @@ class MyTwoCellPresenter{
     
     func set(model: MyPageModel?) {
         self.model = model
+        let PI: Float = model?.result?.scoreAvg ?? 0
         
+        let str = String(format: "%.1f", PI)
+        
+        print(str) // 3.14
         list.append(["label1": "택배", "label2" : "신청/관리"])
         if let scoreAvg = model?.result?.scoreAvg {
-            list.append(["label1": "평점", "label2": "\(scoreAvg)"])
+            list.append(["label1": "평점", "label2": "\(str)"])
         }
         list.append(["label1": "거래내역", "label2" : "0"])
         list.append(["label1": "팔로워", "label2" : "1"])

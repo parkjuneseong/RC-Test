@@ -41,8 +41,8 @@ class APIService {
     
     func getMyPage(userId: String, handler: ((MyPageModel) -> Void)?) {
         let url = baseUrl + "/users/\(userId)"
-        
-        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: MyPageModel.self) { response in
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .get, encoding: JSONEncoding.default,headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: MyPageModel.self) { response in
             switch response.result {
             case .success(let model):
                 print("mypage성공")

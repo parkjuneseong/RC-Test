@@ -12,6 +12,8 @@ class MyOneCellPresenter {
     
     func set(model: MyPageModel?) {
         self.model = model
+        
+        
     }
 }
 

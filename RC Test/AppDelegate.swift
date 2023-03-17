@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        FirebaseApp.configure()
        
        window = UIWindow(frame: UIScreen.main.bounds)
-       let rootViewController = UINavigationController(rootViewController: RootViewController())
+       let rootViewController = UINavigationController(rootViewController: SplashVC())
        rootViewController.navigationBar.isHidden = true
         
        window?.rootViewController = rootViewController

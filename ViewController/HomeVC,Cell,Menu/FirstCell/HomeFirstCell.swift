@@ -58,7 +58,7 @@ extension HomeFirstCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
         return CGSize(width: width, height: height)
     }
     func bannerTimer() {
-        let _: Timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (Timer) in
+        let _: Timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (Timer) in
             self.bannerMove()
         }
     }

@@ -59,7 +59,7 @@ class MyVC: UIViewController {
     }
     
     private func loadData() {
-        APIService.shared.getMyPage(userId: UserDefaults.standard.string(forKey: "userIdx") ?? "") { [weak self] model in
+        APIService.shared.getMyPage(userId: UserDefaults.standard.string(forKey: "userId") ?? "") { [weak self] model in
             self?.mymodel = model
             self?.setPresenterModel()
             self?.setTablePresenters()

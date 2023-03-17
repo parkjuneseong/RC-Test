@@ -31,13 +31,13 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-i5-0DM">
-                        <rect key="frame" x="60" y="-1.6666666666666661" width="44.333333333333343" height="21"/>
+                        <rect key="frame" x="60" y="3.3333333333333339" width="44.333333333333343" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctS-19-RZJ">
-                        <rect key="frame" x="62" y="22.333333333333332" width="33" height="15.666666666666668"/>
+                        <rect key="frame" x="62" y="27.333333333333332" width="33" height="15.666666666666668"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -46,8 +46,8 @@
                         <rect key="frame" x="245" y="12" width="60" height="25"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팔로우" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-Cf-EKA">
-                                <rect key="frame" x="10.666666666666657" y="3.6666666666666661" width="39" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="15.666666666666687" y="6.0000000000000009" width="28.666666666666671" height="13.333333333333336"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <color key="textColor" red="1" green="0.032865371490000003" blue="0.0210049494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -74,7 +74,7 @@
                     <constraint firstAttribute="bottom" secondItem="018-DK-v7E" secondAttribute="bottom" constant="13" id="Ult-38-tg6"/>
                     <constraint firstItem="ctS-19-RZJ" firstAttribute="top" secondItem="XU6-i5-0DM" secondAttribute="bottom" constant="3" id="ftt-Oq-Kup"/>
                     <constraint firstItem="ctS-19-RZJ" firstAttribute="leading" secondItem="DdK-Ld-rJw" secondAttribute="trailing" constant="7" id="jJV-RO-q3L"/>
-                    <constraint firstAttribute="bottom" secondItem="ctS-19-RZJ" secondAttribute="bottom" constant="12" id="qbA-UB-8ri"/>
+                    <constraint firstAttribute="bottom" secondItem="ctS-19-RZJ" secondAttribute="bottom" constant="7" id="qbA-UB-8ri"/>
                     <constraint firstItem="DdK-Ld-rJw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yLk-vX-UkU"/>
                 </constraints>
             </tableViewCellContentView>

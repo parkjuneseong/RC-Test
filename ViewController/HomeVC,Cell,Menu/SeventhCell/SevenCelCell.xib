@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-MP-Its">
                         <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="200"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="Fga-qG-Tms">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="Fga-qG-Tms">
                                 <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="oCn-ca-tps"/>

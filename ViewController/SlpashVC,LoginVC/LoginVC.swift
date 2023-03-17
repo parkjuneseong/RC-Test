@@ -29,7 +29,7 @@ class LoginVC: UIViewController {
             APIService.shared.postLogin(param: ["email" : "\(emailTextField.text ?? "")","password" : "\(passwordTextField.text ?? "")"]) {[weak self] model in
                 if model.code == 1000 {
                     showToast(message: model.message ?? "")
-                    UserDefaults.standard.set(model.result?.userIdx, forKey: "userIdx")
+                    UserDefaults.standard.set(model.result?.userId, forKey: "userId")
                     UserDefaults.standard.set(model.result?.jwt, forKey: "jwt")
                     let vc = UINavigationController(rootViewController: RootViewController())
                

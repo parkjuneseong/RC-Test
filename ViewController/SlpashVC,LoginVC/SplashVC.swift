@@ -14,11 +14,11 @@ class SplashVC: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            let userIdx = UserDefaults.standard.string(forKey: "userIdx")
+            let userId = UserDefaults.standard.string(forKey: "userId")
             let jwt = UserDefaults.standard.string(forKey: "jwt")
             
             //자동로그인
-            if userIdx != nil && jwt != nil {
+            if userId != nil && jwt != nil {
                 vc = UINavigationController(rootViewController: RootViewController())
 //                print("\(jwt ?? "")")
             } else {

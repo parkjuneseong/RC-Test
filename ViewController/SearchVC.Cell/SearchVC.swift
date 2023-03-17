@@ -32,12 +32,12 @@ class SearchVC: UIViewController {
     
     
     let twoList = [
-        ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
-        ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
-        ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
-        ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
-        ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
-        ["image" : "test" , "brand": "나이키" , "title" : "nike . 12,222"],
+        ["image" : "nike" , "brand": "나이키" , "title" : "nike . 12,222"],
+        ["image" : "ylndfles" , "brand": "YLDFLES" , "title" : "YLDFLES . 21,421"],
+        ["image" : "visvim" , "brand": "visvim" , "title" : "visvim . 12,522"],
+        ["image" : "adererror" , "brand": "adererror" , "title" : "adererror . 42,612"],
+        ["image" : "nike" , "brand": "나이키" , "title" : "nike . 7342"],
+       
     ]
     let threeList = [
         ["image":"shoes","title" : "스니커즈","image2":"watch","title2" : "시계","image3":"star","title3" : "스타굿즈","image4":"bike","title4" : "자전거"],

@@ -30,17 +30,17 @@ struct LoginModel: Codable {
 }
 
 struct LoginResultModel: Codable {
-    let userIdx: Int?
+    let userId: Int?
     let jwt: String?
     
     enum CodingKeys: String, CodingKey {
-        case userIdx
+        case userId
         case jwt
     }
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         jwt = try values.decodeIfPresent(String.self, forKey: .jwt)
-        userIdx = try values.decodeIfPresent(Int.self, forKey: .userIdx)
+        userId = try values.decodeIfPresent(Int.self, forKey: .userId)
     }
 }

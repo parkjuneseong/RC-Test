@@ -18,11 +18,9 @@ class TalkVC: UIViewController {
     
     
     let oneList = [
-        ["image": "test" , "label1": "번개장터", "label2" : "사기 위험! 안전결제란?"],
-        ["image": "test" , "label1": "번개장터", "label2" : "사기 위험! 안전결제란?"],
-        ["image": "test" , "label1": "번개장터", "label2" : "사기 위험! 안전결제란?"],
-        ["image": "test" , "label1": "번개장터", "label2" : "사기 위험! 안전결제란?"],
-        ["image": "test" , "label1": "번개장터", "label2" : "사기 위험! 안전결제란?"]
+        ["image": "redBunjang" , "label1": "번개장터", "label2" : "사기 위험! 안전결제란?"],
+        ["image": "redEvent" , "label1": "번개장터_이벤트", "label2" : "웰컴! 3,000즉시 지급"],
+      
     ]
     override func viewDidLoad() {
         super.viewDidLoad()

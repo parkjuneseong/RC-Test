@@ -39,69 +39,65 @@ class HomeVC: UIViewController {
     private var sevenCellPresnter = SevenCellPresenter()
     private var eighthCellPresenter = EighthCellPresenter()
      
-    let topList = [
-    ["image" : "testImage1", "label":"10/10 모두보기"],
-    ["image" : "testImage2"],
-    ["image" : "IMG", "label":"10/10 모두보기"]
-    ]
+     
     let threeList = [
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"]
+        ["image" : "shoes1", "price" : "25,000원원","title" : "RED VANS 윅스 [교환] "],
+        ["image" : "shoes2", "price" : "45,000원원","title" : "WHITE VANS 남녀공용 화이트"],
+        ["image" : "shoes3", "price" : "27,000원원","title" : "프리즘 웍스 SNSNW-04"],
+        ["image" : "shoes4", "price" : "75,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"],
+        ["image" : "clothes1", "price" : "23,000원원","title" : "소프트 필링 세미오버 라운드 니트 초코브라운 "],
+        ["image" : "clothes2", "price" : "44,000원원","title" : "아반디 타임 SANKND[일반/기모]"],
+        ["image" : "shoes3", "price" : "62,000원원","title" : "팝니다"],
+        ["image" : "shoes1", "price" : "12,000원원","title" : "팝니다"],
+        ["image" : "shoes4", "price" : "63,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"]
         ]
     let fourthList = [
-        ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
-        ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
-        ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
-        ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
-        ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"],
-        ["image" : "test","price" : "195만원", "title": "지금 세상에서 제일 인기 좋은 뉴발라슨 ?"]
-    ]
+        ["image" : "shoes1", "price" : "25,000원원","title" : "RED VANS 윅스 [교환] "],
+        ["image" : "shoes2", "price" : "45,000원원","title" : "WHITE VANS 남녀공용 화이트"],
+        ["image" : "shoes3", "price" : "27,000원원","title" : "프리즘 웍스 SNSNW-04"],
+        ["image" : "shoes4", "price" : "75,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"],
+        ["image" : "clothes1", "price" : "23,000원원","title" : "소프트 필링 세미오버 라운드 니트 초코브라운 "],
+ 
+        ]
     let fifthList = [
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"]
-    ]
+        ["image" : "shoes1", "price" : "25,000원원","title" : "RED VANS 윅스 [교환] "],
+        ["image" : "shoes2", "price" : "45,000원원","title" : "WHITE VANS 남녀공용 화이트"],
+        ["image" : "shoes3", "price" : "27,000원원","title" : "프리즘 웍스 SNSNW-04"],
+        ["image" : "shoes4", "price" : "75,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"],
+        ["image" : "clothes1", "price" : "23,000원원","title" : "소프트 필링 세미오버 라운드 니트 초코브라운 "],
+        ["image" : "clothes2", "price" : "44,000원원","title" : "아반디 타임 SANKND[일반/기모]"],
+        ["image" : "shoes3", "price" : "62,000원원","title" : "팝니다"],
+        ["image" : "shoes1", "price" : "12,000원원","title" : "팝니다"],
+        ["image" : "shoes4", "price" : "63,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"]
+        ]
     let sixthList = [
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        
+        ["image" : "shoes1", "price" : "25,000원원","title" : "RED VANS 윅스 [교환] "],
+        ["image" : "shoes2", "price" : "45,000원원","title" : "WHITE VANS 남녀공용 화이트"],
+        ["image" : "shoes3", "price" : "27,000원원","title" : "프리즘 웍스 SNSNW-04"],
+        ["image" : "shoes4", "price" : "75,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"],
+        ["image" : "clothes1", "price" : "23,000원원","title" : "소프트 필링 세미오버 라운드 니트 초코브라운 "],
+        ["image" : "clothes2", "price" : "44,000원원","title" : "아반디 타임 SANKND[일반/기모]"],
+       
     ]
     let sevenList = [
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"],
-        ["image" : "test", "price" : "100원","title" : "팝니다"]
-    ]
+        ["image" : "shoes1", "price" : "25,000원원","title" : "RED VANS 윅스 [교환] "],
+        ["image" : "shoes2", "price" : "45,000원원","title" : "WHITE VANS 남녀공용 화이트"],
+        ["image" : "shoes3", "price" : "27,000원원","title" : "프리즘 웍스 SNSNW-04"],
+        ["image" : "shoes4", "price" : "75,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"],
+        ["image" : "clothes1", "price" : "23,000원원","title" : "소프트 필링 세미오버 라운드 니트 초코브라운 "],
+        ["image" : "clothes2", "price" : "44,000원원","title" : "아반디 타임 SANKND[일반/기모]"],
+        ["image" : "shoes3", "price" : "62,000원원","title" : "팝니다"],
+        ["image" : "shoes1", "price" : "12,000원원","title" : "팝니다"],
+        ["image" : "shoes4", "price" : "63,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"]
+        ]
     let eighthList = [
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        ["image" : "test" , "price" : "190만원", "title" : "20대에 제일 잘나간거에여"],
-        
-    ]
+        ["image" : "shoes1", "price" : "25,000원원","title" : "RED VANS 윅스 [교환] "],
+        ["image" : "shoes2", "price" : "45,000원원","title" : "WHITE VANS 남녀공용 화이트"],
+        ["image" : "shoes3", "price" : "27,000원원","title" : "프리즘 웍스 SNSNW-04"],
+        ["image" : "shoes4", "price" : "75,000원원","title" : "마크 곤잘레스 알로하 남녀공용 스니커즈 오키드 핑크"],
+        ["image" : "clothes1", "price" : "23,000원원","title" : "소프트 필링 세미오버 라운드 니트 초코브라운 "]
+      
+        ]
     
 //    private var modelList: [HomeProductsResultModel] = []
     
@@ -113,13 +109,16 @@ class HomeVC: UIViewController {
         
         let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
         print(jwt)
-        
+        setProductModel()
         setTablePresenters()
      }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadData()
+        
+    
+        
     }
     
     private func loadData() {

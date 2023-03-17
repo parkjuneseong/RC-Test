@@ -8,7 +8,7 @@
 import UIKit
 
 class Detail: UIViewController {
-    private let productId: Int
+    private let productId: Int = 0
     
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -31,16 +31,16 @@ class Detail: UIViewController {
     var detailModel : DetailModel?
     private var tablePresenters: [CommonTablePresenter?] = []
     private var detailOnePresneter = DetailOnePresenter()
-    
-    init(productId: Int) {
-        self.productId = productId
-        super.init(nibName: "Detail", bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        self.productId = 0
-        super.init(coder: coder)
-    }
+//    
+//    init(productId: Int) {
+//        self.productId = productId
+//        super.init(nibName: "Detail", bundle: nil)
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        self.productId = 0
+//        super.init(coder: coder)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

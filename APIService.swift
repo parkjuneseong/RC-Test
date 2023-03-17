@@ -45,7 +45,8 @@ class APIService {
         AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: MyPageModel.self) { response in
             switch response.result {
             case .success(let model):
-                print("banner성공")
+                print("mypage성공")
+                print(userId)
                 handler?(model)
             case .failure(let error):
                 print("에러myPage\(error)")

@@ -31,7 +31,7 @@ extension MyFiveCell: UICollectionViewDelegate, UICollectionViewDataSource,UICol
      
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyFiveColCell", for: indexPath as IndexPath) as? MyFiveColCell
-               
+                        
         cell?.bind(image: (UIImage(named: list[indexPath.row]["image"] ?? "" ) ?? UIImage()), label: list[indexPath.row]["label"] ?? "")
         return cell ?? UICollectionViewCell()
     }

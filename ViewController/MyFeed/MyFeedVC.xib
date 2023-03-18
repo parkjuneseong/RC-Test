@@ -10,10 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFeedVC" customModule="RC_Test" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="UdP-lB-hwF" id="bXU-Cv-NtL"/>
                 <outlet property="label1" destination="Rf9-pU-jAB" id="AP8-LZ-kvD"/>
                 <outlet property="label2" destination="jxe-J9-oKE" id="95Z-Pg-HRZ"/>
                 <outlet property="label3" destination="ErN-n4-YDG" id="XHX-UW-nnb"/>
-                <outlet property="tableView" destination="6vo-qB-IuT" id="Qry-QW-jAX"/>
+                <outlet property="tableView" destination="WAN-7x-BFp" id="HSA-XZ-X1R"/>
                 <outlet property="underLine1" destination="CjD-P5-6zb" id="rbQ-n1-Cmx"/>
                 <outlet property="underLine2" destination="X7T-DV-kBF" id="xEd-0S-9cT"/>
                 <outlet property="underLine3" destination="pRd-KS-5yc" id="KD2-D4-oMD"/>
@@ -181,28 +182,46 @@
                         <constraint firstAttribute="height" constant="50" id="FvI-PG-jZx"/>
                     </constraints>
                 </stackView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6vo-qB-IuT">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WAN-7x-BFp">
                     <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="x3G-5L-Ni0"/>
-                        <outlet property="delegate" destination="-1" id="3yV-iW-ufh"/>
+                        <outlet property="dataSource" destination="-1" id="Coo-cS-YOa"/>
+                        <outlet property="delegate" destination="-1" id="zGX-tt-nI9"/>
                     </connections>
                 </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UdP-lB-hwF">
+                    <rect key="frame" x="0.0" y="159" width="393" height="659"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="buL-VP-dF9">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LrT-km-KK1"/>
+                        <outlet property="delegate" destination="-1" id="Llu-Xd-3M6"/>
+                    </connections>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="WAN-7x-BFp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2fX-g0-yRp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WAN-7x-BFp" secondAttribute="trailing" id="3yn-Er-YSn"/>
+                <constraint firstItem="WAN-7x-BFp" firstAttribute="top" secondItem="uLy-E4-8iI" secondAttribute="bottom" id="4KB-7N-WgJ"/>
                 <constraint firstItem="VYH-7H-zXQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Kh-SE-jQr"/>
-                <constraint firstItem="6vo-qB-IuT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fij-ar-ucg"/>
+                <constraint firstItem="UdP-lB-hwF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5wm-EV-Tes"/>
                 <constraint firstItem="uLy-E4-8iI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fqt-P5-lFh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6vo-qB-IuT" secondAttribute="trailing" id="Uxu-rZ-NSC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UdP-lB-hwF" secondAttribute="bottom" id="LKa-MM-8XR"/>
                 <constraint firstItem="VYH-7H-zXQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cPu-qK-moM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UdP-lB-hwF" secondAttribute="trailing" id="eDa-gC-hUB"/>
                 <constraint firstItem="uLy-E4-8iI" firstAttribute="top" secondItem="VYH-7H-zXQ" secondAttribute="bottom" id="fEz-Wy-pvO"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6vo-qB-IuT" secondAttribute="bottom" id="qGh-UX-pob"/>
+                <constraint firstItem="UdP-lB-hwF" firstAttribute="top" secondItem="uLy-E4-8iI" secondAttribute="bottom" id="pGO-HC-rOH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WAN-7x-BFp" secondAttribute="bottom" id="rBG-4a-uJ7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uLy-E4-8iI" secondAttribute="trailing" id="s4T-o2-Fqe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VYH-7H-zXQ" secondAttribute="trailing" id="twD-PR-JfQ"/>
-                <constraint firstItem="6vo-qB-IuT" firstAttribute="top" secondItem="uLy-E4-8iI" secondAttribute="bottom" id="xYT-5j-cvB"/>
             </constraints>
             <point key="canvasLocation" x="59" y="-403"/>
         </view>

@@ -8,7 +8,18 @@
 import UIKit
 
 class MyFeedVC: UIViewController {
+    var listModel : [[String : String]]?
+    let emptyList = [
+        ["label" : "내 피드가 없습니다.","image" : "111"]
+    ]
+    let emptyList2 = [
+        ["label" : "나를 팔로우한 상점이 없습니다.","image" : "111"]
+    ]
+    let liste =  [
+        ["label1" : "1", "label2" : "d" , "image1":"111", "image2":"111","image3":"111", "image4":"111"]
+    ]
     
+    @IBOutlet weak var tableView: UITableView!
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -19,13 +30,16 @@ class MyFeedVC: UIViewController {
     
     private var selectedIndex: Int = 0 {
         didSet {
-            tableView.reloadData()
+            collectionView.reloadData()
         }
     }
     
     var list : [String] = []
-    var list2 =  ["page" , "..."]
-    var list3: [String] = []
+    var list2 : [String] = []
+    var list3 = [
+        ["label" : "ㅡㅜ"],
+        ["label" : "ㅡㅜ"]
+    ]
     
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var underLine1: UIView!
@@ -36,8 +50,8 @@ class MyFeedVC: UIViewController {
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var underLine3: UIView!
     
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var collectionView: UICollectionView!
+    var cellLabel : XXEmptyCell?
     @IBAction func control1Action(_ sender: Any) {
         label2.textColor = .lightGray
         label3.textColor = .lightGray
@@ -46,8 +60,11 @@ class MyFeedVC: UIViewController {
         label1.textColor = .black
         underLine1.backgroundColor = .black
         underLine1.isHidden = false
-        
+        collectionView.isHidden = false
+        tableView.isHidden = true
+        cellLabel?.label1.text = "내 피드가 아직 없습니다."
         selectedIndex = 0
+        
     }
     @IBAction func control2Action(_ sender: Any) {
         label1.textColor = .lightGray
@@ -57,7 +74,9 @@ class MyFeedVC: UIViewController {
         label2.textColor = .black
         underLine2.backgroundColor = .black
         underLine2.isHidden = false
-        
+        cellLabel?.label1.text = "내가 팔로우한 상점이 없습니다."
+        collectionView.isHidden = false
+        tableView.isHidden = true
         selectedIndex = 1
     }
     @IBAction func control3Action(_ sender: Any) {
@@ -68,25 +87,26 @@ class MyFeedVC: UIViewController {
         label3.textColor = .black
         underLine3.backgroundColor = .black
         underLine3.isHidden = false
-        
+        tableView.isHidden = false
         selectedIndex = 2
+        collectionView.isHidden = true
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "XXTableViewCell", bundle: nil), forCellReuseIdentifier: "XXTableViewCell")
-        tableView.register(UINib(nibName: "XXEmptyTableViewCell", bundle: nil), forCellReuseIdentifier: "XXEmptyTableViewCell")
+        collectionView.register(UINib(nibName: "NoEmptyCell", bundle: nil), forCellWithReuseIdentifier: "NoEmptyCell")
+        collectionView.register(UINib(nibName: "XXEmptyCell", bundle: nil), forCellWithReuseIdentifier: "XXEmptyCell")
+        tableView.register(UINib(nibName: "FollowTableCell", bundle: nil), forCellReuseIdentifier: "FollowTableCell")
+
+     
     }
 }
 
-extension MyFeedVC: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
+extension MyFeedVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch selectedIndex {
         case 0:
             if list.isEmpty {
@@ -106,50 +126,91 @@ extension MyFeedVC: UITableViewDelegate, UITableViewDataSource {
             } else {
                 return list3.count
             }
+            
         default:
             return 0
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch selectedIndex {
         case 0:
             if list.isEmpty {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "XXEmptyTableViewCell", for: indexPath)
+               guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "XXEmptyCell", for: indexPath) as? XXEmptyCell else {
+                   return UICollectionViewCell()
+               }
+                cell.bind(label: emptyList[indexPath.row]["label"] ?? "", image: (UIImage(named:emptyList[indexPath.row]["image"] ?? "") ?? UIImage()) )
+    
+                
                 return cell
             } else {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "XXTableViewCell", for: indexPath) as? XXTableViewCell else {
-                    return UITableViewCell()
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NoEmptyCell", for: indexPath) as? NoEmptyCell else {
+                    return UICollectionViewCell()
                 }
-                cell.bind(text: list[indexPath.row] )
+                cell.bind(label: list[indexPath.row] )
                 return cell
             }
         case 1:
             if list2.isEmpty {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "XXEmptyTableViewCell", for: indexPath)
-                return cell
-            } else {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "XXTableViewCell", for: indexPath) as? XXTableViewCell else {
-                    return UITableViewCell()
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "XXEmptyCell", for: indexPath) as? XXEmptyCell else {
+                    return UICollectionViewCell()
                 }
-                cell.bind(text: list2[indexPath.row])
+                 cell.bind(label: emptyList2[indexPath.row]["label"] ?? "", image: (UIImage(named:emptyList2[indexPath.row]["image"] ?? "") ?? UIImage()) )
+     
+                 
+                 return cell
+            } else {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NoEmptyCell", for: indexPath) as? NoEmptyCell else {
+                    return UICollectionViewCell()
+                }
+                cell.bind(label: list2[indexPath.row])
                 return cell
             }
         case 2:
             if list3.isEmpty {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "XXEmptyTableViewCell", for: indexPath)
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "XXEmptyCell", for: indexPath)
                 return cell
             } else {
-                guard let cell = tableView.dequeueReusableCell(withIdentifier: "XXTableViewCell", for: indexPath) as? XXTableViewCell else {
-                    return UITableViewCell()
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NoEmptyCell", for: indexPath) as? NoEmptyCell else {
+                    return UICollectionViewCell()
                 }
-                cell.bind(text: list3[indexPath.row])
+                cell.bind(label: list3[indexPath.row]["label"] ?? "")
                 return cell
             }
         default:
             break
         }
+        return UICollectionViewCell()
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return UITableViewCell()
+        let width: CGFloat = 393
+        let height: CGFloat = 500 // collectionViewCell 높이
+        
+        return CGSize(width: width, height: height)
+    }
+    
+}
+extension MyFeedVC : UITableViewDataSource,UITableViewDelegate{
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return liste.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:  "FollowTableCell", for: indexPath) as? FollowTableCell else {
+            return UITableViewCell()
+        }
+        cell.bind(image1: (UIImage(named:liste[indexPath.row]["image1"] ?? "") ?? UIImage()), image2: (UIImage(named:liste[indexPath.row]["image2"] ?? "") ?? UIImage()), image3: (UIImage(named:liste[indexPath.row]["image3"] ?? "") ?? UIImage()), image4: (UIImage(named:liste[indexPath.row]["image4"] ?? "") ?? UIImage()), label1: liste[indexPath.row]["label1"] ?? "", label2: liste[indexPath.row]["label2"] ?? "")
+        return cell
+    }
+    func height(at indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+
+    func numberOfRows(in section: Int) -> Int {
+        return 1
     }
 }

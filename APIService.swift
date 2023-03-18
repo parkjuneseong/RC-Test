@@ -181,4 +181,18 @@ class APIService {
             }
         }
     }
+    func postLike(param: [String: String], handler: ((LikeModel) -> Void)?) {
+        let url = baseUrl + "/likes"
+        let userId = UserDefaults.standard.string(forKey: "userId") ?? ""
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default,headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: LikeModel.self) { response in
+            switch response.result {
+            case .success(let model):
+                print("\(model.message ?? "")")
+                handler?(model)
+            case .failure(let error):
+                print("에러Like \(error)")
+            }
+        }
+    }
 }

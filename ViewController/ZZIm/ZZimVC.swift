@@ -50,11 +50,27 @@ class ZZimVC: UIViewController {
         lookLabel.textColor = .black
         selectedIndex = 1
     }
-    
+    var likeModel : LikeModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(UINib(nibName: "ZZimDummyCell", bundle: nil), forCellWithReuseIdentifier: "ZZimDummyCell")
         collectionView.register(UINib(nibName: "ZZimCell", bundle: nil), forCellWithReuseIdentifier: "ZZimCell")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadData()
+    }
+    
+    private func loadData(){
+        APIService.shared.postLike(param: ["userId" : "\(15)","productId" : "\(27)"]) { [weak self] model in
+            if model.code == 1000 {
+                self?.likeModel = model
+                 
+            } else {
+//                showToast(message: model.message ?? "")
+                print("zzim오류요 ~")
+            }
+        }
     }
     private var selectedIndex: Int = 0 {
         didSet {

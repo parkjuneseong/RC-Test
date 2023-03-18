@@ -188,10 +188,37 @@ class APIService {
         AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default,headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: LikeModel.self) { response in
             switch response.result {
             case .success(let model):
-                print("\(model.message ?? "")")
+                print("찜이요")
                 handler?(model)
             case .failure(let error):
-                print("에러Like \(error)")
+                print("찜 실패요 \(error)")
+            }
+        }
+    }
+    //QueryString param?
+    func getLike(userId: String, handler: ((AddLikeModel) -> Void)?) {
+        let url = baseUrl + "/likes"
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .get, parameters: ["userId": userId], encoding: URLEncoding.queryString, headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: AddLikeModel.self) { response in
+            switch response.result {
+            case .success(let model):
+                print("addLike성공")
+                handler?(model)
+            case .failure(let error):
+                print("에러찜이요\(error)")
+            }
+        }
+    }
+    func patchDeleteLikeModel(likeId: Int ,param: [String:String], handler: ((DeleteLikeModel) -> Void)?) {
+        let url = baseUrl + "/likes/\(likeId)/status"
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .patch, encoding: JSONEncoding.default,headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: DeleteLikeModel.self) { response in
+            switch response.result {
+            case .success(let model):
+                handler?(model)
+                print("Delete okay")
+            case .failure(let error):
+                print("에러 Delete찜이요\(error)")
             }
         }
     }

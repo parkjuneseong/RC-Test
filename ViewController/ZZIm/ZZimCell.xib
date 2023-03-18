@@ -39,6 +39,7 @@
                 <constraint firstItem="PLO-DS-Rgf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZXJ-Qt-aKx"/>
             </constraints>
             <connections>
+                <outlet property="zzimImage" destination="Hev-sY-2Ce" id="ZfK-sO-tSM"/>
                 <outlet property="zzimLabel" destination="PLO-DS-Rgf" id="sQX-fk-U0R"/>
             </connections>
             <point key="canvasLocation" x="138.93129770992365" y="20.422535211267608"/>

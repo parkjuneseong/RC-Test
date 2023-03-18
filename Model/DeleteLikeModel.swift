@@ -1,0 +1,31 @@
+//
+//  DeleteLikeModel.swift
+//  RC Test
+//
+//  Created by 박준성 on 2023/03/18.
+//
+
+import Foundation
+
+struct DeleteLikeModel: Codable {
+    let isSuccess: Bool?
+    let code: Int?
+    let message: String?
+    let result: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case isSuccess
+        case code
+        case message
+        case result
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        isSuccess = try values.decodeIfPresent(Bool.self, forKey: .isSuccess)
+        code = try values.decodeIfPresent(Int.self, forKey: .code)
+        message = try values.decodeIfPresent(String.self, forKey: .message)
+        result = try values.decodeIfPresent(String.self, forKey: .result)
+    }
+}
+ 

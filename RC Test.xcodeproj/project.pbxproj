@@ -43,6 +43,10 @@
 		3F257E1329C5A5FE002800A9 /* NoEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1129C5A5FE002800A9 /* NoEmptyCell.swift */; };
 		3F257E1429C5A5FE002800A9 /* NoEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F257E1229C5A5FE002800A9 /* NoEmptyCell.xib */; };
 		3F257E1629C5B5E5002800A9 /* LikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1529C5B5E5002800A9 /* LikeModel.swift */; };
+		3F257E1929C5C23F002800A9 /* ZZimProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1729C5C23F002800A9 /* ZZimProductCell.swift */; };
+		3F257E1A29C5C23F002800A9 /* ZZimProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F257E1829C5C23F002800A9 /* ZZimProductCell.xib */; };
+		3F257E1C29C5C38F002800A9 /* AddLikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1B29C5C38F002800A9 /* AddLikeModel.swift */; };
+		3F257E1E29C5C6EB002800A9 /* DeleteLikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1D29C5C6EB002800A9 /* DeleteLikeModel.swift */; };
 		3F25A47D29B58FF80072A034 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A47B29B58FF80072A034 /* SplashVC.swift */; };
 		3F25A47E29B58FF80072A034 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A47C29B58FF80072A034 /* SplashVC.xib */; };
 		3F25A48129B590280072A034 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A47F29B590280072A034 /* LoginVC.swift */; };
@@ -275,6 +279,10 @@
 		3F257E1129C5A5FE002800A9 /* NoEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEmptyCell.swift; sourceTree = "<group>"; };
 		3F257E1229C5A5FE002800A9 /* NoEmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoEmptyCell.xib; sourceTree = "<group>"; };
 		3F257E1529C5B5E5002800A9 /* LikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeModel.swift; sourceTree = "<group>"; };
+		3F257E1729C5C23F002800A9 /* ZZimProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZZimProductCell.swift; sourceTree = "<group>"; };
+		3F257E1829C5C23F002800A9 /* ZZimProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZimProductCell.xib; sourceTree = "<group>"; };
+		3F257E1B29C5C38F002800A9 /* AddLikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLikeModel.swift; sourceTree = "<group>"; };
+		3F257E1D29C5C6EB002800A9 /* DeleteLikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLikeModel.swift; sourceTree = "<group>"; };
 		3F25A47B29B58FF80072A034 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		3F25A47C29B58FF80072A034 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		3F25A47F29B590280072A034 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -494,6 +502,8 @@
 				3FAD85B829BB83680042B227 /* ZZimDummyCell.xib */,
 				3FAD85BB29BB8B340042B227 /* ZZimCell.swift */,
 				3FAD85BC29BB8B340042B227 /* ZZimCell.xib */,
+				3F257E1729C5C23F002800A9 /* ZZimProductCell.swift */,
+				3F257E1829C5C23F002800A9 /* ZZimProductCell.xib */,
 			);
 			path = ZZIm;
 			sourceTree = "<group>";
@@ -580,6 +590,8 @@
 				3F2BBB8B29BDB04400325749 /* SearchModel.swift */,
 				3F2BBB8D29BDB19F00325749 /* SearchCategoryModel.swift */,
 				3F257E1529C5B5E5002800A9 /* LikeModel.swift */,
+				3F257E1B29C5C38F002800A9 /* AddLikeModel.swift */,
+				3F257E1D29C5C6EB002800A9 /* DeleteLikeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1149,6 +1161,7 @@
 				3F55874F29B8921B00E5127E /* NumberTextField.xib in Resources */,
 				3F40A28929C35D2900ED457B /* ProductTable.xib in Resources */,
 				3F7EB60129B333CC002F03E8 /* TalkVC.xib in Resources */,
+				3F257E1A29C5C23F002800A9 /* ZZimProductCell.xib in Resources */,
 				3F1FE6D929B359ED002153C6 /* FifthCell.xib in Resources */,
 				3F257E0829C49200002800A9 /* XXEmptyCell.xib in Resources */,
 				3F2BBB7C29BCE1DF00325749 /* JoinVc.xib in Resources */,
@@ -1267,6 +1280,7 @@
 				3F1FE6D329B344AB002153C6 /* FourthColCell.swift in Sources */,
 				3F2BBBA629BF913700325749 /* OptionSelectedVC.swift in Sources */,
 				3F1FE6D029B34439002153C6 /* FourthCellPresenter.swift in Sources */,
+				3F257E1C29C5C38F002800A9 /* AddLikeModel.swift in Sources */,
 				3F25A48529B590380072A034 /* SginVC.swift in Sources */,
 				3F69EAB329B4C17500440C41 /* RegistVC.swift in Sources */,
 				3F2BBB5A29BC2F0D00325749 /* ShowMoreFooter.swift in Sources */,
@@ -1292,6 +1306,7 @@
 				3F55874929B891FA00E5127E /* LGTextField.swift in Sources */,
 				3F7EB5EE29B31B57002F03E8 /* HomeFirstCell.swift in Sources */,
 				3F57B75C29B461F80009D190 /* SearchThreePresenter.swift in Sources */,
+				3F257E1E29C5C6EB002800A9 /* DeleteLikeModel.swift in Sources */,
 				3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */,
 				3F69EAAF29B4C16700440C41 /* MyVC.swift in Sources */,
 				3F2BBB8029BDA3FC00325749 /* SellModel.swift in Sources */,
@@ -1305,6 +1320,7 @@
 				3F3A234429B38E0400ED756A /* TalkFirstCell.swift in Sources */,
 				3F69EA9D29B47A1E00440C41 /* TalkFirst.swift in Sources */,
 				3F1894A229BB96EA00786B73 /* Detail.swift in Sources */,
+				3F257E1929C5C23F002800A9 /* ZZimProductCell.swift in Sources */,
 				3F4E6AB029C0B495007EFD0E /* SetDetailHeaderView.swift in Sources */,
 				3F2BBB5E29BC36D200325749 /* ImagePickerDelegate.swift in Sources */,
 				3F87046D29B8789B00CB5D87 /* TagVC.swift in Sources */,

@@ -9,12 +9,14 @@ import UIKit
 
 class ZZimCell: UICollectionViewCell {
 
+    @IBOutlet weak var zzimImage: UIImageView!
     @IBOutlet weak var zzimLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    func bind(label:String){
+    func bind(label:String,image:UIImage){
         zzimLabel.text = label
+        zzimImage.image = image
     }
 }

@@ -116,6 +116,7 @@ extension ZZimVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollect
                     return UICollectionViewCell()
                 }
                 cell.bind(model: addLikeModel?.result?[indexPath.row], type: .zzim)
+                cell.delegate = self
                 return cell
             }
         case 1:
@@ -156,4 +157,10 @@ extension ZZimVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollect
         }
     }
     
+}
+
+extension ZZimVC: ZZimProductCellDelegate {
+    func reload() {
+        self.loadData()
+    }
 }

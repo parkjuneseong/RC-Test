@@ -47,6 +47,7 @@
 		3F257E1A29C5C23F002800A9 /* ZZimProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F257E1829C5C23F002800A9 /* ZZimProductCell.xib */; };
 		3F257E1C29C5C38F002800A9 /* AddLikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1B29C5C38F002800A9 /* AddLikeModel.swift */; };
 		3F257E1E29C5C6EB002800A9 /* DeleteLikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E1D29C5C6EB002800A9 /* DeleteLikeModel.swift */; };
+		3F257E2129C5F660002800A9 /* UIView+Ancestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F257E2029C5F660002800A9 /* UIView+Ancestor.swift */; };
 		3F25A47D29B58FF80072A034 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A47B29B58FF80072A034 /* SplashVC.swift */; };
 		3F25A47E29B58FF80072A034 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F25A47C29B58FF80072A034 /* SplashVC.xib */; };
 		3F25A48129B590280072A034 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25A47F29B590280072A034 /* LoginVC.swift */; };
@@ -283,6 +284,7 @@
 		3F257E1829C5C23F002800A9 /* ZZimProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZimProductCell.xib; sourceTree = "<group>"; };
 		3F257E1B29C5C38F002800A9 /* AddLikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLikeModel.swift; sourceTree = "<group>"; };
 		3F257E1D29C5C6EB002800A9 /* DeleteLikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLikeModel.swift; sourceTree = "<group>"; };
+		3F257E2029C5F660002800A9 /* UIView+Ancestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ancestor.swift"; sourceTree = "<group>"; };
 		3F25A47B29B58FF80072A034 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		3F25A47C29B58FF80072A034 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		3F25A47F29B590280072A034 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -554,6 +556,14 @@
 				3F1FE6EC29B3690E002153C6 /* SevenCellPresenter.swift */,
 			);
 			path = SeventhCell;
+			sourceTree = "<group>";
+		};
+		3F257E1F29C5F652002800A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F257E2029C5F660002800A9 /* UIView+Ancestor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		3F25A47A29B58FC70072A034 /* SlpashVC,LoginVC */ = {
@@ -847,6 +857,7 @@
 		3F7EB60629B2ECBA0090A87B = {
 			isa = PBXGroup;
 			children = (
+				3F257E1F29C5F652002800A9 /* Extension */,
 				3F2BBB6E29BC673600325749 /* Model */,
 				3F2BBB6C29BC650900325749 /* APIService.swift */,
 				3F432BE529B315850017E245 /* Commonc */,
@@ -1313,6 +1324,7 @@
 				3FAD85BD29BB8B340042B227 /* ZZimCell.swift in Sources */,
 				3FB911FF29B5D74600646D8C /* MyHeaderView.swift in Sources */,
 				3FAD85B129B9DAD90042B227 /* MyFeedVC.swift in Sources */,
+				3F257E2129C5F660002800A9 /* UIView+Ancestor.swift in Sources */,
 				3F756EBA29B7081B00C82827 /* MyFourCell.swift in Sources */,
 				3F7EB60029B333CC002F03E8 /* TalkVC.swift in Sources */,
 				3F2BBB6529BC3D2F00325749 /* PickerColCell.swift in Sources */,

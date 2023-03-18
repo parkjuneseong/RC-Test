@@ -22,14 +22,21 @@ class ThirdColCell: UICollectionViewCell {
     @IBOutlet weak var isSagePayImageView: UIImageView!
     
     let imageArray = [UIImage(named: "heartImage"), UIImage(named: "zzim")]
-    var currentImageIndex = false
+    var productId: Int?
     
     @IBAction func controlAction(_ sender: Any) {
-        currentImageIndex.toggle()
-        heartImage.image = currentImageIndex ? UIImage(named: "zzim") : UIImage(named: "heartImage")
+        APIService.shared.postLike(productId: self.productId) { [weak self] model in
+            if model.code == 1000 {
+                self?.heartImage.image = UIImage(named: "zzim")
+                showToast(message: "찜목록에 추가되었습니다.1")
+            } else {
+                showToast(message: "찜목록에 추가되지 않았습니다.")
+            }
+        }
     }
     
     func bind(model: HomeProductsResultModel?){
+        self.productId = model?.productId
         cellPrice.text = model?.price
         cellTitle.text = model?.title
         isSagePayImageView.isHidden = model?.isSagePay ?? "" == "Y" ? false : true

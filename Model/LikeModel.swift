@@ -11,7 +11,7 @@ struct LikeModel: Codable {
     let isSuccess: Bool?
     let code: Int?
     let message: String?
-    let result: [LikeResultModel]?
+    let result: LikeResultModel?
     
     enum CodingKeys: String, CodingKey {
         case isSuccess
@@ -25,7 +25,7 @@ struct LikeModel: Codable {
         isSuccess = try values.decodeIfPresent(Bool.self, forKey: .isSuccess)
         code = try values.decodeIfPresent(Int.self, forKey: .code)
         message = try values.decodeIfPresent(String.self, forKey: .message)
-        result = try values.decodeIfPresent([LikeResultModel].self, forKey: .result)
+        result = try values.decodeIfPresent(LikeResultModel.self, forKey: .result)
     }
 }
 

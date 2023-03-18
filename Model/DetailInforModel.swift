@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DetailInforModel: Codable {
+struct DetailInfoModel: Codable {
     let isSuccess: Bool?
     let code: Int?
     let message: String?
@@ -31,42 +31,83 @@ struct DetailInforModel: Codable {
 
 struct DetailInforResultModel: Codable {
     let getUserDataRes: DetailgetUserDataRes?
-    let getUserProductsRes : DetailgetUserProductsRes?
-    let getProductsImgRes : DetailgetProductsImgRes?
-   
+    let getUserProductsRes : [DetailgetUserProductsRes]?
     
-    
-    struct DetailgetUserDataRes : Codable{
-        let score : Double?
-        let profileImageUrl : String?
-        let userNickName : String?
-    }
-    struct DetailgetUserProductsRes : Codable {
-        let productId :  Int?
-        let userId : Int?
-        let title : String?
-        let price : String?
-        let like : Double?
-        let likeId : Int?
-    }
-    struct DetailgetProductsImgRes : Codable {
-        let productId :  Int?
-        let imageUrl : String?
-    }
 
     enum CodingKeys: String, CodingKey {
         case getUserDataRes
         case getUserProductsRes
-        case getProductsImgRes
-       
     }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         getUserDataRes = try values.decodeIfPresent(DetailgetUserDataRes.self, forKey: .getUserDataRes)
-        getUserProductsRes = try values.decodeIfPresent(DetailgetUserProductsRes.self, forKey: .getUserProductsRes)
-        getProductsImgRes = try values.decodeIfPresent(DetailgetProductsImgRes.self, forKey: .getProductsImgRes)
-        
+        getUserProductsRes = try values.decodeIfPresent([DetailgetUserProductsRes].self, forKey: .getUserProductsRes)
+    }
+}
 
+struct DetailgetUserDataRes : Codable{
+    let score : Float?
+    let profileImageUrl : String?
+    let userNickName : String?
+    
+    enum CodingKeys: String, CodingKey {
+        case score
+        case profileImageUrl
+        case userNickName
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        score = try values.decodeIfPresent(Float.self, forKey: .score)
+        profileImageUrl = try values.decodeIfPresent(String.self, forKey: .profileImageUrl)
+        userNickName = try values.decodeIfPresent(String.self, forKey: .userNickName)
+    }
+}
+
+struct DetailgetUserProductsRes : Codable {
+    let productId :  Int?
+    let userId : Int?
+    let title : String?
+    let price : String?
+    let like : Int?
+    let likeId : Int?
+    let getProductsImgRes : [DetailgetProductsImgRes]?
+    
+    enum CodingKeys: String, CodingKey {
+        case productId
+        case userId
+        case title
+        case price
+        case like
+        case likeId
+        case getProductsImgRes
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        productId = try values.decodeIfPresent(Int.self, forKey: .productId)
+        userId = try values.decodeIfPresent(Int.self, forKey: .userId)
+        title = try values.decodeIfPresent(String.self, forKey: .title)
+        price = try values.decodeIfPresent(String.self, forKey: .price)
+        like = try values.decodeIfPresent(Int.self, forKey: .like)
+        likeId = try values.decodeIfPresent(Int.self, forKey: .likeId)
+        getProductsImgRes = try values.decodeIfPresent([DetailgetProductsImgRes].self, forKey: .getProductsImgRes)
+    }
+}
+
+struct DetailgetProductsImgRes : Codable {
+    let productId : Int?
+    let imageUrl : String?
+    
+    enum CodingKeys: String, CodingKey {
+        case productId
+        case imageUrl
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        productId = try values.decodeIfPresent(Int.self, forKey: .productId)
+        imageUrl = try values.decodeIfPresent(String.self, forKey: .imageUrl)
     }
 }

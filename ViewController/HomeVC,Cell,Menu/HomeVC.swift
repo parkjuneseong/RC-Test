@@ -271,7 +271,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
 extension HomeVC : MyFeedDelegate,ZZimDelegate{
     func zzimAction() {
         print("d")
-        let vc1 = ZZimVC()
+//        let vc1 = ZZimVC()
+        let vc1 = Detail(productId: 1)
         self.navigationController?.pushViewController(vc1, animated: true)
     }
     

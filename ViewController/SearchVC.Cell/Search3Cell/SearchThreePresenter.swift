@@ -53,6 +53,7 @@ extension SearchThreePresenter: CommonTablePresenter
         }
     }
     
+    
     var headerHeight: CGFloat {
         get {
             return 50

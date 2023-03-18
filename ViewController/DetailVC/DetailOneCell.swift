@@ -15,6 +15,7 @@ class DetailOneCell: UITableViewCell {
     @IBOutlet weak var detailLocation: UILabel!
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailPrice: UILabel!
+    @IBOutlet weak var contentsLabelHeightConstraint: NSLayoutConstraint!
     
     private var model: DetailResultModel? {
         didSet {
@@ -31,22 +32,24 @@ class DetailOneCell: UITableViewCell {
     func bind(model: DetailResultModel?) {
         self.model = model
         
-        detailPrice.text = model?.price
+        detailPrice.text = "\(model?.price ?? "")원"
         detailTitle.text = model?.title
         detailLocation.text = model?.location
         detailProductUpdatedAtTime.text = model?.productUpdatedAtTime
-        contentsLabel.attributedText = makeAttribute(model?.contents, lineSpacing: 2)
+        
+        let attribureText = makeAttribute(text: model?.contents ?? "", spacing: 2, fontSize: 17, weight: .regular)
+        contentsLabel.attributedText = attribureText
+        contentsLabelHeightConstraint.constant = attribureText.height(containerWidth: UIScreen.main.bounds.width - 30)
     }
     
-    private func makeAttribute(_ text: String?, lineSpacing: CGFloat) -> NSMutableAttributedString {
+    func makeAttribute(text: String, spacing: CGFloat, fontSize: CGFloat, weight: UIFont.Weight) -> NSMutableAttributedString {
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = lineSpacing
-        paragraphStyle.alignment = .left
-        paragraphStyle.lineBreakMode = .byTruncatingTail
-        let attributedStr = NSMutableAttributedString(string: text ?? "")
-        attributedStr.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attributedStr.length))
-        
-        return attributedStr
+        paragraphStyle.lineSpacing = spacing
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attributedText.length))
+        let font = UIFont.systemFont(ofSize: fontSize, weight: weight)
+        attributedText.addAttribute(.font, value: font, range: NSRange(location: 0, length: attributedText.length))
+        return attributedText
     }
 }
 
@@ -69,5 +72,14 @@ extension DetailOneCell: UICollectionViewDelegate, UICollectionViewDataSource, U
         let width = UIScreen.main.bounds.width
         
         return CGSize(width: width, height: height)
+    }
+}
+
+extension NSAttributedString {
+    func height(containerWidth: CGFloat) -> CGFloat {
+        let rect = self.boundingRect(with: CGSize(width: containerWidth, height: .greatestFiniteMagnitude),
+                                     options: [.usesLineFragmentOrigin, .usesFontLeading],
+                                     context: nil)
+        return ceil(rect.height)
     }
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class Detail: UIViewController {
-    private let productId: Int = 0
+    private var productId: Int = 0
     
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -29,21 +29,29 @@ class Detail: UIViewController {
         self.present(vc, animated: true)
     }
     var detailModel : DetailModel?
+    var detailInfoModel : DetailInfoModel?
     private var tablePresenters: [CommonTablePresenter?] = []
     private var detailOnePresneter = DetailOnePresenter()
-//    
-//    init(productId: Int) {
-//        self.productId = productId
-//        super.init(nibName: "Detail", bundle: nil)
-//    }
-//    
-//    required init?(coder: NSCoder) {
-//        self.productId = 0
-//        super.init(coder: coder)
-//    }
+    private var detailSecondPresenter = DetailSecondPresenter()
+    
+    init(productId: Int) {
+        self.productId = productId
+        super.init(nibName: "Detail", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.productId = 0
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 15.0, *) {
+            UITableView.appearance().sectionHeaderTopPadding = 0
+        }
+        self.tableView.tableHeaderView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 0, height: CGFloat.leastNormalMagnitude)))
+        self.tableView.tableFooterView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 0, height: CGFloat.leastNormalMagnitude)))
         setPresenterModel()
         setTablePresenters()
     }
@@ -63,10 +71,24 @@ class Detail: UIViewController {
 //                showToast(message: model.message ?? "")
             }
         }
+        
+        APIService.shared.getDetailInfo(productId: self.productId) { [weak self] model in
+            if model.code == 1000 {
+                self?.detailInfoModel = model
+                self?.setInfoPresenterModel()
+            } else {
+                showToast(message: model.message ?? "")
+            }
+        }
     }
     
     private func setPresenterModel() {
         detailOnePresneter.set(model: detailModel)
+        tableView.reloadData()
+    }
+    
+    private func setInfoPresenterModel() {
+        detailSecondPresenter.set(model: detailInfoModel)
         tableView.reloadData()
     }
     

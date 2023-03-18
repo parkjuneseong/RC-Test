@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRS-fK-Cdi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="sMy-NB-8x2">
                                 <rect key="frame" x="15" y="10" width="40" height="40"/>
@@ -98,26 +98,40 @@
                             <constraint firstItem="sMy-NB-8x2" firstAttribute="top" secondItem="wRS-fK-Cdi" secondAttribute="top" constant="10" id="mkx-0w-BZz"/>
                             <constraint firstItem="x1G-46-fRe" firstAttribute="leading" secondItem="kj4-SB-viR" secondAttribute="trailing" constant="2" id="vTL-mJ-PkI"/>
                             <constraint firstItem="iO1-fR-XAf" firstAttribute="top" secondItem="wRS-fK-Cdi" secondAttribute="top" constant="15" id="wSB-LP-bGW"/>
-                            <constraint firstAttribute="height" constant="100" id="yPb-mC-Ubf"/>
+                            <constraint firstAttribute="height" constant="80" id="yPb-mC-Ubf"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 상점의 상품 70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfp-F7-17d">
-                        <rect key="frame" x="16" y="100" width="121" height="20.333333333333329"/>
+                        <rect key="frame" x="16" y="80" width="121" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uOF-mT-Fx5">
+                        <rect key="frame" x="0.0" y="115.33333333333334" width="320" height="384.66666666666663"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u0A-kO-kwv">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uOF-mT-Fx5" secondAttribute="bottom" id="9fU-GV-3r5"/>
+                    <constraint firstItem="uOF-mT-Fx5" firstAttribute="top" secondItem="vfp-F7-17d" secondAttribute="bottom" constant="15" id="MsT-Hd-qQg"/>
                     <constraint firstItem="wRS-fK-Cdi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tag-nC-9ji"/>
                     <constraint firstItem="vfp-F7-17d" firstAttribute="top" secondItem="wRS-fK-Cdi" secondAttribute="bottom" id="bH2-Mm-6eU"/>
                     <constraint firstAttribute="trailing" secondItem="wRS-fK-Cdi" secondAttribute="trailing" id="coo-hM-OMX"/>
                     <constraint firstItem="wRS-fK-Cdi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eSQ-BM-U9v"/>
+                    <constraint firstAttribute="trailing" secondItem="uOF-mT-Fx5" secondAttribute="trailing" id="lhH-jt-0Ks"/>
                     <constraint firstItem="vfp-F7-17d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nJh-gV-Rwu"/>
+                    <constraint firstItem="uOF-mT-Fx5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wqX-OP-SYs"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="800" y="-278"/>
+            <point key="canvasLocation" x="800" y="-278.16901408450707"/>
         </tableViewCell>
     </objects>
     <resources>

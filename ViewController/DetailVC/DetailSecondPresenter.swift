@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 class DetailSecondPresenter{
-    private let cellId = "UserSetTable"
-    private var model: [[String: String]]?
-    func set(model: [[String: String]]?) {
+    private let cellId = "DetailSecondCell"
+    private var model: DetailInfoModel?
+    func set(model: DetailInfoModel?) {
         self.model = model
     }
 }
@@ -20,10 +20,13 @@ class DetailSecondPresenter{
 extension DetailSecondPresenter: CommonTablePresenter
 {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell? {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? UserSetTable else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DetailSecondCell else {
             return UITableViewCell()
         }
-        cell.bind(list: model)
+        guard let productRes = model?.result?.getUserProductsRes else {
+            return UITableViewCell()
+        }
+        cell.bind(model: productRes)
         return cell
     }
     
@@ -32,7 +35,7 @@ extension DetailSecondPresenter: CommonTablePresenter
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 350
+        return 190
     }
     
     

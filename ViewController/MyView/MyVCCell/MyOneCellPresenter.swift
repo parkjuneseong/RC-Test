@@ -57,7 +57,7 @@ extension MyOneCellPresenter: CommonTablePresenter
     
     var headerHeight: CGFloat {
         get {
-            return 0.01
+            .leastNormalMagnitude
         } set {
             _ = newValue
         }

@@ -34,7 +34,7 @@ extension DetailOnePresenter: CommonTablePresenter
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 800
+        return UITableView.automaticDimension
     }
     
     
@@ -42,4 +42,35 @@ extension DetailOnePresenter: CommonTablePresenter
         return 1
     }
     
+    var headerView: UIView? {
+        get {
+            return nil
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var headerHeight: CGFloat {
+        get {
+            return .leastNormalMagnitude
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var footerView: UIView? {
+        get {
+            return nil
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var footerHeight: CGFloat {
+        get {
+            return .leastNormalMagnitude
+        } set {
+            _ = newValue
+        }
+    }
 }

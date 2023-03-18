@@ -290,7 +290,7 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="quZ-6H-Aay">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="quZ-6H-Aay">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -308,7 +308,10 @@
                         </connections>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w93-oq-emD">
-                        <rect key="frame" x="15" y="441" width="363" height="253"/>
+                        <rect key="frame" x="15" y="461" width="363" height="213"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="213" id="HbS-jI-KRe"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -322,9 +325,9 @@
                     <constraint firstItem="Cr7-fe-Yxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ikr-GK-TSt"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Cr7-fe-Yxe" secondAttribute="bottom" constant="15" id="Lml-dI-em5"/>
                     <constraint firstAttribute="trailingMargin" secondItem="WgU-EF-NFk" secondAttribute="trailing" constant="15" id="MDb-ZQ-9JL"/>
-                    <constraint firstItem="w93-oq-emD" firstAttribute="top" secondItem="vV9-vP-rPr" secondAttribute="bottom" id="N2f-Jb-7ae"/>
+                    <constraint firstItem="w93-oq-emD" firstAttribute="top" secondItem="vV9-vP-rPr" secondAttribute="bottom" constant="20" id="N2f-Jb-7ae"/>
                     <constraint firstItem="quZ-6H-Aay" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qhl-7i-MfA"/>
-                    <constraint firstItem="Cr7-fe-Yxe" firstAttribute="top" secondItem="w93-oq-emD" secondAttribute="bottom" id="RKF-kv-2lJ"/>
+                    <constraint firstItem="Cr7-fe-Yxe" firstAttribute="top" secondItem="w93-oq-emD" secondAttribute="bottom" constant="20" id="RKF-kv-2lJ"/>
                     <constraint firstItem="nIp-na-pNh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VeR-sT-dx0"/>
                     <constraint firstItem="w93-oq-emD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="W7A-Dj-pCD"/>
                     <constraint firstItem="nIp-na-pNh" firstAttribute="top" secondItem="quZ-6H-Aay" secondAttribute="bottom" constant="10" id="Wtq-GL-8Vk"/>
@@ -345,6 +348,7 @@
             <connections>
                 <outlet property="collectionView" destination="quZ-6H-Aay" id="Ff5-HE-NjR"/>
                 <outlet property="contentsLabel" destination="w93-oq-emD" id="A3y-yV-8Aq"/>
+                <outlet property="contentsLabelHeightConstraint" destination="HbS-jI-KRe" id="OyW-pe-Ygj"/>
                 <outlet property="detailLocation" destination="NYw-9g-S3W" id="NQN-dT-Hhm"/>
                 <outlet property="detailPrice" destination="c3k-KU-l4A" id="ehm-Wp-oZH"/>
                 <outlet property="detailProductUpdatedAtTime" destination="Zqq-cq-WUa" id="Tyv-jp-jao"/>

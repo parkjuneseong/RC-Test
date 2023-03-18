@@ -105,9 +105,9 @@ class APIService {
         }
     }
     
-    func getDetailInfor(productId:Int, handler: ((DetailInforModel) -> Void)?) {
-        let url = baseUrl + "/products/\(productId)/storeinfo?"
-        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: DetailInforModel.self) { response in
+    func getDetailInfo(productId:Int, handler: ((DetailInfoModel) -> Void)?) {
+        let url = baseUrl + "/products/\(productId)/storeinfo"
+        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: DetailInfoModel.self) { response in
             switch response.result {
             case .success(let model):
                 handler?(model)

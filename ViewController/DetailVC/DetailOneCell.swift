@@ -15,6 +15,8 @@ class DetailOneCell: UITableViewCell {
     @IBOutlet weak var detailLocation: UILabel!
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailPrice: UILabel!
+    
+    @IBOutlet weak var detailCategory: UILabel!
     @IBOutlet weak var contentsLabelHeightConstraint: NSLayoutConstraint!
     
     private var model: DetailResultModel? {

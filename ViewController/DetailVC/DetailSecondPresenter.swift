@@ -23,6 +23,7 @@ extension DetailSecondPresenter: CommonTablePresenter
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DetailSecondCell else {
             return UITableViewCell()
         }
+        //getUserDataRes 아닌가 ?ㅜ
         guard let productRes = model?.result?.getUserProductsRes else {
             return UITableViewCell()
         }
@@ -43,5 +44,25 @@ extension DetailSecondPresenter: CommonTablePresenter
         return 1
     }
     
+    var footerView: UIView? {
+        get {
+            let view = DetailFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 35))
+            view.footerLabel.text = "상품 전체보기"
+            
+            
+            
+            return view
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var footerHeight: CGFloat {
+        get {
+            return 35
+        } set {
+            _ = newValue
+        }
+    }
 }
 

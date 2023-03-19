@@ -92,6 +92,13 @@
 		3F2BBBA329BF6C6600325749 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2BBBA229BF6C6600325749 /* FirebaseStorage */; };
 		3F2BBBA629BF913700325749 /* OptionSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BBBA429BF913700325749 /* OptionSelectedVC.swift */; };
 		3F2BBBA729BF913700325749 /* OptionSelectedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2BBBA529BF913700325749 /* OptionSelectedVC.xib */; };
+		3F2C356729C6D2ED002B794A /* DetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C356629C6D2ED002B794A /* DetailFooterView.swift */; };
+		3F2C356929C6D2F4002B794A /* DetailFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C356829C6D2F4002B794A /* DetailFooterView.xib */; };
+		3F2C356C29C6D3F2002B794A /* DetailReviewtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C356A29C6D3F2002B794A /* DetailReviewtable.swift */; };
+		3F2C356D29C6D3F2002B794A /* DetailReviewtable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C356B29C6D3F2002B794A /* DetailReviewtable.xib */; };
+		3F2C357029C6D41E002B794A /* DetailReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C356E29C6D41E002B794A /* DetailReviewCell.swift */; };
+		3F2C357129C6D41E002B794A /* DetailReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C356F29C6D41E002B794A /* DetailReviewCell.xib */; };
+		3F2C357329C6D42E002B794A /* DetailReviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C357229C6D42E002B794A /* DetailReviewPresenter.swift */; };
 		3F3A233829B38BDC00ED756A /* EighthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233629B38BDC00ED756A /* EighthCell.swift */; };
 		3F3A233929B38BDC00ED756A /* EighthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A233729B38BDC00ED756A /* EighthCell.xib */; };
 		3F3A233C29B38BF700ED756A /* EighthColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A233A29B38BF700ED756A /* EighthColCell.swift */; };
@@ -325,6 +332,13 @@
 		3F2BBB9729BF69B500325749 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F2BBBA429BF913700325749 /* OptionSelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectedVC.swift; sourceTree = "<group>"; };
 		3F2BBBA529BF913700325749 /* OptionSelectedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionSelectedVC.xib; sourceTree = "<group>"; };
+		3F2C356629C6D2ED002B794A /* DetailFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFooterView.swift; sourceTree = "<group>"; };
+		3F2C356829C6D2F4002B794A /* DetailFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFooterView.xib; sourceTree = "<group>"; };
+		3F2C356A29C6D3F2002B794A /* DetailReviewtable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReviewtable.swift; sourceTree = "<group>"; };
+		3F2C356B29C6D3F2002B794A /* DetailReviewtable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailReviewtable.xib; sourceTree = "<group>"; };
+		3F2C356E29C6D41E002B794A /* DetailReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReviewCell.swift; sourceTree = "<group>"; };
+		3F2C356F29C6D41E002B794A /* DetailReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailReviewCell.xib; sourceTree = "<group>"; };
+		3F2C357229C6D42E002B794A /* DetailReviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReviewPresenter.swift; sourceTree = "<group>"; };
 		3F3A233629B38BDC00ED756A /* EighthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCell.swift; sourceTree = "<group>"; };
 		3F3A233729B38BDC00ED756A /* EighthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EighthCell.xib; sourceTree = "<group>"; };
 		3F3A233A29B38BF700ED756A /* EighthColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthColCell.swift; sourceTree = "<group>"; };
@@ -1017,6 +1031,8 @@
 			children = (
 				3F1894A029BB96EA00786B73 /* Detail.swift */,
 				3F1894A129BB96EA00786B73 /* Detail.xib */,
+				3F2C356629C6D2ED002B794A /* DetailFooterView.swift */,
+				3F2C356829C6D2F4002B794A /* DetailFooterView.xib */,
 				3F1894A429BB989500786B73 /* DetailOneCell.swift */,
 				3F1894A529BB989500786B73 /* DetailOneCell.xib */,
 				3F1894A829BB98B800786B73 /* DetailOnePresenter.swift */,
@@ -1025,6 +1041,11 @@
 				3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */,
 				3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */,
 				3F8D146429C2002900450020 /* DetailSecondPresenter.swift */,
+				3F2C356A29C6D3F2002B794A /* DetailReviewtable.swift */,
+				3F2C356B29C6D3F2002B794A /* DetailReviewtable.xib */,
+				3F2C356E29C6D41E002B794A /* DetailReviewCell.swift */,
+				3F2C356F29C6D41E002B794A /* DetailReviewCell.xib */,
+				3F2C357229C6D42E002B794A /* DetailReviewPresenter.swift */,
 				323AC71C29C3789700936777 /* DetailOneColCell.swift */,
 				323AC71D29C3789700936777 /* DetailOneColCell.xib */,
 				3F257E2329C61D9C002800A9 /* DetailSecondColCell.swift */,
@@ -1182,6 +1203,7 @@
 				3F1FE6D929B359ED002153C6 /* FifthCell.xib in Resources */,
 				3F257E0829C49200002800A9 /* XXEmptyCell.xib in Resources */,
 				3F2BBB7C29BCE1DF00325749 /* JoinVc.xib in Resources */,
+				3F2C356929C6D2F4002B794A /* DetailFooterView.xib in Resources */,
 				3F7EB5FB29B3275D002F03E8 /* SecondCell.xib in Resources */,
 				3F69EAB029B4C16700440C41 /* MyVC.xib in Resources */,
 				3F57B75629B461BF0009D190 /* SearchThree.xib in Resources */,
@@ -1208,6 +1230,7 @@
 				3F1FE6C929B34239002153C6 /* CommonHeaderView.xib in Resources */,
 				3F7EB61F29B2ECBB0090A87B /* LaunchScreen.storyboard in Resources */,
 				3F55874B29B8920400E5127E /* LGTextField.xib in Resources */,
+				3F2C356D29C6D3F2002B794A /* DetailReviewtable.xib in Resources */,
 				3F756EBB29B7081B00C82827 /* MyFourCell.xib in Resources */,
 				3F7EB5E929B318CA002F03E8 /* HomeVC.xib in Resources */,
 				3F1FE6E029B35FE5002153C6 /* SixthCell.xib in Resources */,
@@ -1225,6 +1248,7 @@
 				3F4E6AA829C0AB90007EFD0E /* SetDetailVC.xib in Resources */,
 				3F8D146A29C354F700450020 /* PayDetailVC.xib in Resources */,
 				3F55874729B891E400E5127E /* BirthTextField.xib in Resources */,
+				3F2C357129C6D41E002B794A /* DetailReviewCell.xib in Resources */,
 				3F1894A729BB989500786B73 /* DetailOneCell.xib in Resources */,
 				3FB9120829B603DE00646D8C /* MyTwoCell.xib in Resources */,
 				3F57B75A29B461EC0009D190 /* SearchThreeCell.xib in Resources */,
@@ -1272,6 +1296,7 @@
 				3F2BBB7029BC673D00325749 /* SignModel.swift in Sources */,
 				3F69EAA029B47A2E00440C41 /* TalkOnePresenter.swift in Sources */,
 				3F40A28C29C35D3A00ED457B /* ProductCell.swift in Sources */,
+				3F2C356729C6D2ED002B794A /* DetailFooterView.swift in Sources */,
 				3F257E2529C61D9C002800A9 /* DetailSecondColCell.swift in Sources */,
 				3F3A233F29B38C0800ED756A /* EighthCellPresenter.swift in Sources */,
 				3FB911FC29B5D71600646D8C /* MyOneCell.swift in Sources */,
@@ -1294,6 +1319,7 @@
 				3F57B75929B461EC0009D190 /* SearchThreeCell.swift in Sources */,
 				3F257E0F29C4A4BC002800A9 /* FollowTableCell.swift in Sources */,
 				3F69EAA529B4BFAB00440C41 /* TabbarViewController.swift in Sources */,
+				3F2C356C29C6D3F2002B794A /* DetailReviewtable.swift in Sources */,
 				3F8D146229C1FFFE00450020 /* DetailSecondCell.swift in Sources */,
 				3F2BBB7B29BCE1DF00325749 /* JoinVc.swift in Sources */,
 				3F1FE6D329B344AB002153C6 /* FourthColCell.swift in Sources */,
@@ -1316,6 +1342,7 @@
 				3F3A234929B38E8C00ED756A /* SearchVC.swift in Sources */,
 				3F25A47D29B58FF80072A034 /* SplashVC.swift in Sources */,
 				3F55874D29B8921200E5127E /* NumberTextField.swift in Sources */,
+				3F2C357329C6D42E002B794A /* DetailReviewPresenter.swift in Sources */,
 				3F7EB60C29B33D67002F03E8 /* UIView + Radius.swift in Sources */,
 				3FB9120D29B6041300646D8C /* MyTwoColCell.swift in Sources */,
 				3F87045D29B71B4800CB5D87 /* MySixCellPresenter.swift in Sources */,
@@ -1378,6 +1405,7 @@
 				3FAD85B529B9F3730042B227 /* MenuVC.swift in Sources */,
 				3F4E6AAE29C0B403007EFD0E /* UserSetPresenter.swift in Sources */,
 				3F4E6AA729C0AB90007EFD0E /* SetDetailVC.swift in Sources */,
+				3F2C357029C6D41E002B794A /* DetailReviewCell.swift in Sources */,
 				3FB9120329B5DAD500646D8C /* MyOneCellPresenter.swift in Sources */,
 				3F55875229B8DC4F00E5127E /* SelectedLogin.swift in Sources */,
 				3F69EAA229B4BF5E00440C41 /* RootViewController.swift in Sources */,

@@ -10,9 +10,9 @@ import UIKit
 class DetailtwoTable: UITableViewCell {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    var list: [[String: String]]?
+     
 //    var userSetCell : UserSetCell?
+    private var model : [DetailgetUserProductsRes]?
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -26,36 +26,34 @@ class DetailtwoTable: UITableViewCell {
       
         tableView.tableFooterView = footerView
     }
-    func bind(list: [[String: String]]?) {
-        self.list = list
+    func bind(model : [DetailgetUserProductsRes]) {
+        self.model = model
   
     }
 }
-
-extension DetailtwoTable : UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-        return list?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailSecondCell", for: indexPath) as? DetailSecondCell,
-              
-              let list = self.list else {
-            
-            return UITableViewCell()
-         }
-       
-
-        
-        cell.bind(label: list[indexPath.row]["label"] ?? "")
-         
-          
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
-    }
-}
+//
+//extension DetailtwoTable : UITableViewDelegate,UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//        return model?.result?.getUserProductsRes?.count ?? 0
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailSecondCell", for: indexPath) as? DetailSecondCell else {
+//
+//            return UITableViewCell()
+//         }
+//
+//
+//
+//        cell.bind(model: model?.result?.getUserDataRes)
+//
+//
+//        return cell
+//
+//    }
+//
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 50
+//    }
+//}

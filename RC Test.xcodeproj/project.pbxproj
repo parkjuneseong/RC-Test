@@ -217,8 +217,6 @@
 		3F8D144F29C1AEA600450020 /* LogOutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D144E29C1AEA600450020 /* LogOutPresenter.swift */; };
 		3F8D145229C1F96A00450020 /* PayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D145029C1F96A00450020 /* PayVC.swift */; };
 		3F8D145329C1F96A00450020 /* PayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D145129C1F96A00450020 /* PayVC.xib */; };
-		3F8D145A29C1FFD700450020 /* DetailtwoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D145829C1FFD700450020 /* DetailtwoTable.swift */; };
-		3F8D145B29C1FFD700450020 /* DetailtwoTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D145929C1FFD700450020 /* DetailtwoTable.xib */; };
 		3F8D146229C1FFFE00450020 /* DetailSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */; };
 		3F8D146329C1FFFE00450020 /* DetailSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */; };
 		3F8D146529C2002900450020 /* DetailSecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D146429C2002900450020 /* DetailSecondPresenter.swift */; };
@@ -458,8 +456,6 @@
 		3F8D144E29C1AEA600450020 /* LogOutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutPresenter.swift; sourceTree = "<group>"; };
 		3F8D145029C1F96A00450020 /* PayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayVC.swift; sourceTree = "<group>"; };
 		3F8D145129C1F96A00450020 /* PayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayVC.xib; sourceTree = "<group>"; };
-		3F8D145829C1FFD700450020 /* DetailtwoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailtwoTable.swift; sourceTree = "<group>"; };
-		3F8D145929C1FFD700450020 /* DetailtwoTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailtwoTable.xib; sourceTree = "<group>"; };
 		3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSecondCell.swift; sourceTree = "<group>"; };
 		3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSecondCell.xib; sourceTree = "<group>"; };
 		3F8D146429C2002900450020 /* DetailSecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSecondPresenter.swift; sourceTree = "<group>"; };
@@ -1036,8 +1032,6 @@
 				3F1894A429BB989500786B73 /* DetailOneCell.swift */,
 				3F1894A529BB989500786B73 /* DetailOneCell.xib */,
 				3F1894A829BB98B800786B73 /* DetailOnePresenter.swift */,
-				3F8D145829C1FFD700450020 /* DetailtwoTable.swift */,
-				3F8D145929C1FFD700450020 /* DetailtwoTable.xib */,
 				3F8D146029C1FFFE00450020 /* DetailSecondCell.swift */,
 				3F8D146129C1FFFE00450020 /* DetailSecondCell.xib */,
 				3F8D146429C2002900450020 /* DetailSecondPresenter.swift */,
@@ -1177,7 +1171,6 @@
 			files = (
 				3F7EB60629B33926002F03E8 /* ThirdCell.xib in Resources */,
 				3F25A47E29B58FF80072A034 /* SplashVC.xib in Resources */,
-				3F8D145B29C1FFD700450020 /* DetailtwoTable.xib in Resources */,
 				3F1FE6E429B36001002153C6 /* SixthColCell.xib in Resources */,
 				3F1FE6D429B344AB002153C6 /* FourthColCell.xib in Resources */,
 				3F87044F29B7107800CB5D87 /* ZZimVC.xib in Resources */,
@@ -1394,7 +1387,6 @@
 				3F8D144229C18D1500450020 /* ServiceSetPresenter.swift in Sources */,
 				3F432BE729B315A90017E245 /* CommonTablePresent.swift in Sources */,
 				3F69EABA29B4DEEC00440C41 /* TabIconView.swift in Sources */,
-				3F8D145A29C1FFD700450020 /* DetailtwoTable.swift in Sources */,
 				3FB9120A29B603E900646D8C /* MyTwoCellPresenter.swift in Sources */,
 				3F1FE6EA29B36901002153C6 /* SevenCell.swift in Sources */,
 				3F1FE6DF29B35FE5002153C6 /* SixthCell.swift in Sources */,

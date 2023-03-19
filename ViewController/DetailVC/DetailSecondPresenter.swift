@@ -10,6 +10,7 @@ import UIKit
 class DetailSecondPresenter{
     private let cellId = "DetailSecondCell"
     private var model: DetailInfoModel?
+    weak var delegate: DetailSecondCellDelegate?
     func set(model: DetailInfoModel?) {
         self.model = model
     }
@@ -23,11 +24,9 @@ extension DetailSecondPresenter: CommonTablePresenter
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DetailSecondCell else {
             return UITableViewCell()
         }
-        //getUserDataRes 아닌가 ?ㅜ
-        guard let productRes = model?.result?.getUserProductsRes else {
-            return UITableViewCell()
-        }
-        cell.bind(model: productRes)
+        
+        cell.bind(model: model?.result)
+        cell.delegate = delegate
         return cell
     }
     
@@ -36,7 +35,15 @@ extension DetailSecondPresenter: CommonTablePresenter
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 190
+        var height: CGFloat = 115
+        
+        let cellWidth = (UIScreen.main.bounds.width - 50)/3
+        let cellHeight = cellWidth * 13 / 10 + 60
+        let cellCount = model?.result?.getUserProductsRes?.count ?? 0
+        let line: CGFloat = CGFloat(((cellCount - 1) / 3) + 1)
+        height += cellHeight * line
+        height += (line - 1) * 10
+        return height
     }
     
     

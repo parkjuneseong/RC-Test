@@ -97,8 +97,8 @@
                         <constraint firstItem="6on-0J-t4t" firstAttribute="centerY" secondItem="xOC-oJ-sWx" secondAttribute="centerY" id="vyd-CQ-dDe"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-mm-Kyo">
-                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-mm-Kyo">
+                    <rect key="frame" x="0.0" y="109" width="393" height="629"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="hBd-Ko-FaE"/>
@@ -198,10 +198,10 @@
                 <constraint firstItem="wuk-mm-Kyo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="N70-Nw-8GW"/>
                 <constraint firstItem="wuk-mm-Kyo" firstAttribute="top" secondItem="xOC-oJ-sWx" secondAttribute="bottom" id="X0X-JE-yT9"/>
                 <constraint firstItem="a57-oc-V2Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ceV-fP-BuB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wuk-mm-Kyo" secondAttribute="bottom" id="iWI-hI-BYX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wuk-mm-Kyo" secondAttribute="trailing" id="isW-CO-IlO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a57-oc-V2Y" secondAttribute="bottom" id="u3u-SX-WIB"/>
                 <constraint firstItem="xOC-oJ-sWx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xNm-ov-87Z"/>
+                <constraint firstItem="a57-oc-V2Y" firstAttribute="top" secondItem="wuk-mm-Kyo" secondAttribute="bottom" id="ynx-eL-D8m"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
         </view>

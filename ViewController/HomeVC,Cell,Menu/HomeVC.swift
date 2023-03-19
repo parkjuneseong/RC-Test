@@ -156,6 +156,7 @@ class HomeVC: UIViewController {
         eighthCellPresenter.set(model: eighthList)
         secondCellPresenter.myFeedDelegate = self
         secondCellPresenter.zzimDelegate = self
+        thirdCellPresenter.delegate = self
         
         tableView.reloadData()
     }
@@ -271,8 +272,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
 extension HomeVC : MyFeedDelegate,ZZimDelegate{
     func zzimAction() {
         print("d")
-//        let vc1 = ZZimVC()
-        let vc1 = Detail(productId: 1)
+        let vc1 = ZZimVC()
         self.navigationController?.pushViewController(vc1, animated: true)
     }
     
@@ -289,5 +289,12 @@ extension HomeVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offSet = scrollView.contentOffset.y
         self.setNavigationBarAlpha(offSet: offSet)
+    }
+}
+
+extension HomeVC: ThirdCellDelegate {
+    func selectedThirdCell(indexPath: IndexPath) {
+        let vc = Detail(productId: productsModel?.result?[indexPath.row].productId ?? 0)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

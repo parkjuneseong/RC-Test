@@ -89,6 +89,7 @@ class Detail: UIViewController {
     
     private func setInfoPresenterModel() {
         detailSecondPresenter.set(model: detailInfoModel)
+        detailSecondPresenter.delegate = self
         tableView.reloadData()
     }
     
@@ -96,8 +97,8 @@ class Detail: UIViewController {
     private func setTablePresenters() {
         tablePresenters.removeAll()
         tablePresenters.append(detailOnePresneter)
+        tablePresenters.append(detailSecondPresenter)
         registerCells()
-        tableView.reloadData()
     }
     
     func registerCells() {
@@ -171,6 +172,13 @@ extension Detail : UITableViewDelegate,UITableViewDataSource{
 extension Detail: PayDelegate {
     func movePay() {
         let vc = PayDetailVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension Detail: DetailSecondCellDelegate {
+    func selectedSecondCell(indexPath: IndexPath) {
+        let vc = Detail(productId: detailInfoModel?.result?.getUserProductsRes?[indexPath.row].productId ?? 0)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

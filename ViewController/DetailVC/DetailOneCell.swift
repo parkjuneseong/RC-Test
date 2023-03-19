@@ -15,6 +15,7 @@ class DetailOneCell: UITableViewCell {
     @IBOutlet weak var detailLocation: UILabel!
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailPrice: UILabel!
+    @IBOutlet weak var isSagePay: UIImageView!
     
     @IBOutlet weak var detailCategory: UILabel!
     @IBOutlet weak var contentsLabelHeightConstraint: NSLayoutConstraint!
@@ -42,6 +43,9 @@ class DetailOneCell: UITableViewCell {
         let attribureText = makeAttribute(text: model?.contents ?? "", spacing: 2, fontSize: 17, weight: .regular)
         contentsLabel.attributedText = attribureText
         contentsLabelHeightConstraint.constant = attribureText.height(containerWidth: UIScreen.main.bounds.width - 30)
+        
+        detailCategory.text = model?.category
+        isSagePay.isHidden = model?.isSagePay == "Y" ? false : true
     }
     
     func makeAttribute(text: String, spacing: CGFloat, fontSize: CGFloat, weight: UIFont.Weight) -> NSMutableAttributedString {

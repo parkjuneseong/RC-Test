@@ -16,11 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="190"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gee-tB-CjZ">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gee-tB-CjZ">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="gee-tB-CjZ" secondAttribute="height" multiplier="10:13" id="qJ5-EE-RkC"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-bf-pox">
                         <rect key="frame" x="75" y="5" width="20" height="20"/>
@@ -67,6 +73,11 @@
                 <constraint firstAttribute="trailing" secondItem="uU3-bP-uCx" secondAttribute="trailing" id="Zhy-Wg-hvN"/>
                 <constraint firstAttribute="trailing" secondItem="gee-tB-CjZ" secondAttribute="trailing" id="jH4-Y6-Dqd"/>
             </constraints>
+            <connections>
+                <outlet property="priceLabel" destination="yto-cd-1RR" id="sPm-Sf-Qug"/>
+                <outlet property="thumbnailImageView" destination="gee-tB-CjZ" id="vxx-rk-b5R"/>
+                <outlet property="titleLabel" destination="uU3-bP-uCx" id="yXP-gE-1wJ"/>
+            </connections>
             <point key="canvasLocation" x="139" y="21"/>
         </collectionViewCell>
     </objects>

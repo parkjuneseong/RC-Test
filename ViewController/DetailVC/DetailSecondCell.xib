@@ -102,20 +102,27 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 상점의 상품 70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfp-F7-17d">
-                        <rect key="frame" x="16" y="80" width="121" height="20.333333333333329"/>
+                        <rect key="frame" x="16" y="80" width="121" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="qbX-6I-mff"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uOF-mT-Fx5">
-                        <rect key="frame" x="0.0" y="115.33333333333334" width="320" height="384.66666666666663"/>
+                        <rect key="frame" x="0.0" y="115" width="320" height="385"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u0A-kO-kwv">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="T5r-uh-b1X"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="btQ-Sj-GQx"/>
+                        </connections>
                     </collectionView>
                 </subviews>
                 <constraints>
@@ -131,6 +138,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="uOF-mT-Fx5" id="Tyt-12-9SB"/>
+                <outlet property="nicknameLabel" destination="OK2-kK-wUl" id="1aV-3p-pZ2"/>
+                <outlet property="productCountLabel" destination="vfp-F7-17d" id="llM-O9-f1f"/>
+                <outlet property="profileImageView" destination="sMy-NB-8x2" id="2Td-YY-M5r"/>
+                <outlet property="scoreLabel" destination="x1G-46-fRe" id="DZM-gl-12g"/>
+            </connections>
             <point key="canvasLocation" x="800" y="-278.16901408450707"/>
         </tableViewCell>
     </objects>

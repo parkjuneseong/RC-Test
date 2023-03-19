@@ -107,7 +107,8 @@ class APIService {
     
     func getDetailInfo(productId:Int, handler: ((DetailInfoModel) -> Void)?) {
         let url = baseUrl + "/products/\(productId)/storeinfo"
-        AF.request(url, method: .get, encoding: JSONEncoding.default).responseDecodable(of: DetailInfoModel.self) { response in
+        let jwt = UserDefaults.standard.string(forKey: "jwt") ?? ""
+        AF.request(url, method: .get, encoding: JSONEncoding.default, headers: ["X-ACCESS-TOKEN": jwt]).responseDecodable(of: DetailInfoModel.self) { response in
             switch response.result {
             case .success(let model):
                 handler?(model)

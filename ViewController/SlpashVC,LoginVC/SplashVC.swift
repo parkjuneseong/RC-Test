@@ -20,11 +20,9 @@ class SplashVC: UIViewController {
             //자동로그인
             if userId != nil && jwt != nil {
                 vc = UINavigationController(rootViewController: RootViewController())
-//                print("\(jwt ?? "")")
             } else {
                 vc = UINavigationController(rootViewController: SocialVc())
             }
-            vc = UINavigationController(rootViewController: SocialVc())
             Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
             
         }

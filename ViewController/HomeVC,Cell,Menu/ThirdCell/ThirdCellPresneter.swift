@@ -12,6 +12,7 @@ class ThirdCellPresenter {
     private let cellId = "ThirdCell"
     private var model: HomeProductsModel?
     private var list : [[String:String]] = []
+    weak var delegate: ThirdCellDelegate?
     func set(model:HomeProductsModel?) {
         self.model = model
     }
@@ -27,6 +28,7 @@ extension ThirdCellPresenter: CommonTablePresenter
         
         if let result = model?.result {
             cell.bind(model: result)
+            cell.delegate = delegate
         }
         
         return cell

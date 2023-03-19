@@ -9,10 +9,16 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
+protocol ThirdCellDelegate: AnyObject {
+    func selectedThirdCell(indexPath: IndexPath)
+}
 
 class ThirdCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    weak var delegate: ThirdCellDelegate?
+    
     var model: [HomeProductsResultModel] = [] {
         didSet {
             collectionView.reloadData()
@@ -49,6 +55,10 @@ extension ThirdCell: UICollectionViewDelegate, UICollectionViewDataSource,UIColl
         let height: CGFloat = 200 // collectionViewCell 높이
         
         return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.selectedThirdCell(indexPath: indexPath)
     }
 }
 
